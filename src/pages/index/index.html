@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+
+    <!--
+      This is the main Handlebars template for the site
+      - When the user visits the homepage or submits a color the app calls the endpoints in server.js
+      - The server script passes data in here and the Handlebars code builds it into the HTML page
+    -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:updated_time" content="1682473384">
+    <meta property="og:title" content="CBGN Bike Bus Tracker">
+    <meta property="og:description" content="Track all three routes live on this page on every Wednesday beginning at 7:30am.">
+    <meta property="og:type" content="website">
+
+    <title>Bike Bus Tracker</title>
+
+    <style>
+        body { background-color:white; font-family: sans-serif, helvetica, arial;
+            text-align: center; } h2 { margin-left: auto; margin-right: auto;
+                                      width:400px; max-width:100%; } a.bus-link-txt { display:inline-block;
+                                                                         color: black; } a.north-halsted { background-color: yellow; }
+        a.south-halsted { background-color: pink; } a.milwaukee {
+                                                        background-color: lightblue; }  a.earth1 {
+                                                                                            background-color: lightgreen; max-width:300px;} a.earth2 {
+                                                                                                                                                background-color: lightblue; max-width:300px;} img.preview { width: 50%; float:left; }
+        img.bus-link-img { width:100%; } @media (max-width: 500px) { img.preview {
+            /* margin-left: auto; margin-right:auto; */ width: 100% !important; } } /*
+      div.preview-container { width: 100%; margin-left:auto; margin-right: auto;
+      } */
+    </style>
+</head>
+<body>
+
+<!-- This is the start of content for our page -->
+
+<h1>Meadobrook Bike Bus Tracker</h1>
+<!-- <a class="bus-link-txt south-halsted" href="https://bikegridnow.org/events/s-halsted-bike-bus-run-3"> -->
+<a class="bus-link-txt north-halsted" href="/nottingham">
+    <!-- <a class="bus-link-txt north-halsted" href="https://bikegridnow.org/events/n-halsted-bike-bus-run-8"> -->
+
+    <h2>
+        Track the Meadowbrook Bike Bus<br />
+        <!-- North Halsted Bike Bus Info &rarr;<br /> -->
+        <!--       <img class="bus-link-img" src="https://cdn.glitch.global/6ba8c1b0-9df4-482f-9009-77d10d780dbb/header-halsted.png?v=1662526286000" /> -->
+    </h2>
+</a>
+
+<a class="bus-link-txt" href="/beacon/nottingham/">
+    Be the Beacon!
+</a>
+
+<h3>
+    Brought to you by
+    <a href="https://adiron.com">Dr. Polar Humenn</a>
+</h3>
+</body>
+</html>

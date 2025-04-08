@@ -1,0 +1,875 @@
+{
+  "nottingham": {
+    "title": "Nottingham to Ed Smith School",
+    "runInfo": "The Nottingham to Ed Smith Bike Bus Route is a 30-minute bike journey from Nottingham High School to Ed Smith School.",
+    "trackerBounds": {
+      "bottomLeft": [
+        43.02933,
+        -76.12613
+      ],
+      "topRight": [
+        43.04302,
+        -76.09245
+      ]
+    },
+    "trackerTileSrcPattern": "https://cdn.glitch.globa…10.05.22.{z}.{x}.{y}.png",
+    "mapHeight": "463px",
+    "color": "#EFB143",
+    "globalMarkerClass": "label-right",
+    "stops": [
+      {
+        "name": "Nottingham HighSchool",
+        "coordinates": [
+          43.042529,
+          -76.096887
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.042528,
+          -76.096944
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0425,
+          -76.098454
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.042481,
+          -76.098831
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04248,
+          -76.099036
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.042472,
+          -76.099119
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.042445,
+          -76.099167
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.042372,
+          -76.09925
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.042281,
+          -76.099352
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.042108,
+          -76.099543
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.042012,
+          -76.099693
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041948,
+          -76.09984
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041926,
+          -76.099899
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041893,
+          -76.100018
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041873,
+          -76.100138
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041859,
+          -76.100231
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041793,
+          -76.100688
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Hurlburt Road",
+        "coordinates": [
+          43.041793,
+          -76.100688
+        ],
+        "markerClass": "label-right push-down"
+      },
+      {
+        "coordinates": [
+          43.041789,
+          -76.100715
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041776,
+          -76.100801
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041645,
+          -76.101696
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04158,
+          -76.102144
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041518,
+          -76.10261
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04149,
+          -76.102817
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041392,
+          -76.103391
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041257,
+          -76.104151
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041197,
+          -76.104425
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04115,
+          -76.104642
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04111,
+          -76.104795
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Brookford Road",
+        "coordinates": [
+          43.04111,
+          -76.104795
+        ],
+        "markerClass": "label-right push-down"
+      },
+      {
+        "coordinates": [
+          43.041089,
+          -76.104874
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041029,
+          -76.105115
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.040963,
+          -76.105337
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.040785,
+          -76.105808
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.040576,
+          -76.106295
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Bradford Parkway",
+        "coordinates": [
+          43.040576,
+          -76.106295
+        ],
+        "markerClass": "label-left push-up-8x"
+      },
+      {
+        "coordinates": [
+          43.040519,
+          -76.106418
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.040448,
+          -76.10656
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.040112,
+          -76.107155
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03988,
+          -76.107515
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.039723,
+          -76.107731
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.039556,
+          -76.107886
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.039294,
+          -76.108089
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Scott Avenue",
+        "coordinates": [
+          43.039294,
+          -76.108089
+        ],
+        "markerClass": "label-left push-up-8x"
+      },
+      {
+        "coordinates": [
+          43.039252,
+          -76.108121
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.038347,
+          -76.108819
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Crawford Avenue",
+        "coordinates": [
+          43.038347,
+          -76.108819
+        ],
+        "markerClass": "label-left push-up-8x"
+      },
+      {
+        "coordinates": [
+          43.038292,
+          -76.108773
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.038213,
+          -76.108713
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.038142,
+          -76.108664
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.037965,
+          -76.108512
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.037862,
+          -76.108446
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.037671,
+          -76.108366
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.037504,
+          -76.108328
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.037241,
+          -76.108306
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.036955,
+          -76.108345
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.036841,
+          -76.108385
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.036644,
+          -76.108495
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.036521,
+          -76.108576
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.035762,
+          -76.109144
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Euclid Avenue",
+        "coordinates": [
+          43.035762,
+          -76.109144
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.035696,
+          -76.109193
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.035562,
+          -76.109295
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0351,
+          -76.109645
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.034821,
+          -76.109825
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.034714,
+          -76.109881
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.034615,
+          -76.109913
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.034511,
+          -76.109939
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.034276,
+          -76.109947
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03338,
+          -76.109879
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03283,
+          -76.109857
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.032609,
+          -76.109881
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.032362,
+          -76.109956
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.032221,
+          -76.110015
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.032101,
+          -76.110066
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Sherbourne Avenue",
+        "coordinates": [
+          43.032101,
+          -76.110066
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.032056,
+          -76.110085
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.031999,
+          -76.110116
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.031717,
+          -76.110271
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03144,
+          -76.11045
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.031209,
+          -76.11063
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.031093,
+          -76.110695
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.031011,
+          -76.110735
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030968,
+          -76.110822
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030862,
+          -76.111035
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030795,
+          -76.111196
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030745,
+          -76.111422
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030733,
+          -76.111581
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Nottingham Road",
+        "coordinates": [
+          43.030733,
+          -76.111581
+        ],
+        "markerClass": "label-right rotate-65"
+      },
+      {
+        "coordinates": [
+          43.030725,
+          -76.111681
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030702,
+          -76.112243
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030694,
+          -76.112442
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030679,
+          -76.112798
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030654,
+          -76.1135
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030629,
+          -76.113885
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030599,
+          -76.114497
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030589,
+          -76.114706
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030551,
+          -76.115541
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030544,
+          -76.11569
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Meadowbrook Road",
+        "coordinates": [
+          43.030544,
+          -76.11569
+        ],
+        "markerClass": "label-right rotate-65"
+      },
+      {
+        "coordinates": [
+          43.030541,
+          -76.115749
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03053,
+          -76.115976
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030526,
+          -76.116061
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030525,
+          -76.116074
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030478,
+          -76.117093
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030475,
+          -76.117159
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030434,
+          -76.117966
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030431,
+          -76.118016
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030423,
+          -76.11832
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Wescott Street",
+        "coordinates": [
+          43.030423,
+          -76.11832
+        ],
+        "markerClass": "label-right rotate-65"
+      },
+      {
+        "coordinates": [
+          43.030421,
+          -76.118384
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030351,
+          -76.119767
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030286,
+          -76.12105
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Broad Street",
+        "coordinates": [
+          43.030286,
+          -76.12105
+        ],
+        "markerClass": "label-right rotate-65"
+      },
+      {
+        "coordinates": [
+          43.03028,
+          -76.12116
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030241,
+          -76.122176
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030235,
+          -76.122299
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.030137,
+          -76.122297
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.029818,
+          -76.122271
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Ed Smith School",
+        "coordinates": [
+          43.029818,
+          -76.122271
+        ],
+        "markerClass": "label-left"
+      }
+    ]
+  }
+}
