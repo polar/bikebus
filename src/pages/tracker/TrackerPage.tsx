@@ -3,26 +3,12 @@ import {BusInfo} from "../../lib/BusInfo.ts"
 import React from "react";
 import {Helmet} from "react-helmet"
 import {MapElement} from "./MapElement.tsx";
+
 interface TrackerProps {
     busInfo: BusInfo
 }
 
-interface TrackerState {
-    active: boolean
-}
-export class TrackerPage extends React.Component<TrackerProps,TrackerState> {
-
-    constructor(props: TrackerProps) {
-        super(props);
-        this.state = {
-            active: false
-        }
-    }
-
-
-    toggle() {
-        this.setState({active: !this.state.active});
-    }
+export class TrackerPage extends React.Component<TrackerProps> {
 
     render() {
         return (
