@@ -1,16 +1,17 @@
 import fastify, { FastifyInstance, FastifyServerOptions } from "fastify";
-import { userSchema } from "./schemas/user";
-import { errorSchema } from "./schemas/error";
+import { userSchema } from "../schemas/user.ts";
+import { errorSchema } from "../schemas/error.ts";
 import { fastifyStatic } from "@fastify/static"
 import { fastifyCors} from "@fastify/cors";
+import {fastifyAutoload} from "fastify-autoload";
+
 interface BuildOpts extends FastifyServerOptions {
-    exposeDocs?: boolean;
+    exposeDocs?: boolean,
+    cache?: any
 }
 
 const build = (opts?: BuildOpts): FastifyInstance => {
-    const app = fastify({
-        ...opts,
-    });
+    const app = fastify({});
 
     app.register(fastifyCors, {
         origin:  (origin, cb) => {
@@ -24,13 +25,25 @@ const build = (opts?: BuildOpts): FastifyInstance => {
                 cb(null, true)
                 return
             }
+            if(hostname === "adiron.com"){
+                //  Request from localhost will pass
+                cb(null, true)
+                return
+            }
             // Generate an error on other origins, disabling access
             cb(new Error("Not allowed"), false)
         }
     })
 
+    app.register(fastifyAutoload, {
+        dir: `${import.meta.dirname}/actions`,
+        options:{
+            cache: opts!.cache
+        }
+    })
+
     app.register(fastifyStatic, {
-        root: `${import.meta.dirname}/routes`,
+        root: `${import.meta.dirname}/../stuff`,
         prefix: "/"
     })
 

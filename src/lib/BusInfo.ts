@@ -1,8 +1,9 @@
-import {Stop} from "./stop";
+import {Stop} from "./stop.ts";
 
 export type Bounds = { bottomLeft: number[], topRight: number[] };
 
 export interface BusInfo {
+    name: string,
     ctu: boolean,
     route: string,
     title: string,

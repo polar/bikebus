@@ -1,16 +1,24 @@
 import {FastifyInstance, FastifyLoggerOptions} from "fastify";
 import { Server, IncomingMessage, ServerResponse } from "http";
-import build from "./app";
+import build from "./build.ts";
+
+import NanoCache from "nano-cache"
 
 const loggerConfig : FastifyLoggerOptions = {
 };
 let exposeDocs = true;
+let cache = new NanoCache();
+
+// Register the route.
+cache.set("nottingham", "true")
+
 if (process.env.NODE_ENV === "production") {
     exposeDocs = true;
 }
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build({
     logger: loggerConfig,
-    exposeDocs,
+    exposeDocs: exposeDocs,
+    cache: cache
 });
 
 let listenOpts = {

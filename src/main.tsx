@@ -1,47 +1,65 @@
-import React, {StrictMode} from "react";
-import {hydrateRoot} from "react-dom/client";
-import {TrackerPage} from "./pages/tracker/tracker-page.tsx";
-import {BusInfo} from "./BusInfo";
+import React from "react";
+import {TrackerPage} from "./pages/tracker/TrackerPage.tsx";
+import {BusInfo} from "./lib/BusInfo.ts";
+import {OperatorPage} from "./pages/OperatorPage/OperatorPage.tsx";
 
 interface MainProps {
-    name: string
-}
-interface MainState {
-    busInfo: BusInfo | null
+    name: string;
+    operator: boolean
 }
 
-export class Main extends React.Component<MainProps,MainState> {
+interface MainState     {
+    loading: boolean
+    busInfo?: BusInfo
+}
+export class Main extends React.Component<MainProps, MainState> {
     constructor(props: MainProps) {
         super(props);
-        this.state = { name: props.name, busInfo: null}
-    }
-
-    state = {
-        name: this.props.name,
-        busInfo: null
+        this.state = {
+            busInfo: undefined,
+            loading: true
+        }
     }
 
     componentDidMount() {
-        fetch("/api/NewRoute.json")
+        fetch(`/api/${this.props.name}.json`)
             .then(response => response.json())
             .then(data => {
-                this.setState({busInfo: data[this.state.name]})
+                this.setState({busInfo: data[this.props.name], loading: false});
                 console.log(data)
-            }).catch((error: any) => console.error(error))
+            }).catch((error: any) => {
+            console.error(error)
+            this.setState({loading: false})
+        })
+    }
+
+    noRoute() {
+        return (
+            <div>
+            Your route named by {this.props.name} was not found in our database.
+            </div>
+        )
+    }
+
+    loading() {
+        return (
+            <div>
+                Loading....
+            </div>
+        )
     }
 
     render() {
-        return (
-            <>
-                {
-                    (this.state.busInfo != null) ? <TrackerPage busInfo={this.state.busInfo}/> : <div>Loading...</div>
-                }
-            </>
-        )
+        if (this.state.loading) {
+            return this.loading()
+        }
+        if (this.state.busInfo) {
+            if (this.props.operator) {
+                return (<OperatorPage busInfo={this.state.busInfo}/>)
+            } else {
+                return (<TrackerPage busInfo={this.state.busInfo}/>)
+            }
+        }
+        return this.noRoute()
     }
 }
-
-hydrateRoot(
-    document.getElementById('app')!,
-        <Main name={"nottingham"}/>
-)

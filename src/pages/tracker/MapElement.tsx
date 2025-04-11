@@ -1,11 +1,16 @@
 
-import {BusInfo} from "../../BusInfo.ts";
+import {BusInfo} from "../../lib/BusInfo.ts";
 import React from "react";
-import {MapContainer, Marker} from "react-leaflet";
+import {MapContainer, Polyline, TileLayer} from "react-leaflet";
 import "./MapElement.css"
-import L, {icon} from "leaflet";
+import {StopMarker} from "./StopMarker.tsx";
+import L from "leaflet";
+import {BusMarker} from "./BusMarker.tsx";
+import {TrackerControl} from "./TrackerControl.tsx";
+
 interface MapElementProps {
-    busInfo: BusInfo
+    busInfo: BusInfo,
+    enableTracker: boolean,
 }
 
 interface MapElementState {
@@ -27,42 +32,37 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
             bounds: [routeBounds.bottomLeft, routeBounds.topRight] as L.LatLngTuple[]
         }
     }
-    // render() {
-    //     return (
-    //         <>
-    //             <h1>{this.props.busInfo.title}</h1>
-    //             <MapDiv ref={this.map_div} {...this.props}/>
-    //             <MarkerList map={this.map_div.current} stops={this.state.busInfo.stops.filter(stop => !stop.waypointOnly)}/>
-    //
-    //             <h2>{this.props.busInfo.runInfo}</h2>
-    //         </>
-    //     )
-    // }
+
+    OpenStreetMap() {
+    return (
+            <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                )
+    }
+
+    BikeBusMap() {
+        return (
+            <TileLayer url={'https://api.mapbox.com/styles/v1/streicherd/clkyafeqb00ki01pifykf5jp8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic3RyZWljaGVyZCIsImEiOiJjbDkxZ2JuaDQxMXRpM25vNmRjdzNlZXVzIn0.BkniqpkfdbK_szBJGdr0KQ'}
+                       tileSize={512} zoomOffset={-1}
+                       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' />
+
+        )
+    }
 
     render() {
         let stops = this.props.busInfo.stops.filter(stop => !stop.waypointOnly)
+        let route = this.props.busInfo.stops.map(stop => stop.coordinates as L.LatLngTuple)
         return (
-            <MapContainer bounds={this.state.bounds} zoom={15} scrollWheelZoom={true}>
+            <MapContainer style={{height: "100vh"}} bounds={this.state.bounds} zoom={13} scrollWheelZoom={true}>
+                <this.BikeBusMap/>
                 {
-                    stops.map(
-                        (stop, i) => {
-                            let img =  stop.icon || "https://cdn.glitch.global/6ba8c1b0-9df4-482f-9009-77d10d780dbb/bus_stop_circle.svg?v=1664245520908"
-                            let stopIcon = icon({iconUrl: img, iconSize: [20, 20]})
-                            return (
-                                <Marker position={stop.coordinates as L.LatLngTuple} key={`stop-marker-${i}`} icon={stopIcon} eventHandlers={{click: () => {alert("Clicked!")}}}>
-
-                                        <div className="marker-box">
-                                            <div>
-                                                <b>{stop.name}</b>
-                                                <br/>
-                                                {stop.subtitle && <div>{stop.subtitle}</div>}
-                                            </div>
-                                        </div>
-                                </Marker>
-                            )
-                        }
-                    )
+                    stops.map(stop => <StopMarker stop={stop}/>)
                 }
+                <BusMarker {...this.props} />
+                <Polyline positions={route}/>
+                { this.props.enableTracker ? <TrackerControl {...this.props}/> : null}
             </MapContainer>
         )
     }

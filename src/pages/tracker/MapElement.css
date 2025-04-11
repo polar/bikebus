@@ -40,8 +40,12 @@ div#map {
     flex-grow: 0;
 }
 
+div.marker-box-tracker > img {
+    width: 30px !important;
+}
+
 div.marker-box-center > img {
-    width: 20px !important;
+    width: 10px !important;
 }
 .marker-box:first-child > div {
     margin-left: auto;

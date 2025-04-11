@@ -1,0 +1,58 @@
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.center
+{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.go-button {
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
+    color: #fff;
+    font-size:25px;
+    text-align: center;
+    line-height: 25px;
+    font-family: verdana, serif;
+    text-tranform: uppercase;
+}
+
+@keyframes pulse
+{
+    0%
+    {
+        box-shadow: 0 0 0 0 rgba(255,4,0,.7), 0 0 0 0 rgba(255,4,0,.7);
+    }
+    40%
+    {
+        box-shadow: 0 0 0 0 rgba(255,4,0,0), 0 0 0 30px rgba(255,4,0,.7);
+    }
+    80%
+    {
+        box-shadow: 0 0 0 0 rgba(255,4,0,0), 0 0 0 70px rgba(255,4,0,0);
+    }
+    100%
+    {
+        box-shadow: 0 0 0 0 rgba(255,4,0,.7), 0 0 0 30px rgba(255,4,0,0);
+    }
+}
+.pulse
+{
+    background:#ff0400;
+    animation: pulse 2s linear infinite;
+}
