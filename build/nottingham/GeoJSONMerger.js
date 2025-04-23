@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 // Files to merge, listed in desired order
 const files = [
@@ -11,9 +11,9 @@ const files = [
   "07-Crawford Avenue-Euclid Avenue-Sherbourne Avenue.json",
   "08-Crawford Avenue-Sherbourne Avenue-Nottingham Road.json",
   "09-Broad Street-Nottingham Road-Meadowbrook Road.json",
-  "10-Broad Street-Meadowbrook Road-Westcott Street.json",
-  "11-Broad Street-Wescott Street-Buckingham Avenue.json",
-  "12-Lancaster Ave-Broad Street-Ed Smith School.json",
+  "10-Broad Street-Meadowbrook Road-Nottingham Road.json",
+  "11-Meadowbrook Road-Wesctott Street-Lancaster Avenue.json",
+  "12-Lancaster Avenue-Lancaster Avenue-Ed Smith School.json",
 ];
 
 const labelClass = {
@@ -28,7 +28,7 @@ const labelClass = {
     "09": "label-right rotate-65",
     "10": "label-right rotate-65",
     "11": "label-right rotate-65",
-    "12": "label-right rotate-65",
+    "12": "label-left",
 }
 // Function to read and parse GeoJSON files
 function readGeoJSON(fileName) {
@@ -59,7 +59,8 @@ const lastCoord = mergedCoordinates[mergedCoordinates.length - 1];
 const lastStop = { "name": "Ed Smith School", "coordinates": lastCoord.coordinates, "markerClass": "label-left" };
 // Build the merged GeoJSON object
 const mergedGeoJSON = {
-   "nottingham" : {
+   "Nottingham" : {
+       "name": "Nottingham",
     "title": "Nottingham to Ed Smith School",
     "runInfo": "The Nottingham to Ed Smith Bike Bus Route is a 30-minute bike journey from Nottingham High School to Ed Smith School.",
     "trackerBounds":{
@@ -76,5 +77,5 @@ const mergedGeoJSON = {
 
 
 // Save to "route.json"
-fs.writeFileSync("../../src/stuff/notingham.json", JSON.stringify(mergedGeoJSON, null, 2));
-console.log("Merged GeoJSON saved as ../src/stuff/notingham.json");
+fs.writeFileSync("../../src/stuff/routes/Nottingham.json", JSON.stringify(mergedGeoJSON, null, 2));
+console.log("Merged GeoJSON saved as ../../src/stuff/routes/Nottingham.json");

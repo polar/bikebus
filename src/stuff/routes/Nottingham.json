@@ -1,6 +1,6 @@
 {
-  "nottingham": {
-    "name": "nottingham",
+  "Nottingham": {
+    "name": "Nottingham",
     "title": "Nottingham to Ed Smith School",
     "runInfo": "The Nottingham to Ed Smith Bike Bus Route is a 30-minute bike journey from Nottingham High School to Ed Smith School.",
     "trackerBounds": {
@@ -723,151 +723,396 @@
       {
         "name": "Meadowbrook Road",
         "coordinates": [
-          43.030544,
-          -76.11569
+          43.0305,
+          -76.11598
         ],
         "markerClass": "label-right rotate-65"
       },
       {
         "coordinates": [
-          43.030541,
-          -76.115749
+          43.03047,
+          -76.11598
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.03053,
-          -76.115976
+          43.03041,
+          -76.11599
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030526,
-          -76.116061
+          43.03025,
+          -76.11601
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030525,
-          -76.116074
+          43.02991,
+          -76.11608
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030478,
-          -76.117093
+          43.02972,
+          -76.11615
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030475,
-          -76.117159
+          43.0294,
+          -76.11631
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030434,
-          -76.117966
+          43.02906,
+          -76.11647
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030431,
-          -76.118016
+          43.02903,
+          -76.11649
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030423,
-          -76.11832
+          43.02883,
+          -76.11655
         ],
         "waypointOnly": true
       },
       {
-        "name": "Wescott Street",
         "coordinates": [
-          43.030423,
-          -76.11832
+          43.02862,
+          -76.11658
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02833,
+          -76.11659
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0277,
+          -76.11653
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02754,
+          -76.11653
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02751,
+          -76.11654
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02735,
+          -76.11658
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02721,
+          -76.11666
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02714,
+          -76.11673
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02712,
+          -76.11676
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02702,
+          -76.1169
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02697,
+          -76.11702
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02662,
+          -76.11787
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02655,
+          -76.11805
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02655,
+          -76.11805
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Wesctott Street",
+        "coordinates": [
+          43.02655,
+          -76.11805
         ],
         "markerClass": "label-right rotate-65"
       },
       {
         "coordinates": [
-          43.030421,
-          -76.118384
+          43.02642,
+          -76.11833
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030351,
-          -76.119767
+          43.02601,
+          -76.11939
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030286,
-          -76.12105
-        ],
-        "waypointOnly": true
-      },
-      {
-        "name": "Broad Street",
-        "coordinates": [
-          43.030286,
-          -76.12105
-        ],
-        "markerClass": "label-right rotate-65"
-      },
-      {
-        "coordinates": [
-          43.03028,
-          -76.12116
+          43.02584,
+          -76.11981
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030241,
-          -76.122176
+          43.02576,
+          -76.12001
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030235,
-          -76.122299
+          43.02568,
+          -76.12016
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.030137,
-          -76.122297
+          43.02558,
+          -76.12029
         ],
         "waypointOnly": true
       },
       {
         "coordinates": [
-          43.029818,
-          -76.122271
+          43.02547,
+          -76.12042
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02545,
+          -76.12044
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02534,
+          -76.12053
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02527,
+          -76.12056
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02513,
+          -76.12059
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02485,
+          -76.12056
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02485,
+          -76.12056
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02479,
+          -76.1217
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02479,
+          -76.12174
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02479,
+          -76.12174
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Lancaster Avenue",
+        "coordinates": [
+          43.02479,
+          -76.12174
+        ],
+        "markerClass": "label-left"
+      },
+      {
+        "coordinates": [
+          43.02478,
+          -76.12182
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02478,
+          -76.12182
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02625,
+          -76.12195
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02709,
+          -76.12202
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02754,
+          -76.12206
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02778,
+          -76.12208
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02853,
+          -76.12214
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02903,
+          -76.1222
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02913,
+          -76.12221
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02929,
+          -76.12223
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02958,
+          -76.12225
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02973,
+          -76.12226
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.02973,
+          -76.12226
         ],
         "waypointOnly": true
       },
       {
         "name": "Ed Smith School",
         "coordinates": [
-          43.029818,
-          -76.122271
+          43.02973,
+          -76.12226
         ],
         "markerClass": "label-left"
       }

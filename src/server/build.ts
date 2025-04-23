@@ -8,6 +8,7 @@ import {fastifyAutoload} from "fastify-autoload";
 interface BuildOpts extends FastifyServerOptions {
     exposeDocs?: boolean,
     cache?: any
+    routes?: string[]
 }
 
 const build = (opts?: BuildOpts): FastifyInstance => {
@@ -38,7 +39,8 @@ const build = (opts?: BuildOpts): FastifyInstance => {
     app.register(fastifyAutoload, {
         dir: `${import.meta.dirname}/actions`,
         options:{
-            cache: opts!.cache
+            cache: opts!.cache,
+            routes: opts!.routes
         }
     })
 

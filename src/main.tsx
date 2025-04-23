@@ -22,7 +22,7 @@ export class Main extends React.Component<MainProps, MainState> {
     }
 
     componentDidMount() {
-        fetch(`/api/${this.props.name}.json`)
+        fetch(`/api/routes/${this.props.name}.json`)
             .then(response => response.json())
             .then(data => {
                 this.setState({busInfo: data[this.props.name], loading: false});

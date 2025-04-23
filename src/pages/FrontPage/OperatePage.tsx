@@ -1,6 +1,6 @@
 import "./FrontPage.css"
 import {Component} from "react";
-import {RouteEntry} from "./RouteEntry.tsx";
+import {RouteOperationEntry} from "./RouteOperationEntry.tsx";
 
 export interface FrontPageOps {
     api: string
@@ -10,7 +10,7 @@ export interface FrontPageState {
     names?: string[]
 }
 
-export default class FrontPage extends Component<FrontPageOps, FrontPageState> {
+export default class OperatePage extends Component<FrontPageOps, FrontPageState> {
 
     state: FrontPageState = {}
 
@@ -34,13 +34,15 @@ export default class FrontPage extends Component<FrontPageOps, FrontPageState> {
     }
 
     private getNames() {
-        return <div className={"overlay"}>
-            <h1 className={"name"}>Adiron, LLC</h1>
-            <table>
-                <tbody>
-                {this.state.names!.map(name => <RouteEntry key={name} name={name}/>)}
-                </tbody>
-            </table>
-        </div>;
+        return (
+            <div className={"overlay"}>
+                <h1 className={"name"}>Adiron, LLC</h1>
+                <table className={"container"}>
+                    <tbody>
+                    {this.state.names!.map(name => <RouteOperationEntry key={name} name={name}/>)}
+                    </tbody>
+                </table>
+            </div>
+        )
     }
 }

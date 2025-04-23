@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import {BrowserRouter, Routes, Route, useParams} from "react-router";
 import {Main} from "./main.tsx";
 import FrontPage from "./pages/FrontPage/FrontPage.tsx";
+import OperatePage from "./pages/FrontPage/OperatePage.tsx";
 
 const root = document.getElementById("root");
 
@@ -25,7 +26,8 @@ function App(props: {op: boolean}) {
 ReactDOM.createRoot(root!).render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<FrontPage/>} />
+            <Route path="/op" element={<OperatePage api={"/api/tracker/routes"}/>} />
+            <Route path="/" element={<FrontPage api={"/api/tracker/routes"}/>} />
             <Route path="/:name" element={<App op={false}/>} />
             <Route path="/:name/op" element={<App op={true}/>} />
         </Routes>

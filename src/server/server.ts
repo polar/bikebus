@@ -3,14 +3,19 @@ import { Server, IncomingMessage, ServerResponse } from "http";
 import build from "./build.ts";
 
 import NanoCache from "nano-cache"
+import * as fs from "node:fs";
 
 const loggerConfig : FastifyLoggerOptions = {
 };
 let exposeDocs = true;
 let cache = new NanoCache();
+let routes: string[] = []
 
-// Register the route.
-cache.set("nottingham", "true")
+fs.readdirSync("./src/stuff/routes").forEach(file => {
+    let route = file.replace(".json", "")
+    routes.push(route)
+    cache.set(route, "true")
+})
 
 if (process.env.NODE_ENV === "production") {
     exposeDocs = true;
@@ -18,7 +23,8 @@ if (process.env.NODE_ENV === "production") {
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build({
     logger: loggerConfig,
     exposeDocs: exposeDocs,
-    cache: cache
+    cache: cache,
+    routes: routes
 });
 
 let listenOpts = {
