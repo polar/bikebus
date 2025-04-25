@@ -28,7 +28,7 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
     state: BusMarkerState = {}
 
     busMarker(location: BusLocation){
-        let icon = "/api/44-512.webp"
+        let icon = this.props.busInfo.busIcon || "/api/44-512.webp"
 
         return (
             <div className={``}>

@@ -1,0 +1,3180 @@
+{
+  "Bike_Party": {
+    "name": "Bike_Party",
+    "title": "Bike Party Route",
+    "runInfo": "",
+    "trackerBounds": {
+      "bottomLeft": [
+        43.035,
+        -76.18867
+      ],
+      "topRight": [
+        43.05054,
+        -76.14737
+      ]
+    },
+    "trackerTileSrcPattern": "https://cdn.glitch.globa…10.05.22.{z}.{x}.{y}.png",
+    "mapHeight": "463px",
+    "color": "#EFB143",
+    "busIcon": "/api/icons8-party-96.png",
+    "globalMarkerClass": "label-right",
+    "stops": [
+      {
+        "name": "Clinton Square",
+        "coordinates": [
+          43.05054,
+          -76.15289
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.05054,
+          -76.15323
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.05054,
+          -76.15339
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.05054,
+          -76.15354
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.05054,
+          -76.15354
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.05047,
+          -76.15354
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.05003,
+          -76.15355
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04979,
+          -76.15355
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0496,
+          -76.15356
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04926,
+          -76.15356
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0487,
+          -76.15357
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04841,
+          -76.15357
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04804,
+          -76.15357
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04796,
+          -76.15357
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04785,
+          -76.15357
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04743,
+          -76.15357
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04706,
+          -76.15357
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04619,
+          -76.15358
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04593,
+          -76.15358
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04578,
+          -76.15358
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04566,
+          -76.15359
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0456,
+          -76.15359
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04541,
+          -76.15359
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04536,
+          -76.15359
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04524,
+          -76.15359
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04522,
+          -76.15359
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04511,
+          -76.1536
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04489,
+          -76.15361
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04469,
+          -76.15359
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04455,
+          -76.15358
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04448,
+          -76.15356
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04444,
+          -76.15355
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04438,
+          -76.15353
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0443,
+          -76.1535
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.044,
+          -76.15341
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04365,
+          -76.15326
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04363,
+          -76.15325
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04363,
+          -76.15325
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "South Onondaga Street",
+        "coordinates": [
+          43.04363,
+          -76.15325
+        ],
+        "markerClass": "label-left rotate-65"
+      },
+      {
+        "coordinates": [
+          43.04365,
+          -76.15326
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04365,
+          -76.15326
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04366,
+          -76.15344
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04367,
+          -76.15356
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04367,
+          -76.15361
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04366,
+          -76.15385
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04365,
+          -76.15402
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04364,
+          -76.15416
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04358,
+          -76.15538
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04357,
+          -76.15554
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04354,
+          -76.15612
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04349,
+          -76.15704
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04347,
+          -76.15781
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04346,
+          -76.15789
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04346,
+          -76.15802
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04345,
+          -76.1582
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04344,
+          -76.15849
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04342,
+          -76.15887
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04341,
+          -76.15914
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04339,
+          -76.15964
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04338,
+          -76.15966
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04334,
+          -76.16046
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04331,
+          -76.16117
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04329,
+          -76.16157
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04323,
+          -76.16269
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04317,
+          -76.16405
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04317,
+          -76.16405
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04318,
+          -76.16405
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04318,
+          -76.16405
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Oswego Street",
+        "coordinates": [
+          43.04318,
+          -76.16405
+        ],
+        "markerClass": "label-left"
+      },
+      {
+        "coordinates": [
+          43.04317,
+          -76.16405
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04226,
+          -76.16398
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04186,
+          -76.16395
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04136,
+          -76.1639
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0404,
+          -76.16382
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0403,
+          -76.16382
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04022,
+          -76.16386
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04022,
+          -76.16386
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0385,
+          -76.16616
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03768,
+          -76.16728
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03714,
+          -76.168
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03689,
+          -76.1683
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03689,
+          -76.1683
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03704,
+          -76.16865
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03704,
+          -76.16865
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03623,
+          -76.16921
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0358,
+          -76.16952
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03543,
+          -76.16977
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0351,
+          -76.16998
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03504,
+          -76.17
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03504,
+          -76.17
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.035,
+          -76.17121
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.035,
+          -76.17121
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03516,
+          -76.1715
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03552,
+          -76.17219
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03552,
+          -76.17219
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Bradley Street",
+        "coordinates": [
+          43.03552,
+          -76.17219
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.03554,
+          -76.17223
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03559,
+          -76.17233
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03569,
+          -76.17271
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03595,
+          -76.17374
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03598,
+          -76.17385
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03601,
+          -76.17396
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03601,
+          -76.17396
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03595,
+          -76.17399
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03595,
+          -76.17399
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03594,
+          -76.17423
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0359,
+          -76.175
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03588,
+          -76.1754
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03581,
+          -76.17694
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0358,
+          -76.17703
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03579,
+          -76.17724
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03579,
+          -76.17735
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03573,
+          -76.17843
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03573,
+          -76.17843
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03639,
+          -76.17848
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03645,
+          -76.17848
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03654,
+          -76.17849
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03766,
+          -76.17856
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03798,
+          -76.17859
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03868,
+          -76.17864
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03868,
+          -76.17864
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Grand Avenue",
+        "coordinates": [
+          43.03868,
+          -76.17864
+        ],
+        "markerClass": "label-left push-up-8x"
+      },
+      {
+        "coordinates": [
+          43.03869,
+          -76.17864
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03875,
+          -76.17864
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03875,
+          -76.17864
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03865,
+          -76.17937
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03865,
+          -76.17937
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03868,
+          -76.1794
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03871,
+          -76.17946
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03875,
+          -76.17967
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03884,
+          -76.18069
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03885,
+          -76.18085
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03888,
+          -76.18105
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03898,
+          -76.18146
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03901,
+          -76.18172
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03901,
+          -76.18185
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03897,
+          -76.1821
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03894,
+          -76.18226
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03888,
+          -76.1824
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03868,
+          -76.18274
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03863,
+          -76.18286
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03858,
+          -76.183
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03838,
+          -76.18389
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03828,
+          -76.18431
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03821,
+          -76.18446
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03813,
+          -76.1846
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03772,
+          -76.18503
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03766,
+          -76.18514
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0375,
+          -76.18567
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03736,
+          -76.18596
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0372,
+          -76.18622
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03701,
+          -76.18655
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03696,
+          -76.18671
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03695,
+          -76.18679
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03693,
+          -76.18703
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03693,
+          -76.1872
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03696,
+          -76.18735
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.037,
+          -76.18746
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03708,
+          -76.18758
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03715,
+          -76.18764
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03751,
+          -76.18781
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03804,
+          -76.18802
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03817,
+          -76.18805
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03833,
+          -76.18804
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03842,
+          -76.18801
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03849,
+          -76.18794
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03853,
+          -76.18789
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03857,
+          -76.18781
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0386,
+          -76.18772
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03862,
+          -76.18753
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03866,
+          -76.1874
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03871,
+          -76.18731
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0388,
+          -76.18719
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03887,
+          -76.18715
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03891,
+          -76.18715
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.039,
+          -76.1872
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03911,
+          -76.1873
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03924,
+          -76.18748
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03974,
+          -76.18814
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03992,
+          -76.18837
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04005,
+          -76.18846
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04024,
+          -76.18856
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04055,
+          -76.18862
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04129,
+          -76.18867
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04137,
+          -76.18866
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04147,
+          -76.18861
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04153,
+          -76.18855
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04156,
+          -76.18849
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0416,
+          -76.18832
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04161,
+          -76.18827
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04161,
+          -76.18827
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04132,
+          -76.18828
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0412,
+          -76.18823
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04107,
+          -76.18813
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04099,
+          -76.188
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04098,
+          -76.18797
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04081,
+          -76.18776
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04067,
+          -76.18761
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04065,
+          -76.18756
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04064,
+          -76.18749
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04065,
+          -76.18743
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04065,
+          -76.18743
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04038,
+          -76.18729
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04038,
+          -76.18729
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Burnet Park",
+        "coordinates": [
+          43.04085,
+          -76.18735
+        ],
+        "markerClass": "label-left push-up-8x"
+      },
+      {
+        "coordinates": [
+          43.04086,
+          -76.18735
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04094,
+          -76.18738
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041,
+          -76.18741
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04107,
+          -76.18748
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04112,
+          -76.18757
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04112,
+          -76.18767
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04111,
+          -76.18775
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04109,
+          -76.18783
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04099,
+          -76.188
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04099,
+          -76.188
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04107,
+          -76.18813
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0412,
+          -76.18823
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04132,
+          -76.18828
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04161,
+          -76.18827
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04161,
+          -76.18827
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04162,
+          -76.18819
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04171,
+          -76.18775
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04172,
+          -76.18767
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0417,
+          -76.1875
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04164,
+          -76.1873
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04161,
+          -76.18718
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04162,
+          -76.18706
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04165,
+          -76.18698
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04169,
+          -76.18693
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04199,
+          -76.18667
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04199,
+          -76.18667
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04192,
+          -76.18656
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04168,
+          -76.18609
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04168,
+          -76.18609
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04145,
+          -76.18607
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04133,
+          -76.18605
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04107,
+          -76.18596
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04085,
+          -76.18585
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04076,
+          -76.18576
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04073,
+          -76.18568
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04072,
+          -76.18558
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04072,
+          -76.18553
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04089,
+          -76.18504
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04096,
+          -76.18463
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04098,
+          -76.18447
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.041,
+          -76.18428
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04104,
+          -76.18356
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04108,
+          -76.18332
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04113,
+          -76.18316
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04118,
+          -76.18301
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04127,
+          -76.18282
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04128,
+          -76.18281
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04135,
+          -76.18268
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04144,
+          -76.18255
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04193,
+          -76.182
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04193,
+          -76.182
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "The Zoo",
+        "coordinates": [
+          43.04193,
+          -76.182
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.04201,
+          -76.18191
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04209,
+          -76.18184
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04213,
+          -76.18182
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04218,
+          -76.18182
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04222,
+          -76.18184
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04227,
+          -76.18187
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04283,
+          -76.18247
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04297,
+          -76.18264
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04308,
+          -76.18284
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04317,
+          -76.18308
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04323,
+          -76.18329
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04325,
+          -76.18352
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04323,
+          -76.18366
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04323,
+          -76.18366
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04335,
+          -76.18375
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04349,
+          -76.18385
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04349,
+          -76.18385
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Burnet Park Drive",
+        "coordinates": [
+          43.04349,
+          -76.18385
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.04469,
+          -76.18065
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04477,
+          -76.18051
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04481,
+          -76.18047
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04486,
+          -76.18043
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04526,
+          -76.18022
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04535,
+          -76.18016
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04545,
+          -76.18005
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04554,
+          -76.17989
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04559,
+          -76.17978
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04565,
+          -76.17955
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04566,
+          -76.17944
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04567,
+          -76.17931
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04565,
+          -76.17911
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04551,
+          -76.17875
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04548,
+          -76.17865
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04549,
+          -76.17857
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04592,
+          -76.17744
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04592,
+          -76.17744
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04506,
+          -76.17657
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04404,
+          -76.17556
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04401,
+          -76.17553
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04388,
+          -76.17541
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04355,
+          -76.17508
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04349,
+          -76.17503
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04283,
+          -76.17444
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04265,
+          -76.17426
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04241,
+          -76.17405
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0423,
+          -76.17398
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04214,
+          -76.17394
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0421,
+          -76.17394
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0418,
+          -76.17393
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04156,
+          -76.17399
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04127,
+          -76.17411
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04112,
+          -76.1742
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04093,
+          -76.17435
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04076,
+          -76.17453
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04062,
+          -76.17461
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04056,
+          -76.17463
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04041,
+          -76.17464
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04038,
+          -76.17463
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04036,
+          -76.17463
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04025,
+          -76.17456
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04002,
+          -76.17433
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03973,
+          -76.17397
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0397,
+          -76.17393
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0397,
+          -76.17393
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Grand Avenue",
+        "coordinates": [
+          43.0397,
+          -76.17393
+        ],
+        "markerClass": "label-right rotate-65"
+      },
+      {
+        "coordinates": [
+          43.03966,
+          -76.17387
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03954,
+          -76.17362
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0394,
+          -76.17333
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03931,
+          -76.17315
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03911,
+          -76.17275
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03911,
+          -76.17275
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03902,
+          -76.17262
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03892,
+          -76.17241
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0389,
+          -76.17232
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0387,
+          -76.17196
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03739,
+          -76.16938
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0371,
+          -76.16881
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03704,
+          -76.16865
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03689,
+          -76.1683
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03645,
+          -76.16714
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03603,
+          -76.16603
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03568,
+          -76.16514
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0355,
+          -76.16464
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03545,
+          -76.16434
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03545,
+          -76.16434
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03543,
+          -76.16429
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03542,
+          -76.16414
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03543,
+          -76.16392
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03546,
+          -76.16373
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03562,
+          -76.16268
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0358,
+          -76.16153
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03601,
+          -76.16016
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03619,
+          -76.15894
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03622,
+          -76.15865
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03629,
+          -76.15711
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0363,
+          -76.15665
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03631,
+          -76.1564
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03633,
+          -76.15588
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03635,
+          -76.15529
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.15485
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.1548
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03639,
+          -76.15456
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0364,
+          -76.15409
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0364,
+          -76.15401
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0364,
+          -76.1537
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03641,
+          -76.15287
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0364,
+          -76.15247
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0364,
+          -76.15213
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0364,
+          -76.15203
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03639,
+          -76.15145
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.15068
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.15037
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.15001
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.14985
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.14967
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03638,
+          -76.14967
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Talman Street",
+        "coordinates": [
+          43.03638,
+          -76.14974
+        ],
+        "markerClass": "label-left"
+      },
+      {
+        "coordinates": [
+          43.03639,
+          -76.14959
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03639,
+          -76.14959
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03737,
+          -76.14971
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03766,
+          -76.14977
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03785,
+          -76.14982
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03814,
+          -76.14989
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03814,
+          -76.14989
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03814,
+          -76.14968
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03816,
+          -76.14937
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03819,
+          -76.1487
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03821,
+          -76.14808
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03824,
+          -76.14737
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03824,
+          -76.14737
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03895,
+          -76.14743
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03908,
+          -76.14744
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.03926,
+          -76.14745
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0393,
+          -76.14746
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0394,
+          -76.14746
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04058,
+          -76.14756
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04103,
+          -76.14756
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04161,
+          -76.14756
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04199,
+          -76.14755
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04218,
+          -76.14755
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04261,
+          -76.14755
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04274,
+          -76.14755
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04287,
+          -76.14755
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04359,
+          -76.14753
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04415,
+          -76.14752
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0442,
+          -76.14752
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0442,
+          -76.14752
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Harrison Street",
+        "coordinates": [
+          43.0442,
+          -76.14752
+        ],
+        "markerClass": "label-right rotate-65"
+      },
+      {
+        "coordinates": [
+          43.0443,
+          -76.14752
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04445,
+          -76.14752
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04516,
+          -76.14751
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04516,
+          -76.14751
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04515,
+          -76.14741
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04515,
+          -76.14741
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04551,
+          -76.14741
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04551,
+          -76.14741
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04551,
+          -76.14751
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04551,
+          -76.14751
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04558,
+          -76.1475
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04579,
+          -76.1475
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04633,
+          -76.14749
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04648,
+          -76.14749
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04691,
+          -76.14749
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04693,
+          -76.14749
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04702,
+          -76.14749
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.0471,
+          -76.14748
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04712,
+          -76.14748
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04753,
+          -76.14747
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04763,
+          -76.14746
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04783,
+          -76.14746
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04795,
+          -76.14745
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04809,
+          -76.14744
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04815,
+          -76.14744
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04836,
+          -76.14743
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04853,
+          -76.14742
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04864,
+          -76.14742
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04873,
+          -76.14741
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04897,
+          -76.1474
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04904,
+          -76.1474
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04934,
+          -76.14739
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04934,
+          -76.14739
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "",
+        "coordinates": [
+          43.04934,
+          -76.14739
+        ],
+        "markerClass": "label-right"
+      },
+      {
+        "coordinates": [
+          43.0494,
+          -76.14739
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04951,
+          -76.14739
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04951,
+          -76.14739
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04951,
+          -76.14762
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04951,
+          -76.14777
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04951,
+          -76.14777
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04932,
+          -76.14793
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04932,
+          -76.14825
+        ],
+        "waypointOnly": true
+      },
+      {
+        "coordinates": [
+          43.04932,
+          -76.14825
+        ],
+        "waypointOnly": true
+      },
+      {
+        "name": "Harvey's Gardent",
+        "coordinates": [
+          43.04932,
+          -76.14825
+        ],
+        "markerClass": "label-left"
+      }
+    ]
+  }
+}

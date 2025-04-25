@@ -14,6 +14,7 @@ export interface BusInfo {
     minZoomLevel: number,
     mapHeight: number,
     color: string,
+    busIcon?: string,
     globalMarkerClass: string,
     stops: Stop[],
 }
