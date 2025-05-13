@@ -46,7 +46,7 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
         return (
             <TileLayer url={'https://api.mapbox.com/styles/v1/streicherd/clkyafeqb00ki01pifykf5jp8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic3RyZWljaGVyZCIsImEiOiJjbDkxZ2JuaDQxMXRpM25vNmRjdzNlZXVzIn0.BkniqpkfdbK_szBJGdr0KQ'}
                        tileSize={512} zoomOffset={-1}
-                       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' />
+                       attribution='Dr. Polar Humenn' />
 
         )
     }
@@ -55,11 +55,12 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
         let stops = this.props.busInfo.stops.filter(stop => !stop.waypointOnly)
         let route = this.props.busInfo.stops.map(stop => stop.coordinates as L.LatLngTuple)
         return (
-            <MapContainer style={{height: "100vh"}} bounds={this.state.bounds} zoom={13} scrollWheelZoom={true}>
+            <MapContainer attributionControl={true} style={{height: "100vh"}} bounds={this.state.bounds} zoom={13} scrollWheelZoom={true}>
                 <this.BikeBusMap/>
                 {
                     stops.map(stop => <StopMarker stop={stop}/>)
                 }
+
                 <BusMarker {...this.props} />
                 <Polyline positions={route}/>
                 { this.props.enableTracker ? <TrackerControl {...this.props}/> : null}

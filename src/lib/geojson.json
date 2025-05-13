@@ -1,0 +1,1192 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ascent": 49.4,
+        "descent": 29.4,
+        "segments": [
+          {
+            "distance": 0.368,
+            "duration": 73.7,
+            "steps": [
+              {
+                "distance": 0.368,
+                "duration": 73.7,
+                "type": 11,
+                "instruction": "Head west on <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  0,
+                  10
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Meadowbrook Drive, on the left",
+                "name": "-",
+                "way_points": [
+                  10,
+                  10
+                ]
+              }
+            ],
+            "ascent": 10
+          },
+          {
+            "distance": 0.468,
+            "duration": 93.6,
+            "steps": [
+              {
+                "distance": 0.468,
+                "duration": 93.6,
+                "type": 11,
+                "instruction": "Head west on <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  10,
+                  20
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Meadowbrook Drive, on the left",
+                "name": "-",
+                "way_points": [
+                  20,
+                  20
+                ]
+              }
+            ],
+            "descent": 8
+          },
+          {
+            "distance": 0.325,
+            "duration": 64.9,
+            "steps": [
+              {
+                "distance": 0.325,
+                "duration": 64.9,
+                "type": 11,
+                "instruction": "Head southwest on <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  20,
+                  28
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Meadowbrook Drive, on the right",
+                "name": "-",
+                "way_points": [
+                  28,
+                  28
+                ]
+              }
+            ],
+            "ascent": 5.5,
+            "descent": 1
+          },
+          {
+            "distance": 0.331,
+            "duration": 66.2,
+            "steps": [
+              {
+                "distance": 0.007,
+                "duration": 1.5,
+                "type": 11,
+                "instruction": "Head southwest on <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  28,
+                  29
+                ]
+              },
+              {
+                "distance": 0.321,
+                "duration": 64.1,
+                "type": 0,
+                "instruction": "Turn left onto <b>Crawford Avenue</b>",
+                "name": "Crawford Avenue",
+                "way_points": [
+                  29,
+                  38
+                ]
+              },
+              {
+                "distance": 0.003,
+                "duration": 0.6,
+                "type": 3,
+                "instruction": "Turn sharp right onto <b>Euclid Avenue</b>",
+                "name": "Euclid Avenue",
+                "way_points": [
+                  38,
+                  39
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Euclid Avenue, on the left",
+                "name": "-",
+                "way_points": [
+                  39,
+                  39
+                ]
+              }
+            ],
+            "ascent": 2.46600341796875,
+            "descent": 3.96600341796875
+          },
+          {
+            "distance": 0.631,
+            "duration": 126.3,
+            "steps": [
+              {
+                "distance": 0.003,
+                "duration": 0.6,
+                "type": 11,
+                "instruction": "Head southeast on <b>Euclid Avenue</b>",
+                "name": "Euclid Avenue",
+                "way_points": [
+                  39,
+                  40
+                ]
+              },
+              {
+                "distance": 0.549,
+                "duration": 109.8,
+                "type": 1,
+                "instruction": "Turn right onto <b>Crawford Avenue</b>",
+                "name": "Crawford Avenue",
+                "way_points": [
+                  40,
+                  53
+                ]
+              },
+              {
+                "distance": 0.079,
+                "duration": 15.9,
+                "type": 5,
+                "instruction": "Turn slight right onto <b>Broad Street</b>",
+                "name": "Broad Street",
+                "way_points": [
+                  53,
+                  57
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Broad Street, on the left",
+                "name": "-",
+                "way_points": [
+                  57,
+                  57
+                ]
+              }
+            ],
+            "ascent": 14.468002319335938,
+            "descent": 9.468002319335938
+          },
+          {
+            "distance": 0.353,
+            "duration": 70.7,
+            "steps": [
+              {
+                "distance": 0.353,
+                "duration": 70.7,
+                "type": 11,
+                "instruction": "Head west on <b>Broad Street</b>",
+                "name": "Broad Street",
+                "way_points": [
+                  57,
+                  66
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Broad Street, on the left",
+                "name": "-",
+                "way_points": [
+                  66,
+                  66
+                ]
+              }
+            ],
+            "descent": 6
+          },
+          {
+            "distance": 0.513,
+            "duration": 102.6,
+            "steps": [
+              {
+                "distance": 0.002,
+                "duration": 0.4,
+                "type": 11,
+                "instruction": "Head west on <b>Broad Street</b>",
+                "name": "Broad Street",
+                "way_points": [
+                  66,
+                  67
+                ]
+              },
+              {
+                "distance": 0.511,
+                "duration": 102.2,
+                "type": 0,
+                "instruction": "Turn left onto <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  67,
+                  80
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Meadowbrook Drive, on the right",
+                "name": "-",
+                "way_points": [
+                  80,
+                  80
+                ]
+              }
+            ],
+            "ascent": 2.0030059814453125,
+            "descent": 0.5865097045898438
+          },
+          {
+            "distance": 0.304,
+            "duration": 60.8,
+            "steps": [
+              {
+                "distance": 0.272,
+                "duration": 54.5,
+                "type": 11,
+                "instruction": "Head southwest on <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  80,
+                  88
+                ]
+              },
+              {
+                "distance": 0.031,
+                "duration": 6.3,
+                "type": 4,
+                "instruction": "Turn slight left onto <b>Buckingham Avenue</b>",
+                "name": "Buckingham Avenue",
+                "way_points": [
+                  88,
+                  89
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 1,
+                "instruction": "Turn right onto <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  89,
+                  90
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Meadowbrook Drive, on the right",
+                "name": "-",
+                "way_points": [
+                  90,
+                  90
+                ]
+              }
+            ],
+            "ascent": 2,
+            "descent": 0.41649627685546875
+          },
+          {
+            "distance": 0.089,
+            "duration": 17.8,
+            "steps": [
+              {
+                "distance": 0.089,
+                "duration": 17.8,
+                "type": 11,
+                "instruction": "Head west on <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  90,
+                  91
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Meadowbrook Drive, on the right",
+                "name": "-",
+                "way_points": [
+                  91,
+                  91
+                ]
+              }
+            ]
+          },
+          {
+            "distance": 0.56,
+            "duration": 112.1,
+            "steps": [
+              {
+                "distance": 0.013,
+                "duration": 2.6,
+                "type": 11,
+                "instruction": "Head west on <b>Meadowbrook Drive</b>",
+                "name": "Meadowbrook Drive",
+                "way_points": [
+                  91,
+                  92
+                ]
+              },
+              {
+                "distance": 0.547,
+                "duration": 109.5,
+                "type": 1,
+                "instruction": "Turn right onto <b>Lancaster Avenue</b>",
+                "name": "Lancaster Avenue",
+                "way_points": [
+                  92,
+                  100
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Lancaster Avenue, straight ahead",
+                "name": "-",
+                "way_points": [
+                  100,
+                  100
+                ]
+              }
+            ],
+            "ascent": 13
+          }
+        ],
+        "extras": {
+          "waytype": {
+            "values": [
+              [
+                0,
+                29,
+                2
+              ],
+              [
+                29,
+                38,
+                3
+              ],
+              [
+                38,
+                40,
+                2
+              ],
+              [
+                40,
+                58,
+                3
+              ],
+              [
+                58,
+                67,
+                2
+              ],
+              [
+                67,
+                81,
+                6
+              ],
+              [
+                81,
+                89,
+                2
+              ],
+              [
+                89,
+                92,
+                3
+              ],
+              [
+                92,
+                100,
+                2
+              ]
+            ],
+            "summary": [
+              {
+                "value": 2,
+                "distance": 0.002,
+                "amount": 60.17
+              },
+              {
+                "value": 3,
+                "distance": 0.001,
+                "amount": 26.81
+              },
+              {
+                "value": 6,
+                "distance": 0.001,
+                "amount": 13.03
+              }
+            ]
+          },
+          "surface": {
+            "values": [
+              [
+                0,
+                29,
+                3
+              ],
+              [
+                29,
+                38,
+                0
+              ],
+              [
+                38,
+                40,
+                3
+              ],
+              [
+                40,
+                53,
+                0
+              ],
+              [
+                53,
+                100,
+                3
+              ]
+            ],
+            "summary": [
+              {
+                "value": 3,
+                "distance": 0.003,
+                "amount": 77.94
+              },
+              {
+                "value": 0,
+                "distance": 0.001,
+                "amount": 22.06
+              }
+            ]
+          },
+          "steepness": {
+            "values": [
+              [
+                0,
+                100,
+                0
+              ]
+            ],
+            "summary": [
+              {
+                "value": 0,
+                "distance": 0.004,
+                "amount": 100
+              }
+            ]
+          }
+        },
+        "way_points": [
+          0,
+          10,
+          20,
+          28,
+          39,
+          57,
+          66,
+          80,
+          90,
+          91,
+          100
+        ],
+        "summary": {
+          "distance": 3.942,
+          "duration": 788.6999999999999
+        },
+        "opacity": 0.9
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.096565,
+            43.042537,
+            161
+          ],
+          [
+            -76.096944,
+            43.042528,
+            161
+          ],
+          [
+            -76.098454,
+            43.0425,
+            162.3
+          ],
+          [
+            -76.098831,
+            43.042481,
+            163
+          ],
+          [
+            -76.099119,
+            43.042472,
+            163.7
+          ],
+          [
+            -76.099167,
+            43.042445,
+            163.7
+          ],
+          [
+            -76.099543,
+            43.042108,
+            163.9
+          ],
+          [
+            -76.099693,
+            43.042012,
+            164
+          ],
+          [
+            -76.099898,
+            43.041926,
+            164.1
+          ],
+          [
+            -76.100231,
+            43.041859,
+            171
+          ],
+          [
+            -76.100762,
+            43.041782,
+            171
+          ],
+          [
+            -76.100801,
+            43.041776,
+            171
+          ],
+          [
+            -76.101695,
+            43.041646,
+            171
+          ],
+          [
+            -76.102144,
+            43.04158,
+            171
+          ],
+          [
+            -76.10261,
+            43.041518,
+            166
+          ],
+          [
+            -76.103391,
+            43.041392,
+            166
+          ],
+          [
+            -76.104425,
+            43.041197,
+            163
+          ],
+          [
+            -76.104874,
+            43.041089,
+            163
+          ],
+          [
+            -76.105337,
+            43.040963,
+            163
+          ],
+          [
+            -76.105808,
+            43.040785,
+            163
+          ],
+          [
+            -76.106247,
+            43.040597,
+            163
+          ],
+          [
+            -76.106295,
+            43.040576,
+            163
+          ],
+          [
+            -76.106418,
+            43.040519,
+            168
+          ],
+          [
+            -76.107155,
+            43.040112,
+            168
+          ],
+          [
+            -76.107515,
+            43.03988,
+            168
+          ],
+          [
+            -76.107731,
+            43.039723,
+            167.8
+          ],
+          [
+            -76.107886,
+            43.039556,
+            167.7
+          ],
+          [
+            -76.108121,
+            43.039252,
+            167
+          ],
+          [
+            -76.108775,
+            43.038404,
+            167.5
+          ],
+          [
+            -76.108819,
+            43.038347,
+            168
+          ],
+          [
+            -76.108713,
+            43.038213,
+            168
+          ],
+          [
+            -76.108446,
+            43.037862,
+            169.3
+          ],
+          [
+            -76.108366,
+            43.037671,
+            169.5
+          ],
+          [
+            -76.108328,
+            43.037504,
+            169.7
+          ],
+          [
+            -76.108306,
+            43.037241,
+            170
+          ],
+          [
+            -76.108345,
+            43.036955,
+            169.6
+          ],
+          [
+            -76.108385,
+            43.036841,
+            169.3
+          ],
+          [
+            -76.108576,
+            43.036521,
+            166
+          ],
+          [
+            -76.109193,
+            43.035696,
+            166
+          ],
+          [
+            -76.109218,
+            43.035715,
+            166
+          ],
+          [
+            -76.109193,
+            43.035696,
+            166
+          ],
+          [
+            -76.109645,
+            43.0351,
+            173
+          ],
+          [
+            -76.109825,
+            43.034821,
+            172.7
+          ],
+          [
+            -76.109913,
+            43.034615,
+            175
+          ],
+          [
+            -76.109939,
+            43.034511,
+            175
+          ],
+          [
+            -76.109947,
+            43.034276,
+            175
+          ],
+          [
+            -76.109857,
+            43.03283,
+            179.6
+          ],
+          [
+            -76.109881,
+            43.032609,
+            179.6
+          ],
+          [
+            -76.109956,
+            43.032362,
+            179.5
+          ],
+          [
+            -76.110085,
+            43.032056,
+            180
+          ],
+          [
+            -76.110271,
+            43.031717,
+            174.9
+          ],
+          [
+            -76.11045,
+            43.03144,
+            174.2
+          ],
+          [
+            -76.11063,
+            43.031209,
+            173.4
+          ],
+          [
+            -76.110735,
+            43.031011,
+            171
+          ],
+          [
+            -76.111196,
+            43.030795,
+            171
+          ],
+          [
+            -76.111422,
+            43.030745,
+            171
+          ],
+          [
+            -76.111581,
+            43.030733,
+            171
+          ],
+          [
+            -76.111612,
+            43.03073,
+            171
+          ],
+          [
+            -76.111681,
+            43.030725,
+            171
+          ],
+          [
+            -76.112243,
+            43.030702,
+            171
+          ],
+          [
+            -76.112442,
+            43.030694,
+            171
+          ],
+          [
+            -76.112798,
+            43.030679,
+            167
+          ],
+          [
+            -76.1135,
+            43.030654,
+            167
+          ],
+          [
+            -76.113885,
+            43.030629,
+            167
+          ],
+          [
+            -76.114706,
+            43.030589,
+            167
+          ],
+          [
+            -76.115749,
+            43.030541,
+            165
+          ],
+          [
+            -76.115952,
+            43.030531,
+            165
+          ],
+          [
+            -76.115976,
+            43.03053,
+            165
+          ],
+          [
+            -76.116077,
+            43.029906,
+            165.6
+          ],
+          [
+            -76.116149,
+            43.029723,
+            165.6
+          ],
+          [
+            -76.116474,
+            43.029064,
+            166.1
+          ],
+          [
+            -76.116549,
+            43.028825,
+            166.5
+          ],
+          [
+            -76.116583,
+            43.02862,
+            166.5
+          ],
+          [
+            -76.116586,
+            43.028329,
+            166.7
+          ],
+          [
+            -76.116529,
+            43.02754,
+            166.8
+          ],
+          [
+            -76.116575,
+            43.02735,
+            166.8
+          ],
+          [
+            -76.116659,
+            43.027214,
+            166.9
+          ],
+          [
+            -76.116728,
+            43.027139,
+            167
+          ],
+          [
+            -76.116901,
+            43.027023,
+            167
+          ],
+          [
+            -76.117018,
+            43.026968,
+            166.8
+          ],
+          [
+            -76.118017,
+            43.026561,
+            166.4
+          ],
+          [
+            -76.118046,
+            43.026549,
+            166
+          ],
+          [
+            -76.118334,
+            43.026422,
+            166.7
+          ],
+          [
+            -76.119386,
+            43.026008,
+            168
+          ],
+          [
+            -76.12001,
+            43.025759,
+            168
+          ],
+          [
+            -76.120162,
+            43.025675,
+            168
+          ],
+          [
+            -76.120435,
+            43.025453,
+            168
+          ],
+          [
+            -76.120525,
+            43.025341,
+            168
+          ],
+          [
+            -76.120591,
+            43.025128,
+            168
+          ],
+          [
+            -76.120564,
+            43.024847,
+            168
+          ],
+          [
+            -76.120566,
+            43.024847,
+            168
+          ],
+          [
+            -76.121659,
+            43.024789,
+            168
+          ],
+          [
+            -76.121819,
+            43.024781,
+            168
+          ],
+          [
+            -76.121945,
+            43.026247,
+            170
+          ],
+          [
+            -76.122017,
+            43.027088,
+            178
+          ],
+          [
+            -76.12206,
+            43.027536,
+            178
+          ],
+          [
+            -76.122082,
+            43.027777,
+            178
+          ],
+          [
+            -76.122144,
+            43.028534,
+            178
+          ],
+          [
+            -76.12221,
+            43.029132,
+            181
+          ],
+          [
+            -76.122225,
+            43.029289,
+            181
+          ],
+          [
+            -76.122256,
+            43.029694,
+            181
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Meadow Brook, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.09656572341919,
+          43.042547206791006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Meadowbrook Court, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.10076338052751,
+          43.041788571975424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Bradford Parkway, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.10626459121706,
+          43.04061825645944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Meadow Brook, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.10879123210908,
+          43.03841086693849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "600 Crawford Avenue, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1092257499695,
+          43.035709353229734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "1202 Broad Street, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.11161291599275,
+          43.030733394811534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Meadowbrook Drive, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.11595273017885,
+          43.03054124963522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Meadowbrook Drive, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.11802339553834,
+          43.026568807452975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Meadowbrook Drive, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.12056612968446,
+          43.024847205277375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Meadowbrook Drive, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.12166047096254,
+          43.024800144858894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Lancaster Avenue, Syracuse,NY,USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.12225055694581,
+          43.029694235157244
+        ]
+      }
+    }
+  ]
+}

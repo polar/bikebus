@@ -19,7 +19,6 @@ div#map {
     background-color:white;
 }
 
-
 .marker-container {
     display: flex;
     width: 300px;

@@ -1,0 +1,15 @@
+
+.polar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    color: darkblue;
+    z-index: 10000;
+}
+
+.map-title {
+    font-size: 20px;
+    color: indigo;
+}
