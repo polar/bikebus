@@ -12,9 +12,10 @@ export interface BusInfo {
     headerImageAlt: string,
     trackerBounds: Bounds,
     minZoomLevel: number,
-    mapHeight: number,
+    mapHeight: string,
     color: string,
     busIcon?: string,
     globalMarkerClass: string,
+    trackerTileSrcPattern: string
     stops: Stop[],
 }

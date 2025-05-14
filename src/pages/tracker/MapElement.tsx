@@ -1,7 +1,7 @@
 
 import {BusInfo} from "../../lib/BusInfo.ts";
 import React from "react";
-import {MapContainer, Polyline, TileLayer} from "react-leaflet";
+import {MapContainer, Polyline, TileLayer, useMap} from "react-leaflet";
 import "./MapElement.css"
 import {StopMarker} from "./StopMarker.tsx";
 import L from "leaflet";
@@ -22,24 +22,29 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
     state: MapElementState = {
         bounds: []
     }
+    private myRef: React.RefObject<any>;
 
     constructor(props: MapElementProps) {
         super(props);
         let routeBounds = props.busInfo.trackerBounds;
+
         // First we set our stops to empty, as we must wait until the <div id="map"> is rendered.
         // Once it is mounted then we change the state, so that we can add the markers to the rendered map element.
         this.state = {
             bounds: [routeBounds.bottomLeft, routeBounds.topRight] as L.LatLngTuple[]
         }
+
+        this.myRef = React.createRef();
+
     }
 
     OpenStreetMap() {
-    return (
+        return (
             <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                )
+        )
     }
 
     BikeBusMap() {
@@ -54,13 +59,19 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
     render() {
         let stops = this.props.busInfo.stops.filter(stop => !stop.waypointOnly)
         let route = this.props.busInfo.stops.map(stop => stop.coordinates as L.LatLngTuple)
+        let bounds = [this.props.busInfo.trackerBounds.bottomLeft, this.props.busInfo.trackerBounds.topRight] as L.LatLngTuple[]
+
+        let self = this
+        setTimeout(() => {
+            self.myRef.current.fitBounds(bounds)
+        }, 100);
         return (
-            <MapContainer attributionControl={true} style={{height: "100vh"}} bounds={this.state.bounds} zoom={13} scrollWheelZoom={true}>
+            <MapContainer ref={this.myRef}
+                attributionControl={true} style={{height: "100vh"}} bounds={bounds} scrollWheelZoom={true}>
                 <this.BikeBusMap/>
                 {
                     stops.map(stop => <StopMarker stop={stop}/>)
                 }
-
                 <BusMarker {...this.props} />
                 <Polyline positions={route}/>
                 { this.props.enableTracker ? <TrackerControl {...this.props}/> : null}
