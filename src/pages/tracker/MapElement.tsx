@@ -59,8 +59,7 @@ export class MapElement extends React.Component<MapElementProps, {}> {
             }
             return []
         } else {
-            let route = this.props.busInfo.stops.map(stop => stop.coordinates as L.LatLngTuple)
-            return route
+            return this.props.busInfo.stops.map(stop => stop.coordinates as L.LatLngTuple)
         }
     }
 
