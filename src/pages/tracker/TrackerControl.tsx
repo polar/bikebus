@@ -17,8 +17,22 @@ export class TrackerControl extends React.Component<TrackerControlProps, Tracker
         active: false
     }
 
+    name: string
+    constructor(props: TrackerControlProps) {
+        super(props);
+        this.name = this.props.busInfo.name
+        if (this.props.busInfo.geojson) {
+            if (this.props.busInfo.geojson.features) {
+                let ls = this.props.busInfo.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
+                if (ls && ls.properties.title) {
+                    this.name = ls.properties.title.replaceAll(" ", "_")
+                }
+            }
+        }
+    }
+
     async deleteLocation() {
-        return fetch(`/api/tracker/${this.props.busInfo.name}/location`, {
+        return fetch(`/api/tracker/${this.name}/location`, {
             method: "DELETE"
         })
     }
@@ -64,10 +78,11 @@ export class TrackerControl extends React.Component<TrackerControlProps, Tracker
     }
 
     componentDidMount() {
+
         // @ts-ignore
         this.intervalId = setInterval(() => {
             if (this.state.active && this.busLocation) {
-                fetch(`/api/tracker/${this.props.busInfo.name}/location`, {
+                fetch(`/api/tracker/${this.name}/location`, {
                     method: "POST",
                     headers: {
                         "Accept": "application/json",

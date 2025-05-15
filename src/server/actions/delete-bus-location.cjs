@@ -4,14 +4,14 @@ module.exports = (fastify, options, next ) => {
     async function handleRequest(request , reply ) {
 
         const {route} = request.params;
-        if (!cache.get(route)) {
+        if (!cache.has(route)) {
             return reply
                 .code(404)
                 .type('text/plain')
                 .send('Route not found.');
         }
 
-        cache.set(`location-${route}`, null)
+        cache.removeLocation(route)
 
         return reply.code(200)
             .type("application/json")

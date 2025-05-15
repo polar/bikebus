@@ -1,6 +1,7 @@
 import "./FrontPage.css"
 import {Component} from "react";
 import {RouteEntry} from "./RouteEntry.tsx";
+import {Button} from "@mui/material";
 
 export interface FrontPageOps {
     api: string
@@ -28,6 +29,8 @@ export default class FrontPage extends Component<FrontPageOps, FrontPageState> {
                     <img src={"/api/planets-align.jpg"} alt={"background"}/>
                 </div>
                 {this.state.names ? this.getNames() : null}
+                <Button href={"/op"}>op</Button>
+                <Button href={"/make"}>make</Button>
             </div>
         )
 

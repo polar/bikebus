@@ -81,4 +81,23 @@ export class GeoJSON2BusInfo {
                 }
             }
         }
+
+        static getBusInfo2 (g: any) {
+            let stops =  this.getBusInfoStops(g);
+            if (stops) {
+                let bottomLeft = stops.reduce((accumulated, current) =>
+                    [Math.min(accumulated[0], current.coordinates[0]), Math.min(accumulated[1], current.coordinates[1])], [Infinity, Infinity])
+                let topRight = stops.reduce((accumulated, current) =>
+                    [Math.max(accumulated[0], current.coordinates[0]), Math.max(accumulated[1], current.coordinates[1])], [-Infinity, -Infinity])
+
+                return ({
+                    title: "Bike Party Route",
+                    trackerBounds: {bottomLeft: bottomLeft, topRight: topRight},
+                    name: "Bike Party",
+                    busIcon: "/api/icons8-party-96.png",
+                    globalMarkerClass: "label-right",
+                    geojson: g
+                })
+            }
+        }
 }

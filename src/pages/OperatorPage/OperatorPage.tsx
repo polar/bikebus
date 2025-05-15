@@ -20,7 +20,7 @@ export class OperatorPage extends React.Component<OperatorPageProps> {
                     <meta property="og:title" content={this.props.busInfo.title}/>
                     <meta property="og:type" content="website"/>
 
-                    <title>{this.props.busInfo.title} Bike Bus Tracker</title>
+                    <title>Bike Bus Tracker</title>
                 </Helmet>
                 <MapElement enableTracker={true} {...this.props}/>
             </div>

@@ -3,7 +3,7 @@ import { userSchema } from "../schemas/user.ts";
 import { errorSchema } from "../schemas/error.ts";
 import { fastifyStatic } from "@fastify/static"
 import { fastifyCors} from "@fastify/cors";
-import {fastifyAutoload} from "fastify-autoload";
+import {fastifyAutoload} from "@fastify/autoload";
 
 interface BuildOpts extends FastifyServerOptions {
     exposeDocs?: boolean,

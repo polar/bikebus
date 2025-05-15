@@ -2,19 +2,17 @@ import {FastifyInstance, FastifyLoggerOptions} from "fastify";
 import { Server, IncomingMessage, ServerResponse } from "http";
 import build from "./build.ts";
 
-import NanoCache from "nano-cache"
 import * as fs from "node:fs";
+import {RoutesCache} from "../lib/RoutesCache.ts";
 
 const loggerConfig : FastifyLoggerOptions = {
 };
 let exposeDocs = true;
-let cache = new NanoCache();
-let routes: string[] = []
+let cache = new RoutesCache();
 
 fs.readdirSync("./src/stuff/routes").forEach(file => {
     let route = file.replace(".json", "")
-    routes.push(route)
-    cache.set(route, "true")
+    cache.add(route)
 })
 
 if (process.env.NODE_ENV === "production") {
@@ -23,8 +21,7 @@ if (process.env.NODE_ENV === "production") {
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build({
     logger: loggerConfig,
     exposeDocs: exposeDocs,
-    cache: cache,
-    routes: routes
+    cache: cache
 });
 
 let listenOpts = {

@@ -25,8 +25,19 @@ export class Main extends React.Component<MainProps, MainState> {
         fetch(`/api/routes/${this.props.name}.json`)
             .then(response => response.json())
             .then(data => {
-                this.setState({busInfo: data[this.props.name], loading: false});
-                console.log(data)
+                if (data[this.props.name]) {
+                    this.setState({busInfo: data[this.props.name], loading: false});
+                } else {
+                    if (data.features) {
+                        let ls = data.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString")
+                        if (ls && ls.properties.title) {
+                            let name = ls.properties.title.replaceAll(" ", "_")
+                            let bi = {name: name, title: ls.properties.title, geojson: data}
+                            // @ts-ignore
+                            this.setState({busInfo: bi, loading: false});
+                        }
+                    }
+                }
             }).catch((error: any) => {
             console.error(error)
             this.setState({loading: false})

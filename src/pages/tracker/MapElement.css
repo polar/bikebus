@@ -66,7 +66,7 @@ div.marker-box-center > img {
 
 /* Marker Modifiers */
 .marker-container.rotate-35 {
-    transform: rotate(35deg);
+    transform: rotate(-35deg);
 }
 
 .marker-container.rotate-65 {
@@ -96,7 +96,7 @@ div.marker-box-center > img {
     /* background-color: rgba(255, 0, 0, 0.264); */
     position:relative;
     left: -160px;
-    top: 1.5em;
+    top: 0em;
     text-align:right;
 }
 

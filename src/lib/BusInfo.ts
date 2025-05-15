@@ -18,4 +18,5 @@ export interface BusInfo {
     globalMarkerClass: string,
     trackerTileSrcPattern: string
     stops: Stop[],
+    geojson?: any
 }

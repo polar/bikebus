@@ -27,6 +27,19 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
 
     state: BusMarkerState = {}
 
+    name : string
+    constructor(props: BusMarkerProps) {
+        super(props);
+        this.name = this.props.busInfo.name
+        if (this.props.busInfo.geojson) {
+            if (this.props.busInfo.geojson.features) {
+                let ls = this.props.busInfo.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
+                if (ls && ls.properties.title) {
+                    this.name = ls.properties.title.replaceAll(" ", "_")
+                }
+            }
+        }
+    }
     busMarker(location: BusLocation){
         let icon = this.props.busInfo.busIcon || "/api/44-512.webp"
 
@@ -49,7 +62,7 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
     componentDidMount() {
         // @ts-ignore
         this.intervalId = setInterval(() => {
-            fetch(`/api/tracker/${this.props.busInfo.name}/location`)
+            fetch(`/api/tracker/${this.name}/location`)
                 .then(res =>
                     res.ok ?
                         res.json().then( data => this.setState({location: data}))
