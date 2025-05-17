@@ -5,6 +5,15 @@ import {clearInterval} from "node:timers";
 export class RoutesCache {
     cache = new NanoCache()
     routes: string[] = [];
+    limit = 2
+
+    constructor(limit = 2) {
+        this.limit = limit
+    }
+
+    atLimit() {
+        return this.limit <= this.routes.length
+    }
 
     initialize() {
         let names = fs.readdirSync(`${import.meta.dirname}/../stuff/routes`)

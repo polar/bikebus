@@ -128,10 +128,19 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
                     } else if (response.status === 409) {
                         this.setState({deleteEnabled: true})
                         alert("File exists. Please delete first")
+                    } else if (response.status === 413) {
+                        this.setState({deleteEnabled: true})
+                        alert("File is too large")
+                    } else if (response.status === 403) {
+                        alert("You are not authorized to upload.")
+                    } else if (response.status === 452) {
+                        alert("Cannot save route. There are too many routes on the server.")
+                    } else if (response.status === 400) {
+                        alert("Invalid File Format.")
                     }
                 })
             } else {
-                alert("Name cannot be left blank")
+                alert("Route name cannot be left blank")
             }
         }
     }
