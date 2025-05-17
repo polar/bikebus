@@ -2,7 +2,6 @@ import {FastifyInstance, FastifyLoggerOptions} from "fastify";
 import { Server, IncomingMessage, ServerResponse } from "http";
 import build from "./build.ts";
 
-import * as fs from "node:fs";
 import {RoutesCache} from "../lib/RoutesCache.ts";
 
 const loggerConfig : FastifyLoggerOptions = {
@@ -10,10 +9,8 @@ const loggerConfig : FastifyLoggerOptions = {
 let exposeDocs = true;
 let cache = new RoutesCache();
 
-fs.readdirSync("./src/stuff/routes").forEach(file => {
-    let route = file.replace(".json", "")
-    cache.add(route)
-})
+cache.initialize();
+cache.startUpdate();
 
 if (process.env.NODE_ENV === "production") {
     exposeDocs = true;

@@ -1,7 +1,7 @@
 import React from "react";
 import {TrackerPage} from "./pages/tracker/TrackerPage.tsx";
-import {BusInfo} from "./lib/BusInfo.ts";
 import {OperatorPage} from "./pages/OperatorPage/OperatorPage.tsx";
+import {ensureBusInfoTitle} from "./lib/BusInfo.ts";
 
 interface MainProps {
     name: string;
@@ -9,35 +9,29 @@ interface MainProps {
 }
 
 interface MainState     {
-    loading: boolean
-    busInfo?: BusInfo
+    loading: boolean,
+    geojson?: any
 }
 export class Main extends React.Component<MainProps, MainState> {
     constructor(props: MainProps) {
         super(props);
         this.state = {
-            busInfo: undefined,
             loading: true
         }
     }
 
     componentDidMount() {
         fetch(`/api/routes/${this.props.name}.json`)
-            .then(response => response.json())
+            .then(response => {
+                if (response.ok)
+                    return response.json()
+                throw response.statusText
+            })
             .then(data => {
-                if (data[this.props.name]) {
-                    this.setState({busInfo: data[this.props.name], loading: false});
-                } else {
                     if (data.features) {
-                        let ls = data.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString")
-                        if (ls && ls.properties.title) {
-                            let name = ls.properties.title.replaceAll(" ", "_")
-                            let bi = {name: name, title: ls.properties.title, geojson: data}
-                            // @ts-ignore
-                            this.setState({busInfo: bi, loading: false});
-                        }
+                        ensureBusInfoTitle(data)
+                        this.setState({geojson: data, loading: false});
                     }
-                }
             }).catch((error: any) => {
             console.error(error)
             this.setState({loading: false})
@@ -64,11 +58,11 @@ export class Main extends React.Component<MainProps, MainState> {
         if (this.state.loading) {
             return this.loading()
         }
-        if (this.state.busInfo) {
+        if (this.state.geojson) {
             if (this.props.operator) {
-                return (<OperatorPage busInfo={this.state.busInfo}/>)
+                return (<OperatorPage geojson={this.state.geojson}/>)
             } else {
-                return (<TrackerPage busInfo={this.state.busInfo}/>)
+                return (<TrackerPage geojson={this.state.geojson}/>)
             }
         }
         return this.noRoute()

@@ -1,11 +1,13 @@
 // @ts-ignore
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {BrowserRouter, Routes, Route, useParams} from "react-router";
+import {BrowserRouter, Route, Routes, useParams} from "react-router";
 import {Main} from "./main.tsx";
 import FrontPage from "./pages/FrontPage/FrontPage.tsx";
 import OperatePage from "./pages/FrontPage/OperatePage.tsx";
 import {MakerPage} from "./pages/MakerPage/MakerPage.tsx";
+import {LoadPage} from "./pages/MakerPage/LoadPage.tsx";
+import {EditChooserPage} from "./pages/MakerPage/EditChooserPage.tsx";
 
 const root = document.getElementById("root");
 
@@ -24,9 +26,30 @@ function App(props: {op: boolean}) {
     }
 }
 
+function Editor() {
+    let {route} = useParams()
+    if (route && route != "") {
+        return (<LoadPage name={route} copy={false}/>)
+    } else {
+        return (<MakerPage/>)
+    }
+}
+
+function CopyEditor() {
+    let {route} = useParams()
+    if (route && route != "") {
+        return (<LoadPage name={route} copy={true}/>)
+    } else {
+        return (<MakerPage/>)
+    }
+}
+
 ReactDOM.createRoot(root!).render(
     <BrowserRouter>
         <Routes>
+            <Route path="/list" element={<EditChooserPage/>} />
+            <Route path="/make/:route" element={<Editor/>} />
+            <Route path="/make/:route/copy" element={<CopyEditor/>} />
             <Route path="/make" element={<MakerPage/>} />
             <Route path="/op" element={<OperatePage api={"/api/tracker/routes"}/>} />
             <Route path="/" element={<FrontPage api={"/api/tracker/routes"}/>} />

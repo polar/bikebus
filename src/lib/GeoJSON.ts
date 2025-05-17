@@ -1,6 +1,5 @@
 
 
-
 function bottomLeft(accumulated: number[], coordinates: number[]) {
     return [Math.min(accumulated[0], coordinates[0]), Math.min(accumulated[1], coordinates[1])]
 }

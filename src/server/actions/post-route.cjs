@@ -19,7 +19,7 @@ module.exports = (fastify, options, next ) => {
                         } else {
                             fs.writeFileSync(fname, JSON.stringify(json, null, 2), 'utf8');
                             cache.add(name)
-                            return reply.code(200).type('text/plain').send("Route Saved")
+                            return reply.code(200).type("application/json").send(json)
                         }
                     }
                 }

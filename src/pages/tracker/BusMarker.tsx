@@ -3,7 +3,6 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 import L, {divIcon} from "leaflet";
 import {Marker} from "react-leaflet";
-import {BusInfo} from "../../lib/BusInfo.ts";
 
 export interface Coordinates {
     latitude: number,
@@ -15,7 +14,7 @@ export interface BusLocation extends Coordinates {
 }
 
 interface BusMarkerProps {
-    busInfo: BusInfo,
+    geojson: any,
 }
 
 interface BusMarkerState {
@@ -27,21 +26,23 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
 
     state: BusMarkerState = {}
 
-    name : string
+    name : string = "notsupposedtohappen"
+
     constructor(props: BusMarkerProps) {
         super(props);
-        this.name = this.props.busInfo.name
-        if (this.props.busInfo.geojson) {
-            if (this.props.busInfo.geojson.features) {
-                let ls = this.props.busInfo.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
-                if (ls && ls.properties.title) {
-                    this.name = ls.properties.title.replaceAll(" ", "_")
-                }
+        if (this.props.geojson.features) {
+            let ls = this.props.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
+            if (ls && ls.properties.title) {
+                this.name = ls.properties.title.replaceAll(" ", "_")
             }
         }
     }
     busMarker(location: BusLocation){
-        let icon = this.props.busInfo.busIcon || "/api/44-512.webp"
+        let icon = "/api/bus-icons/44-512.webp'"
+        let ls = this.props.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
+        if (ls && ls.properties.busIcon) {
+            icon = ls.properties.busIcon
+        }
 
         return (
             <div className={``}>

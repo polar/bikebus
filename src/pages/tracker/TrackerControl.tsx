@@ -1,10 +1,9 @@
 import React from "react";
 import "./TrackerControl.css"
-import {BusInfo} from "../../lib/BusInfo.ts";
 import {BusLocation} from "./BusMarker.tsx";
 
 interface TrackerControlProps {
-    busInfo: BusInfo
+    geojson: any
 }
 
 interface TrackerControlState {
@@ -17,16 +16,13 @@ export class TrackerControl extends React.Component<TrackerControlProps, Tracker
         active: false
     }
 
-    name: string
+    name: string =  "notsupposedtohappen"
     constructor(props: TrackerControlProps) {
         super(props);
-        this.name = this.props.busInfo.name
-        if (this.props.busInfo.geojson) {
-            if (this.props.busInfo.geojson.features) {
-                let ls = this.props.busInfo.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
-                if (ls && ls.properties.title) {
-                    this.name = ls.properties.title.replaceAll(" ", "_")
-                }
+        if (this.props.geojson.features) {
+            let ls = this.props.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
+            if (ls && ls.properties.title) {
+                this.name = ls.properties.title.replaceAll(" ", "_")
             }
         }
     }

@@ -1,48 +1,91 @@
-
-import {BusInfo} from "../../lib/BusInfo.ts"
-import React, {ChangeEvent} from "react";
+import {ensureBusInfoTitle, getBusInfoTitle} from "../../lib/BusInfo.ts"
+import React from "react";
 import {Helmet} from "react-helmet"
-import {MapElement} from "../tracker/MapElement";
-import {GeoJSON2BusInfo} from "../../lib/GeoJSON2BusInfo"
 import "../tracker/TrackerPage.css"
-import {PointEditor} from "./PointEditor";
-import {produce} from "immer";
-import {Button, ButtonGroup, SvgIcon, TextField} from "@mui/material";
+import {Button, ButtonGroup, ListItemButton, SvgIcon} from "@mui/material";
+import {EditorElement} from "./EditorElement.tsx";
+
+const ROUTE_URL = "https://maps.openrouteservice.org"
+
 interface MakerPageProps {
+    geojson?: any;
+    name?: string
 }
+
 interface MakerPageState {
-    busInfo?: BusInfo;
     deleteEnabled: boolean
+    name?: string
+    geojson?: any
+    downloadHref?: string
+    disableUrl: boolean
+    copyMode: boolean
 }
-export class MakerPage extends React.Component<MakerPageProps> {
+
+export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
 
     state: MakerPageState = {
-        deleteEnabled: false
+        deleteEnabled: false,
+        disableUrl: false,
+        copyMode: false
     }
-    myRef : React.RefObject<PointEditor|null>
+
+    hasName() {
+        return this.props.name && this.props.name != ""
+    }
+
+    isInCopyMode() {
+        return this.hasName() && this.props.geojson || this.state.copyMode
+    }
+
+    isInEditMode() {
+        return !this.hasName() && this.props.geojson && !this.state.copyMode
+    }
+
+    isInMakeMode() {
+        return !this.props.geojson
+    }
 
     constructor(props: MakerPageProps) {
         super(props);
-        this.myRef = React.createRef<PointEditor>()
+        if (props.geojson) {
+            ensureBusInfoTitle(props.geojson)
+            this.state.name = getBusInfoTitle(props.geojson)
+            this.state.geojson = props.geojson
+            this.state.deleteEnabled = false
+            this.state.downloadHref = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(props.geojson))}`
+        }
     }
 
+    updateState(geojson: any) {
+        ensureBusInfoTitle(geojson)
+        let name = getBusInfoTitle(geojson)
+        let state = {
+            name: name,
+            geojson: geojson,
+            deleteEnabled: false,
+            downloadHref: `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(geojson))}`
+        }
+        if (name) {
+            fetch(`/api/routes/${name}.json`)
+                .then(res => {
+                    this.setState({disableUrl: !res.ok})
+                })
+        }
+        this.setState(state)
+    }
 
     handleFile(event: any) {
-        let self = this
         let geoJson = JSON.parse(event.target.result)
         if (geoJson.features.length > 0) {
-            let busInfo = GeoJSON2BusInfo.getBusInfo2(geoJson)
-            if (busInfo) {
-                self.setState({busInfo: busInfo})
-            }
+            this.updateState(geoJson)
         }
     }
 
     handleChangeFile(files: FileList) {
         if (files?.length > 0) {
             let file = files[0]
-            let fileData = new FileReader();
-            fileData.onload = (e) => this.handleFile(e);
+            let fileData = new FileReader()
+            fileData.onload = (e) => this.handleFile(e)
             fileData.readAsText(file);
         }
     }
@@ -53,43 +96,52 @@ export class MakerPage extends React.Component<MakerPageProps> {
         }
     }
 
-    getMapElement() {
-        if (this.state.busInfo) {
-            return (
-                <MapElement busInfo={this.state.busInfo} enableTracker={false}/>
-            )
+    copy() {
+        if (this.state.geojson) {
+            let name = getBusInfoTitle(this.state.geojson)
+            if (name) {
+                this.setState({name: name, copyMode: true})
+            }
         }
     }
 
     save() {
-        let data = this.myRef.current?.getData()
+        let data = this.state.geojson
         console.log(data)
         if (data) {
-            fetch("/api/route", {
-                method: "POST",
-                headers: {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            }).then(response => {
-                if (response.status === 200) {
-                    alert("File has been uploaded!")
-                } else if (response.status === 409) {
-                    this.setState({deleteEnabled: true})
-                    alert("File exists. Please delete first")
-                }
-            })
+            ensureBusInfoTitle(data)
+            let name = getBusInfoTitle(data)
+            if (name) {
+                fetch("/api/route", {
+                    method: "POST",
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }).then(response => {
+                    if (response.status === 200) {
+                        alert("File has been uploaded!")
+                        response.json()
+                            .then(geojson => this.updateState(geojson))
+                            .then(() => this.setState({copyMode: false}))
+                    } else if (response.status === 409) {
+                        this.setState({deleteEnabled: true})
+                        alert("File exists. Please delete first")
+                    }
+                })
+            } else {
+                alert("Name cannot be left blank")
+            }
         }
     }
 
     delete() {
-        let data = this.myRef.current?.getData()
+        let data = this.state.geojson
         console.log(data)
         if (data) {
-            let ls = data.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString")
-            if (ls && ls.properties.title) {
-                let name = ls.properties.title.replaceAll(" ", "_")
+            let name = getBusInfoTitle(data)
+            if (name) {
                 fetch(`/api/route/${name}`, {
                     method: "DELETE",
                     headers: {
@@ -98,60 +150,76 @@ export class MakerPage extends React.Component<MakerPageProps> {
                     }
                 }).then(response => {
                     if (response.status === 200) {
-                        this.setState({deleteEnabled: false})
+                        this.setState({deleteEnabled: false, disableUrl: true})
                         alert("Route has been deleted!")
                     } else if (response.status === 403) {
-                        this.setState({deleteEnabled: false})
+                        this.setState({deleteEnabled: false, disableUrl: true})
                         alert("Route cannot be deleted!")
                     }
                 })
+            } else {
+                alert("Route cannot be deleted! Invalid Name")
             }
         }
     }
 
-    handleText(event: any) {
-        let busInfo = this.state.busInfo
-        if (busInfo) {
-            busInfo.title = event.target.value
-            this.setState({busInfo: busInfo})
-        }
-    }
-    myUpdate() {
-        let geojson = this.myRef.current!.getData()
-        let busInfo = this.state.busInfo
-        if (busInfo) {
-            this.setState({busInfo: produce(this.state.busInfo, (f:any) => {
-                    f.geojson = geojson
-                })})
+    onChange() {
+        let data = this.state.geojson
+        if (data) {
+            this.updateState(data)
         }
     }
 
-    changeTitle(event: ChangeEvent<HTMLInputElement>) {
-        let text = event.target.value
-        if (this.state.busInfo) {
-            if (this.state.busInfo.geojson) {
-                let bi = produce(this.state.busInfo, (bi: any) => {
-                    let ls = bi.geojson.features.find((f: any) => f.type === "Feature" && f.geometry.type === "LineString")
-                    if (ls) {
-                        ls.properties.title = text
-                    }
-                })
-                this.setState({busInfo: bi})
-            }
+    ChooseFile() {
+        if (this.isInCopyMode() ||this.isInMakeMode()) {
+            return (
+                <Button component="label">
+                    Choose File
+                    <input type="file" accept=".json" hidden onChange={this.handleChange.bind(this)} />
+                </Button>
+            )
+        }
+    }
+
+    Download() {
+        if (this.state.downloadHref) {
+            return (
+                <Button download="geojson.json" href={this.state.downloadHref}>
+                    <SvgIcon>
+                        <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M5,20h14v-2H5V20z M19,9h-4V3H9v6H5l7,7L19,9z"/></g></svg>
+                    </SvgIcon>
+                </Button>
+            )
+        }
+    }
+    Delete() {
+        if (this.state.deleteEnabled) {
+            return (
+                <Button onClick={this.delete.bind(this)}>
+                Delete From Server
+                </Button>
+            )
+        }
+    }
+    SaveToServer() {
+        if (this.state.downloadHref) {
+            return (
+                <Button onClick={this.save.bind(this)}>
+                    Save To Server
+                </Button>
+            )
+        }
+    }
+    SwitchToCopyMode() {
+        if (!this.isInCopyMode() && !this.isInMakeMode()) {
+            return (
+                <Button onClick={this.copy.bind(this)}>
+                    Copy
+                </Button>
+            )
         }
     }
     render() {
-        let title = "Bike Bus Route"
-        if (this.state.busInfo) {
-            if (this.state.busInfo.geojson) {
-                let ls = this.state.busInfo.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString")
-                if (ls) {
-                    if (ls.properties.title) {
-                        title = ls.properties.title
-                    }
-                }
-            }
-        }
         return (
             <div suppressHydrationWarning={true}>
                 <Helmet>
@@ -165,35 +233,17 @@ export class MakerPage extends React.Component<MakerPageProps> {
                 </Helmet>
                 <h1><a href={"/"}>Bike Bus</a> Maker Page</h1>
                 <ButtonGroup>
-                    <Button component="label">
-                        Choose File
-                        <input type="file" accept=".json" hidden onChange={this.handleChange.bind(this)} />
-                    </Button>
-                    <Button download="geojson.json" href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(this.state.busInfo?.geojson))}`}>
-                        <SvgIcon>
-                            <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M5,20h14v-2H5V20z M19,9h-4V3H9v6H5l7,7L19,9z"/></g></svg>
-                        </SvgIcon>
-                    </Button>
-                    <Button onClick={this.save.bind(this)}>
-                        Save To Server
-                    </Button>
-                    { this.state.deleteEnabled ?
-                        <Button onClick={this.delete.bind(this)}>
-                        Delete From Server
-                        </Button>
-                        : null
-                    }
+                    { this.ChooseFile() }
+                    { this.Download() }
+                    { this.SaveToServer() }
+                    { this.Delete() }
+                    { this.SwitchToCopyMode() }
+                    { this.state.name  && <ListItemButton disabled={this.state.disableUrl} href={`/${this.state.name}/op`}>{`/${this.state.name}/op`}</ListItemButton>}
                 </ButtonGroup>
-                <div className={"container"}>
-                    <div className={"polar center"}>
-                        <div className={"map-title"}>
-                            <TextField value={title} onChange={this.changeTitle.bind(this)}></TextField>
-                        </div>
-                        <div>Dr. Polar Humenn</div>
-                    </div>
-                    { this.state.busInfo ? <PointEditor ref={this.myRef} geojson={this.state.busInfo!.geojson} onChange={this.myUpdate.bind(this)}/> : null}
-                    { this.state.busInfo ? <MapElement busInfo={this.state.busInfo} enableTracker={false}/> : null}
-                </div>
+                <ButtonGroup style={{float:"right"}}>
+                    <ListItemButton href={ROUTE_URL}>Create A Route File</ListItemButton>
+                </ButtonGroup>
+                <EditorElement editTitleEnabled={!this.isInEditMode()} geojson={this.state.geojson} onChange={this.onChange.bind(this)}/>
             </div>
         )
     }

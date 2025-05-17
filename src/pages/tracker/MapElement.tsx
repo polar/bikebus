@@ -1,18 +1,18 @@
 
-import {BusInfo} from "../../lib/BusInfo.ts";
 import React from "react";
 import {MapContainer, Polyline, TileLayer} from "react-leaflet";
 import "./MapElement.css"
-import {StopMarker} from "./StopMarker.tsx";
 import L from "leaflet";
 import {BusMarker} from "./BusMarker.tsx";
 import {TrackerControl} from "./TrackerControl";
 import * as G from "../../lib/GeoJSON";
 import {PointMarker} from "./PointMarker";
+import {BusDisplayMarker} from "./BusDisplayMarker.tsx";
 
 interface MapElementProps {
-    busInfo: BusInfo,
+    geojson: any,
     enableTracker: boolean,
+    editor: boolean
 }
 
 export class MapElement extends React.Component<MapElementProps, {}> {
@@ -45,37 +45,31 @@ export class MapElement extends React.Component<MapElementProps, {}> {
     }
 
     getBounds() {
-        if (this.props.busInfo.geojson) {
-            return G.getBounds(this.props.busInfo.geojson).map(x => x.reverse()) as L.LatLngTuple[]
-        }
-        return [this.props.busInfo.trackerBounds.bottomLeft, this.props.busInfo.trackerBounds.topRight] as L.LatLngTuple[]
+        return G.getBounds(this.props.geojson).map(x => [...x].reverse()) as L.LatLngTuple[]
     }
 
     getPositions(): L.LatLngTuple[] {
-        if (this.props.busInfo.geojson) {
-            let ls = this.props.busInfo.geojson.features.find((f:any) => f.geometry.type === "LineString")
-            if (ls) {
-                return ls.geometry.coordinates.map((c:any) => c.slice(0,2).reverse() as L.LatLngTuple)
-            }
-            return []
-        } else {
-            return this.props.busInfo.stops.map(stop => stop.coordinates as L.LatLngTuple)
+        let ls = this.props.geojson.features.find((f:any) => f.geometry.type === "LineString")
+        if (ls) {
+            return ls.geometry.coordinates.map((c:any) => c.slice(0,2).reverse() as L.LatLngTuple)
         }
+        return []
     }
 
     getPointMarkers() {
-        if (this.props.busInfo.geojson) {
-            let fs = this.props.busInfo.geojson.features as any[]
-            let features = fs.filter((f:any) => f.geometry.type === "Point" && !f.properties.ignore)
-            return features.map((f:any, index: number) => <PointMarker key={index} feature={f}/>)
-        }
-        return null
+        let fs = this.props.geojson.features as any[]
+        let features = fs.filter((f:any) => f.geometry.type === "Point" && !f.properties.ignore)
+        return features.map((f:any, index: number) => <PointMarker key={index} feature={f}/>)
     }
-    renderGeoJSON() {
+
+    render() {
         let bounds = this.getBounds()
 
         let positions =  this.getPositions()
 
+        // setTimeout(() => {
+        //     self.myRef.current.fitBounds(bounds)
+        // }, 100);
         return (
             <MapContainer ref={this.myRef}
                               attributionControl={true} style={{height: "100vh"}}
@@ -85,38 +79,11 @@ export class MapElement extends React.Component<MapElementProps, {}> {
                 <this.BikeBusMap/>
                 <Polyline positions={positions}/>
                 { this.getPointMarkers() }
-                <BusMarker {...this.props} />
-                { this.props.enableTracker ? <TrackerControl {...this.props}/> : null}
+                { this.props.editor && <BusDisplayMarker geojson={this.props.geojson}/> }
+                { !this.props.editor && <BusMarker geojson={this.props.geojson} /> }
+                { this.props.enableTracker ? <TrackerControl geojson={this.props.geojson}/> : null}
             </MapContainer>
 
-        )
-    }
-
-    render() {
-        if (this.props.busInfo.geojson) {
-            return this.renderGeoJSON()
-        }
-
-        let stops = this.props.busInfo.stops.filter(stop => !stop.waypointOnly)
-        let route = this.props.busInfo.stops.map(stop => stop.coordinates as L.LatLngTuple)
-        let bounds = [this.props.busInfo.trackerBounds.bottomLeft, this.props.busInfo.trackerBounds.topRight] as L.LatLngTuple[]
-
-        let self = this
-        setTimeout(() => {
-            self.myRef.current.fitBounds(bounds)
-            self.myRef.current.geoJson
-        }, 100);
-        return (
-            <MapContainer ref={this.myRef}
-                attributionControl={true} style={{height: "100vh"}} bounds={bounds} scrollWheelZoom={true}>
-                <this.BikeBusMap/>
-                {
-                    stops.map(stop => <StopMarker stop={stop}/>)
-                }
-                <BusMarker {...this.props} />
-                <Polyline positions={route}/>
-                { this.props.enableTracker ? <TrackerControl {...this.props}/> : null}
-            </MapContainer>
         )
     }
 }
