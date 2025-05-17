@@ -3,15 +3,18 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 import L, {divIcon} from "leaflet";
 import {Marker} from "react-leaflet";
+import {SvgIcon} from "@mui/material";
+import "./PointMarker.css"
 
 export interface PointMarkerProps {
     feature: any
+    className?: string
 }
 
 export class PointMarker extends React.Component<PointMarkerProps> {
 
     pointMarker(feature: any){
-        let icon = feature.properties.icon || "https://cdn.glitch.global/6ba8c1b0-9df4-482f-9009-77d10d780dbb/bus_stop_circle.svg?v=1664245520908"
+       //. let icon = feature.properties.icon || "https://cdn.glitch.global/6ba8c1b0-9df4-482f-9009-77d10d780dbb/bus_stop_circle.svg?v=1664245520908"
 
         let markerClass = ""
         if (feature.properties.left) {
@@ -27,12 +30,20 @@ export class PointMarker extends React.Component<PointMarkerProps> {
             markerClass = " label-right"
         }
         return (
-            <div className={`marker-container ${markerClass}`}>
+            <div className={`marker-container ${this.props.className} ${markerClass}`}>
                 <div className="marker-box">
                     <div><b>{feature.time}</b></div>
                 </div>
                 <div className="marker-box marker-box-center">
-                    <img src={icon} alt="marker"/>
+                    <SvgIcon>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="key">
+                                    <circle cx="5" cy="5" r="2"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </SvgIcon>
 
                 </div>
                 <div className="marker-box">

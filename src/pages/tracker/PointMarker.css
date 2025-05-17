@@ -1,0 +1,13 @@
+
+.marker-start circle{
+    fill: #078207;
+    stroke: #04040c;
+}
+.marker-waypoint circle {
+    fill: #ffffff;
+    stroke: #04040c;
+}
+.marker-destination  circle {
+    fill: #9a0714;
+    stroke: #04040c;
+}

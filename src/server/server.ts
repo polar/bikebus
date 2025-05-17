@@ -2,12 +2,15 @@ import {FastifyInstance, FastifyLoggerOptions} from "fastify";
 import { Server, IncomingMessage, ServerResponse } from "http";
 import build from "./build.ts";
 
-import {RoutesCache} from "../lib/RoutesCache.ts";
+import {DEFAULT_ROUTES_LIMIT, RoutesCache} from "../lib/RoutesCache.ts";
 
 const loggerConfig : FastifyLoggerOptions = {
 };
+
+const SERVER_ROUTES_LIMIT = DEFAULT_ROUTES_LIMIT
+
 let exposeDocs = true;
-let cache = new RoutesCache();
+let cache = new RoutesCache(SERVER_ROUTES_LIMIT);
 
 cache.initialize();
 cache.startUpdate();

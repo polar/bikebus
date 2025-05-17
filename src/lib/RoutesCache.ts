@@ -2,13 +2,17 @@ import NanoCache from "nano-cache";
 import fs from "node:fs";
 import {clearInterval} from "node:timers";
 
+export const DEFAULT_ROUTES_LIMIT = 20
+
 export class RoutesCache {
     cache = new NanoCache()
     routes: string[] = [];
-    limit = 2
+    limit = DEFAULT_ROUTES_LIMIT
 
-    constructor(limit = 2) {
-        this.limit = limit
+    constructor(limit?: number) {
+        if (limit !== undefined && limit > 0) {
+            this.limit = limit
+        }
     }
 
     atLimit() {
