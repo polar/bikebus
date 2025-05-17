@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, ButtonGroup, ListItemButton} from "@mui/material";
+import {DirectionsPage} from "./DirectionsPage.tsx";
 
 interface EditChooserPageState {
     routes: string[]
@@ -58,6 +59,7 @@ export class EditChooserPage extends React.Component<{},EditChooserPageState> {
                     <ButtonGroup size={"small"} orientation={"vertical"}>
                         <Button href={"/make"}>Make New</Button>
                     </ButtonGroup>
+                    <DirectionsPage></DirectionsPage>
                 </div>
             )
         }

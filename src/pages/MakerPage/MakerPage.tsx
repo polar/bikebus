@@ -241,7 +241,9 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
                     { this.state.name  && <ListItemButton disabled={this.state.disableUrl} href={`/${this.state.name}/op`}>{`/${this.state.name}/op`}</ListItemButton>}
                 </ButtonGroup>
                 <ButtonGroup style={{float:"right"}}>
-                    <ListItemButton href={ROUTE_URL}>Create A Route File</ListItemButton>
+                    <ListItemButton href={"/list"}>Edit List</ListItemButton>
+                    <ListItemButton href={"/directions"}>Directions</ListItemButton>
+                    <ListItemButton href={ROUTE_URL}>Create a Route File</ListItemButton>
                 </ButtonGroup>
                 <EditorElement editTitleEnabled={!this.isInEditMode()} geojson={this.state.geojson} onChange={this.onChange.bind(this)}/>
             </div>

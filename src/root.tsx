@@ -8,6 +8,7 @@ import OperatePage from "./pages/FrontPage/OperatePage.tsx";
 import {MakerPage} from "./pages/MakerPage/MakerPage.tsx";
 import {LoadPage} from "./pages/MakerPage/LoadPage.tsx";
 import {EditChooserPage} from "./pages/MakerPage/EditChooserPage.tsx";
+import {DirectionsPage} from "./pages/MakerPage/DirectionsPage.tsx";
 
 const root = document.getElementById("root");
 
@@ -47,6 +48,7 @@ function CopyEditor() {
 ReactDOM.createRoot(root!).render(
     <BrowserRouter>
         <Routes>
+            <Route path="/directions" element={<DirectionsPage/>} />
             <Route path="/list" element={<EditChooserPage/>} />
             <Route path="/make/:route" element={<Editor/>} />
             <Route path="/make/:route/copy" element={<CopyEditor/>} />
