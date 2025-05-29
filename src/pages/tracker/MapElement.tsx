@@ -1,4 +1,3 @@
-
 import React from "react";
 import {MapContainer, Polyline, TileLayer} from "react-leaflet";
 import "./MapElement.css"
@@ -9,6 +8,7 @@ import * as G from "../../lib/GeoJSON";
 import {PointMarker} from "./PointMarker";
 import {BusDisplayMarker} from "./BusDisplayMarker.tsx";
 import {getBusInfoLineString} from "../../lib/BusInfo.ts";
+import {CenterControl} from "./CenterControl.tsx";
 
 interface MapElementProps {
     geojson: any,
@@ -16,17 +16,23 @@ interface MapElementProps {
     editor: boolean
 }
 
+interface MapElementState {
+    panToBusMarker: boolean
+}
 const DEFAULT_CLOSE_TOLERANCE_KM = 0.1
 
-export class MapElement extends React.Component<MapElementProps, {}> {
+export class MapElement extends React.Component<MapElementProps, MapElementState> {
 
     private myRef: React.RefObject<any>;
+
+    state = {
+        panToBusMarker: false,
+    }
 
     constructor(props: MapElementProps) {
         super(props);
 
-        this.myRef = React.createRef();
-
+        this.myRef = React.createRef<typeof MapContainer>();
     }
 
     OpenStreetMap() {
@@ -112,28 +118,36 @@ export class MapElement extends React.Component<MapElementProps, {}> {
 
     }
 
+    onClick() {
+        this.setState({panToBusMarker: !this.state.panToBusMarker});
+    }
+
     render() {
         let bounds = this.getBounds()
 
         let positions =  this.getPositions()
 
+        let icon = "/api/Maps-Center-Direction-icon.png"
         // setTimeout(() => {
         //     self.myRef.current.fitBounds(bounds)
         // }, 100);
         return (
             <MapContainer ref={this.myRef}
-                              attributionControl={true} style={{height: "100vh"}}
+                          attributionControl={true} style={{height: "100vh"}}
                           bounds={bounds}
                           scrollWheelZoom={true}
-                          >
+            >
                 <this.BikeBusMap/>
                 <Polyline positions={positions}/>
-                { this.getPointMarkers() }
-                { this.props.editor && <BusDisplayMarker geojson={this.props.geojson}/> }
-                { !this.props.editor && <BusMarker geojson={this.props.geojson} /> }
-                { this.props.enableTracker ? <TrackerControl geojson={this.props.geojson}/> : null}
+                {this.getPointMarkers()}
+                {this.props.editor && <BusDisplayMarker geojson={this.props.geojson}/>}
+                {!this.props.editor &&
+                    <BusMarker geojson={this.props.geojson} panMapToMarker={this.state.panToBusMarker}/>}
+                {this.props.enableTracker ? <TrackerControl geojson={this.props.geojson}/> : null}
+                <CenterControl icon={icon} on={this.state.panToBusMarker} onClick={() => this.onClick()}/>
             </MapContainer>
 
         )
     }
 }
+

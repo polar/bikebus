@@ -48,13 +48,14 @@ function CopyEditor() {
 ReactDOM.createRoot(root!).render(
     <BrowserRouter>
         <Routes>
+            <Route path="/mobile" element={<FrontPage api={"/api/tracker/routes"} displayNavigation={false}/>} />
             <Route path="/directions" element={<DirectionsPage/>} />
             <Route path="/list" element={<EditChooserPage/>} />
             <Route path="/make/:route" element={<Editor/>} />
             <Route path="/make/:route/copy" element={<CopyEditor/>} />
             <Route path="/make" element={<MakerPage/>} />
             <Route path="/op" element={<OperatePage api={"/api/tracker/routes"}/>} />
-            <Route path="/" element={<FrontPage api={"/api/tracker/routes"}/>} />
+            <Route path="/" element={<FrontPage api={"/api/tracker/routes"} displayNavigation={true}/>} />
             <Route path="/:name" element={<App op={false}/>} />
             <Route path="/:name/op" element={<App op={true}/>} />
         </Routes>

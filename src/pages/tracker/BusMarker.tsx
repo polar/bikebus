@@ -1,8 +1,8 @@
-
 import React from "react";
 import ReactDOMServer from "react-dom/server";
-import L, {divIcon} from "leaflet";
-import {Marker} from "react-leaflet";
+import L, {divIcon, LatLngExpression} from "leaflet";
+import {Marker, useMap} from "react-leaflet";
+import {getBusInfoLineString} from "../../lib/BusInfo.ts";
 
 export interface Coordinates {
     latitude: number,
@@ -15,12 +15,14 @@ export interface BusLocation extends Coordinates {
 
 interface BusMarkerProps {
     geojson: any,
+    panMapToMarker: boolean
 }
 
 interface BusMarkerState {
     location?: BusLocation;
 }
 
+const UPDATE_LOCATION_INTERVAL_SECONDS = 10
 
 export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
 
@@ -39,18 +41,18 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
     }
     busMarker(location: BusLocation){
         let icon = "/api/bus-icons/44-512.webp'"
-        let ls = this.props.geojson.features.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString");
+        let ls = getBusInfoLineString(this.props.geojson)
         if (ls && ls.properties.busIcon) {
             icon = ls.properties.busIcon
         }
-
+        let time = new Date(location.timestamp).toLocaleTimeString()
         return (
             <div className={``}>
                 <div className="marker-box marker-box-tracker">
                     <img src={icon} alt="marker"/>
                 </div>
                 <div className="">
-                    <div><b>{new Date(location.timestamp).toLocaleTimeString()}</b></div>
+                    <div><b>{time}</b></div>
                 </div>
             </div>
         );
@@ -72,7 +74,7 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
                     this.setState({location: undefined});
                     console.log(error)
                 });
-        }, 10000)
+        }, 1000 * UPDATE_LOCATION_INTERVAL_SECONDS);
     }
     componentWillUnmount() {
         if (this.intervalId) {
@@ -86,13 +88,16 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
             let element = ReactDOMServer.renderToString(s)
             let coordinates = [this.state.location.latitude, this.state.location.longitude]
             let divIcon1 = divIcon({className: '', html: element, iconAnchor: [0,35]})
+            let map = useMap()
+            if (this.props.panMapToMarker) {
+                map.panTo(coordinates as LatLngExpression);
+            }
             return (
                 <Marker position={coordinates as L.LatLngTuple} icon={divIcon1}/>
             )
         } else {
             return null
         }
-
 
     }
 }

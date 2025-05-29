@@ -4,7 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Nottingham"
+        "title": "Nottingham",
+        "busIcon": "/api/bus-icons/bike.png"
       },
       "geometry": {
         "type": "LineString",

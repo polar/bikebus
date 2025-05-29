@@ -1,7 +1,7 @@
 import "./FrontPage.css"
 import {Component} from "react";
 import {RouteOperationEntry} from "./RouteOperationEntry.tsx";
-import {Button} from "@mui/material";
+import {Button, ButtonGroup} from "@mui/material";
 
 export interface FrontPageOps {
     api: string
@@ -48,14 +48,16 @@ export default class OperatePage extends Component<FrontPageOps, FrontPageState>
 
     render() {
         return (
-            <div className="container">
+            <div className="container front-page">
                 <div>
-                    <img src={"/api/planets-align.jpg"} alt={"background"}/>
+                    <img className={"main-image"} src={"/api/planets-align.jpg"} alt={"background"}/>
                 </div>
                 {this.state.names ? this.getNames() : null}
-                <Button href={"/"}>home</Button>
-                <Button href={"/make"}>make</Button>
-                <Button href={"/list"}>list</Button>
+                <ButtonGroup>
+                    <Button href={"/"}>home</Button>
+                    <Button href={"/make"}>make</Button>
+                    <Button href={"/list"}>list</Button>
+                </ButtonGroup>
             </div>
         )
 
@@ -64,7 +66,7 @@ export default class OperatePage extends Component<FrontPageOps, FrontPageState>
     private getNames() {
         return (
             <div className={"overlay"}>
-                <h1 className={"name"}>Adiron, LLC</h1>
+                <h1 className={"name"}>Bike Bus</h1>
                 <table className={"container"}>
                     <tbody>
                     {this.state.names!.map(name => <RouteOperationEntry key={name} name={name}/>)}

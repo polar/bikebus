@@ -60,13 +60,43 @@ export class DirectionsPage extends React.Component<{}, {}> {
         return (
             <div>
                 <h1>Directions</h1>
-                <h2>Make New Route From Scratch</h2>
+                <h2>Operating the Route</h2>
                 <p>
-                    An easy way to make a route is to go you <a href="/make" target="_blank" rel="noopener noreferrer">https://adiron.com/make</a> or use "MAKE NEW" button above.
-                    You can go to the Open Street Maps site <a href="https://maps.openrouteservice.org" target="_blank" rel="noopener noreferrer">https://maps.openrouteservice.org</a>/
+                    If you are planning on tracking the group, open a browser on your phone and go to <a href={"/op"}>https://adiron.com/op</a>.
+                    This url will bring you to a list of routes on our system. To "operate" the route, click on the "Operate" link
+                    next to the route you want to operate.
                 </p>
                 <p>
-                    From there, you go to the "Directions" { this.DirectionsIcon() }
+                    You will be presented with the route displayed on the map, and there will be a green "GO" button in
+                    the top right corner. If you press that, you may be asked to share your location. If you deny this
+                    capability, it will not work. You must go to your settings and re-enable it.
+                </p>
+                <p>
+                    Another point, is that you must keep your phone alive while you are using it. Most phones have a setting
+                    where it has got a time to sleep setting. Most can go up to 30 minutes. Otherwise, you just have to
+                    keep touching your phone to keep the screen alive. You must keep the phone on the page for the tracking
+                    to work. If the phone goes to sleep it will stop sending locations to our servers.
+                </p>
+                <h2>Observing the Route Tracking</h2>
+                <p>
+                    If you are looking for the Bike Bus for the route, you just go to the home page <a href={"/"}>https://adiron.com</a> and
+                    you will be presented with a list of available routes. Click on the link for your desired
+                    route. If somebody is operating the route from their phone, you should see the bus icon on your
+                    map.  It updates about once every 10 seconds or so, so you should see it moving if the group is moving.
+                </p>
+                <h2>Make New Route From Scratch</h2>
+                <p>
+                    An easy way to make a route is to
+                    go <a href="/make" target="_blank" rel="noopener noreferrer">https://adiron.com/make</a> or use "MAKE NEW" button above.
+                    This brings you to the "Maker" page.
+                </p>
+                <p>
+                    You can go to the link <a href={"https://maps.openrouteservice.org"}>Create a New Route</a>, which
+                    is <a href="https://maps.openrouteservice.org" target="_blank" rel="noopener noreferrer">https://maps.openrouteservice.org</a>.
+                    It is the <a href={"https://openstreetmaps.org"}>Open Street Maps</a> Special Route Finding service. It has bike routes.
+                </p>
+                <p>
+                    On the Open Street Maps Route Service Page, you go to the "Directions" { this.DirectionsIcon() }
                     icon and create your route using this website. It is a bit tricky, but play with it.
                     It may require clicking on the "Map" icon { this.MapIcon()}
                     and then clicking on a location on the map, which will fill it in the sidebar.
@@ -83,7 +113,7 @@ export class DirectionsPage extends React.Component<{}, {}> {
                         <li>You may have to rename the file, depending if the file name already resides on your computer.</li>
                     </ul>
                     You are now ready to import this GeoJSON file into the Bike Bus system.
-                    Go to <a href={"/make"} target="_blank" rel="noopener noreferrer">https://adiron.com/make</a>
+                    Go to <a href={"/make"} target="_blank" rel="noopener noreferrer">https://adiron.com/make</a>.
                     <ul>
                         <li>Click on the "CHOOSE FILE" Button</li>
                         <li>Select your recently downloaded file</li>
@@ -97,7 +127,8 @@ export class DirectionsPage extends React.Component<{}, {}> {
                         <b>NOTE:</b> You cannot alter the route on this page! If you need to alter the route, you need to
                         go back to the <a href={"https://maps.openrouteservice.org"}>https://maps.openrouteservice.org</a>
                         and redo the download process. You may alter an existing route, but following the instructions
-                        in the next section.
+                        in the next section. Also, the server has a limit of holding onto 20 routes. You may be denied
+                        if there are too many.
                     </p>
                 </p>
                 <h2>Modifying an Existing Route</h2>
@@ -110,10 +141,11 @@ export class DirectionsPage extends React.Component<{}, {}> {
                     to alter the route.
                 </p>
                 <p>
-                    From the Bike Bus route maker page you click on to the "Download" { this.DownloadFileIcon() } button
+                    From the Bike Bus route maker page, click on to the "Download" { this.DownloadFileIcon() } button
                     and save the file to your computer.
-                    Next, you go to the Open Route Service, a convenience link is on the right
-                    entitled <a href={"https://maps.openrouteservice.org"}>Create a Route File</a>.
+                    Next, go to the Open Route Service.
+                    A convenience link <a href={"https://maps.openrouteservice.org"}>Create a New Route"</a> is
+                    on the right.
                 </p>
                 <p>
                     From there, do the following:
@@ -125,12 +157,14 @@ export class DirectionsPage extends React.Component<{}, {}> {
                 </ul>
                 <p>
                     This will load the existing route.
-                    You may now alter the route, add way points, move the
-                    start and stop. <b>However, it is tricky. You must be careful with mouse clicks.</b>
+                    You may now alter the route, add, remove, or alter waypoints, even move the
+                    start and stop points. <b>However, the site is tricky. You must be careful with mouse clicks.</b>
+                    Follow the below procedure.
                 </p>
                 <p>
-                    Once the file is imported, the side bar will contain the way points and the route
-                    will appear on the map. <b>This state is fragile.</b> You may have to replay the process if you
+                    Once the file is imported, the side bar will contain the waypoints and the route
+                    will appear on the map. However, the "Route details" section will not
+                    appear. <b>This state is fragile.</b> You may have to replay the process if you
                     mess it up.
                 </p>
                 <ul>

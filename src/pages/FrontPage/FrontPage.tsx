@@ -1,10 +1,11 @@
-import "./FrontPage.css"
+
 import {Component} from "react";
 import {RouteEntry} from "./RouteEntry.tsx";
-import {Button} from "@mui/material";
+import {Button, ButtonGroup} from "@mui/material";
 
 export interface FrontPageOps {
     api: string
+    displayNavigation: boolean
 }
 
 export interface FrontPageState {
@@ -47,14 +48,23 @@ export default class FrontPage extends Component<FrontPageOps, FrontPageState> {
 
     render() {
         return (
-            <div className="container">
+            <div className="container front-page">
                 <div>
-                    <img src={"/api/planets-align.jpg"} alt={"background"}/>
+                <div>
+                    <img className={"main-image"} src={"/api/planets-align.jpg"} alt={"background"}/>
                 </div>
                 {this.state.names ? this.getNames() : null}
-                <Button href={"/op"}>op</Button>
-                <Button href={"/make"}>make</Button>
-                <Button href={"/list"}>list</Button>
+                {
+                    this.props.displayNavigation &&
+                    <ButtonGroup className={"float-bottom"}>
+                        <Button href={"/make"}>make</Button>
+                        <Button href={"/list"}>list</Button>
+                    </ButtonGroup>
+                }
+                    <ButtonGroup className="float-bottom" >
+                        <Button href={"/op"}>OPERATOR</Button>
+                    </ButtonGroup>
+                </div>
             </div>
         )
 
@@ -62,7 +72,7 @@ export default class FrontPage extends Component<FrontPageOps, FrontPageState> {
 
     private getNames() {
         return <div className={"overlay"}>
-            <h1 className={"name"}>Adiron, LLC</h1>
+            <h1 className={"name"}>Bike Bus</h1>
             <table>
                 <tbody>
                 {this.state.names!.map(name => <RouteEntry key={name} name={name}/>)}

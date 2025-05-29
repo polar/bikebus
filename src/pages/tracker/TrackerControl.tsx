@@ -10,6 +10,7 @@ interface TrackerControlState {
     active: boolean
 }
 
+const UPDATE_LOCATION_INTERVAL_SECONDS = 1
 export class TrackerControl extends React.Component<TrackerControlProps, TrackerControlState> {
 
     state: TrackerControlState = {
@@ -88,7 +89,7 @@ export class TrackerControl extends React.Component<TrackerControlProps, Tracker
                 })
                 this.busLocation = undefined
             }
-        }, 1000)
+        }, 1000 * UPDATE_LOCATION_INTERVAL_SECONDS)
     }
 
     componentWillUnmount() {
