@@ -4,6 +4,8 @@ import { errorSchema } from "../schemas/error.ts";
 import { fastifyStatic } from "@fastify/static"
 import { fastifyCors} from "@fastify/cors";
 import {fastifyAutoload} from "@fastify/autoload";
+import {fastifyCookie} from "@fastify/cookie";
+import {fastifySession} from "@fastify/session";
 
 interface BuildOpts extends FastifyServerOptions {
     exposeDocs?: boolean,
@@ -13,7 +15,11 @@ interface BuildOpts extends FastifyServerOptions {
 
 const build = (opts?: BuildOpts): FastifyInstance => {
     const app = fastify(opts);
-
+    app.register(fastifyCookie)
+    app.register(fastifySession, {
+        secret: "cNaoPYAwF60HZJzkcNaoPYAwF60HZJzk",
+        cookie: { secure: false, maxAge: 60*60*60*24 },
+    })
     app.register(fastifyCors, {
         origin:  (origin, cb) => {
             if (origin === undefined) {

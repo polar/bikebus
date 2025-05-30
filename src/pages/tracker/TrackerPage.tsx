@@ -14,6 +14,21 @@ export class TrackerPage extends React.Component<TrackerProps> {
     constructor(props: TrackerProps) {
         super(props);
     }
+
+    componentDidMount() {
+        let name = getBusInfoTitle(this.props.geojson)
+        fetch(`/api/tracker/${name}/hello?type=tracker`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    console.error(data.message)
+                }
+            })
+            .catch((error: any) => {
+                console.error(error)
+            })
+    }
+
     render() {
         let name = getBusInfoTitle(this.props.geojson)
         return (

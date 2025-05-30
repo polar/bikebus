@@ -27,7 +27,7 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
     private myRef: React.RefObject<any>;
 
     state = {
-        panToBusMarker: false,
+        panToBusMarker: true,
     }
 
     constructor(props: MapElementProps) {
