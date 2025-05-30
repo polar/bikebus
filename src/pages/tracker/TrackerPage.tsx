@@ -10,10 +10,14 @@ interface TrackerProps {
 
 export class TrackerPage extends React.Component<TrackerProps> {
 
+
+    constructor(props: TrackerProps) {
+        super(props);
+    }
     render() {
         let name = getBusInfoTitle(this.props.geojson)
         return (
-            <div suppressHydrationWarning={true} className={"container"}>
+            <div suppressHydrationWarning={false}>
                 <Helmet>
                     <meta charSet="utf-8"/>
                     <link rel="icon" href="https://glitch.com/favicon.ico"/>
@@ -21,11 +25,13 @@ export class TrackerPage extends React.Component<TrackerProps> {
                     <meta property="og:updated_time" content="1686368955"/>
                     <meta property="og:type" content="website"/>
                 </Helmet>
-                <div className={"polar center"}>
-                    <div className={"map-title"}>{name}</div>
-                    <div>Dr. Polar Humenn</div>
+                <div className={"container"}>
+                    <div className={"polar center"}>
+                        <div className={"map-title"}>{name}</div>
+                        <div>Dr. Polar Humenn</div>
+                    </div>
+                    <MapElement geojson={this.props.geojson} editor={false} enableTracker={false}/>
                 </div>
-                <MapElement geojson={this.props.geojson} editor={false} enableTracker={false}/>
             </div>
         )
     }

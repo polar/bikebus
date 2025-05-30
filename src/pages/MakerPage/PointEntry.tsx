@@ -53,8 +53,8 @@ export class PointEntry extends React.Component<PointEntryProps, { update: numbe
 
     onChangeName(event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>): void {
         if (event.target) {
-            this.props.feature.properties.title = event.target.value;
-            this.setState({update: this.state.update + 1}, () => this.props.onChange && this.props.onChange())
+            this.props.feature.properties.label = event.target.value;
+            this.setState({update: this.state.update + 1})
         }
     }
 

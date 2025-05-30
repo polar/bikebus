@@ -9,6 +9,7 @@ import {PointMarker} from "./PointMarker";
 import {BusDisplayMarker} from "./BusDisplayMarker.tsx";
 import {getBusInfoLineString} from "../../lib/BusInfo.ts";
 import {CenterControl} from "./CenterControl.tsx";
+import {SvgIcon} from "@mui/material";
 
 interface MapElementProps {
     geojson: any,
@@ -137,6 +138,19 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
                           bounds={bounds}
                           scrollWheelZoom={true}
             >
+                {
+                    /**
+                     * We need to use an SvgIcon explicitly so MUI installs the propper CSS
+                     * for the SvgIcons used in the map element. The problem is that the
+                     * PointMarkers are dynamically generated, this.getPointMarkers(), So effectively, the declarative
+                     * system does not realize that the CSS is needed for the SvgIcon inside
+                     * the PointMarkers. And, apparently, the MUI system does not insert the CSS
+                     * for css-xxxxx-MuiSvgIcon-root into the head of the page.
+                     */
+                }
+                <SvgIcon style={{display:"none"}}>
+                    <svg></svg>
+                </SvgIcon>
                 <this.BikeBusMap/>
                 <Polyline positions={positions}/>
                 {this.getPointMarkers()}

@@ -12,7 +12,7 @@ interface BuildOpts extends FastifyServerOptions {
 }
 
 const build = (opts?: BuildOpts): FastifyInstance => {
-    const app = fastify({});
+    const app = fastify(opts);
 
     app.register(fastifyCors, {
         origin:  (origin, cb) => {

@@ -6,6 +6,7 @@ import {Button, ButtonGroup} from "@mui/material";
 export interface FrontPageOps {
     api: string
     displayNavigation: boolean
+    displayOperator: boolean
 }
 
 export interface FrontPageState {
@@ -61,9 +62,12 @@ export default class FrontPage extends Component<FrontPageOps, FrontPageState> {
                         <Button href={"/list"}>list</Button>
                     </ButtonGroup>
                 }
+                {
+                    this.props.displayOperator &&
                     <ButtonGroup className="float-bottom" >
                         <Button href={"/op"}>OPERATOR</Button>
                     </ButtonGroup>
+                }
                 </div>
             </div>
         )

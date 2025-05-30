@@ -37,11 +37,7 @@ export class PointMarker extends React.Component<PointMarkerProps> {
                 <div className="marker-box marker-box-center">
                     <SvgIcon>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
-                            <g id="Layer_2" data-name="Layer 2">
-                                <g id="key">
-                                    <circle cx="5" cy="5" r="2"/>
-                                </g>
-                            </g>
+                            <circle cx="5" cy="5" r="2"/>
                         </svg>
                     </SvgIcon>
 

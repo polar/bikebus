@@ -6,7 +6,8 @@
     left: 0;
     font-size: 15px;
     color: darkblue;
-    z-index: 10000;
+    z-index: 500;
+    padding-bottom: 60px;
 }
 
 .map-title {

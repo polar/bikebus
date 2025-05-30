@@ -11,7 +11,7 @@ export class OperatorPage extends React.Component<OperatorPageProps> {
     render() {
         let name = getBusInfoTitle(this.props.geojson);
         return (
-            <div suppressHydrationWarning={true} className={"container"}>
+            <div suppressHydrationWarning={true}>
                 <Helmet>
                     <meta charSet="utf-8"/>
                     <link rel="icon" href="https://glitch.com/favicon.ico"/>
@@ -21,11 +21,13 @@ export class OperatorPage extends React.Component<OperatorPageProps> {
 
                     <title>Bike Bus Tracker</title>
                 </Helmet>
-                <div className={"polar center"}>
-                    <div className={"map-title"}>{name}</div>
-                    <div>Dr. Polar Humenn</div>
+                <div className={"container"}>
+                    <div className={"polar center"}>
+                        <div className={"map-title"}>{name}</div>
+                        <div>Dr. Polar Humenn</div>
+                    </div>
+                    <MapElement enableTracker={true} editor={false} geojson={this.props.geojson}/>
                 </div>
-                <MapElement enableTracker={true} editor={false} geojson={this.props.geojson}/>
             </div>
         )
     }
