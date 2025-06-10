@@ -7,9 +7,11 @@ import {TrackerControl} from "./TrackerControl";
 import * as G from "../../lib/GeoJSON";
 import {PointMarker} from "./PointMarker";
 import {BusDisplayMarker} from "./BusDisplayMarker.tsx";
-import {getBusInfoLineString} from "../../lib/BusInfo.ts";
+import {getBusInfoLineString, getBusInfoTitle} from "../../lib/BusInfo.ts";
 import {CenterControl} from "./CenterControl.tsx";
 import {SvgIcon} from "@mui/material";
+import {MyLocation, MyLocationMarker} from "./LocationMarker.tsx";
+import {LocationControl} from "./LocationControl.tsx";
 
 interface MapElementProps {
     geojson: any,
@@ -19,21 +21,19 @@ interface MapElementProps {
 
 interface MapElementState {
     panToBusMarker: boolean
+    locationControl: string
 }
 const DEFAULT_CLOSE_TOLERANCE_KM = 0.1
 
 export class MapElement extends React.Component<MapElementProps, MapElementState> {
 
-    private myRef: React.RefObject<any>;
-
     state = {
         panToBusMarker: true,
+        locationControl: "location-control-off"
     }
 
     constructor(props: MapElementProps) {
         super(props);
-
-        this.myRef = React.createRef<typeof MapContainer>();
     }
 
     OpenStreetMap() {
@@ -119,12 +119,60 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
 
     }
 
-    onClick() {
-        this.setState({panToBusMarker: !this.state.panToBusMarker});
+    onCenterControlClick() {
+        if (!this.state.panToBusMarker) {
+            if (this.state.locationControl === "location-control-center") {
+                this.setState({locationControl: "location-control-on", panToBusMarker: true})
+            } else if (this.state.locationControl === "location-control-on") {
+                this.setState({panToBusMarker: true})
+            } else if (this.state.locationControl === "location-control-off") {
+                this.setState({panToBusMarker: true})
+            }
+        } else {
+            this.setState({panToBusMarker: false})
+        }
+    }
+
+    onLocationControlClick() {
+        if (this.state.locationControl === "location-control-off") {
+            this.setState({locationControl: "location-control-on"})
+        } else if (this.state.locationControl === "location-control-on") {
+            this.setState({locationControl: "location-control-center", panToBusMarker: false})
+        } else if (this.state.locationControl === "location-control-center") {
+            this.setState({locationControl: "location-control-off"})
+        }
+    }
+
+    lastLocation?: MyLocation
+
+    onLocationChange(location: MyLocation) {
+        this.lastLocation = location
+    }
+    componentDidMount() {
+    }
+
+    componentWillUnmount() {
+    }
+
+    setupMapEvent(map: any) {
+        if (map) {
+            map.on("dragend", (_x: any) => {
+                if (this.state.locationControl === "location-control-center") {
+                    this.setState({locationControl: "location-control-on"})
+                }
+            })
+            map.on("zoomend", (_x: any) => {
+                if (this.state.locationControl === "location-control-center") {
+                    this.setState({locationControl: "location-control-on"})
+                }
+            })
+        }
     }
 
     render() {
         let bounds = this.getBounds()
+
+        let name = getBusInfoTitle(this.props.geojson) || "notsupposedtohappen"
 
         let positions =  this.getPositions()
 
@@ -133,7 +181,7 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
         //     self.myRef.current.fitBounds(bounds)
         // }, 100);
         return (
-            <MapContainer ref={this.myRef}
+            <MapContainer ref={(ref) => this.setupMapEvent(ref)}
                           attributionControl={true} style={{height: "100vh"}}
                           bounds={bounds}
                           scrollWheelZoom={true}
@@ -155,12 +203,27 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
                 <Polyline positions={positions}/>
                 {this.getPointMarkers()}
                 {this.props.editor && <BusDisplayMarker geojson={this.props.geojson}/>}
-                {!this.props.editor &&
-                    <BusMarker geojson={this.props.geojson} panMapToMarker={this.state.panToBusMarker}/>}
-                {this.props.enableTracker ? <TrackerControl geojson={this.props.geojson}/> : null}
-                <CenterControl icon={icon} on={this.state.panToBusMarker} onClick={() => this.onClick()}/>
+                {
+                    !this.props.editor &&
+                    <BusMarker geojson={this.props.geojson}
+                               panMapToMarker={this.state.panToBusMarker}/>
+                }
+                {this.props.enableTracker && <TrackerControl geojson={this.props.geojson}/>}
+                <CenterControl icon={icon} on={this.state.panToBusMarker} onClick={() => this.onCenterControlClick()}/>
+                {
+                    !this.props.enableTracker &&
+                        <LocationControl icon={icon}
+                                         state={this.state.locationControl}
+                                         onClick={() => this.onLocationControlClick()}/>
+                }
+                {
+                    !this.props.enableTracker && this.state.locationControl !== "location-control-off" &&
+                        <MyLocationMarker location={this.lastLocation}
+                                          panMapToMarker={this.state.locationControl === "location-control-center"}
+                                          onLocationChange={(l) => this.onLocationChange(l)}
+                                          name={name}/>
+                }
             </MapContainer>
-
         )
     }
 }

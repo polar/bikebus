@@ -144,11 +144,55 @@ and (min-resolution:.001dpcm) {
         height: 40px;
         width: 40px;
         border-radius: 40px;
-        background-color: #c5b9ce;
+        background-color: #9097dc;
         border-width: 2px;
     }
 
     .center-button-on img {
+        position: relative;
+        top: 2px
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+    .location-control-off {
+        background-color: white;
+        position: absolute;
+        left: 10px;
+        top: 85vh;
+        z-index: 999;
+        height: 40px;
+        width: 40px;
+        border-width: 0px;
+        border-radius: 40px;
+    }
+
+    .location-control-on {
+        position: absolute;
+        left: 10px;
+        top: 85vh;
+        z-index: 999;
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        background-color: #c5b9ce;
+        border-width: 2px;
+    }
+
+    .location-control-center {
+        position: absolute;
+        left: 10px;
+        top: 85vh;
+        z-index: 999;
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        background-color: #9097dc;
+        border-width: 2px;
+    }
+
+    .location-control img {
         position: relative;
         top: 2px
     }

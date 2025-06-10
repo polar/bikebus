@@ -79,15 +79,16 @@ app.addHook('preHandler', function (request, _reply, done) {
         let log = {
             type: "request",
             time: new Date().getTime(),
+            date: new Date().toTimeString(),
             requestId: request.id,
             client: request.headers["x-forwarded-for"],
             method: request.method,
-            user_agent: request.headers["user-agent"],
             url: request.url,
-            path: request.routeOptions.url,
             parameters: request.params,
-            sessionId: request.session && request.session.sessionId,
             body: request.body,
+            user_agent: request.headers["user-agent"],
+            path: request.routeOptions.url,
+            sessionId: request.session && request.session.sessionId,
         }
         fs.appendFileSync(`logs/${request.session.sessionId}.json.log`, JSON.stringify(log) + "\n")
     }
@@ -109,18 +110,19 @@ app.addHook('onSend', function (request, reply, payload, done) {
             let log = {
                 type: "response",
                 time: new Date().getTime(),
+                date: new Date().toTimeString(),
                 requestId: request.id,
                 client: request.headers["x-forwarded-for"],
                 method: request.method,
-                user_agent: request.headers["user-agent"],
+                statusCode: reply.statusCode,
+                responseTime: reply.elapsedTime,
                 url: request.url,
                 path: request.routeOptions.url,
                 parameters: request.params,
-                sessionId: request.session && request.session.sessionId,
                 body: request.body,
-                responseTime: reply.elapsedTime,
-                statusCode: reply.statusCode,
-                payload: payloadBody
+                payload: payloadBody,
+                user_agent: request.headers["user-agent"],
+                sessionId: request.session && request.session.sessionId,
             }
             fs.appendFileSync(`logs/${request.session.sessionId}.json.log`, JSON.stringify(log) + "\n")
         }
