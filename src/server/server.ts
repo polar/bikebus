@@ -4,6 +4,7 @@ import build from "./build.ts";
 
 import {DEFAULT_ROUTES_LIMIT, RoutesCache} from "../lib/RoutesCache.ts";
 import fs from "node:fs";
+import {uniqueNamesGenerator, names} from "unique-names-generator";
 
 const loggerConfig : FastifyLoggerOptions = {
     // @ts-ignore
@@ -49,6 +50,7 @@ const SERVER_ROUTES_LIMIT = DEFAULT_ROUTES_LIMIT
 let exposeDocs = true;
 let cache = new RoutesCache(SERVER_ROUTES_LIMIT);
 
+let namesGenerator = () => uniqueNamesGenerator({dictionaries: [names]})
 cache.initialize();
 cache.startUpdate();
 
@@ -58,7 +60,8 @@ if (process.env.NODE_ENV === "production") {
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build({
     logger: loggerConfig,
     exposeDocs: exposeDocs,
-    cache: cache
+    cache: cache,
+    idGenerator: namesGenerator
 });
 
 let listenOpts = {

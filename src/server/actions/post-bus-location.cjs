@@ -3,7 +3,7 @@ module.exports = (fastify, options, next ) => {
 
     async function handleRequest(request , reply ) {
 
-        const {route} = request.params;
+        const {route, user} = request.params;
         if (!cache.has(route)) {
             return reply
                 .code(404)
@@ -18,9 +18,12 @@ module.exports = (fastify, options, next ) => {
         }
         cache.setLocation(route, location)
 
+
+        let ans = {location: location, requestUser: user, sessionUser: request.session.user}
+
         return reply.code(200)
             .type("application/json")
-            .send(JSON.stringify(location))
+            .send(JSON.stringify(ans))
     }
 
     cache = options.cache

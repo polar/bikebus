@@ -10,7 +10,7 @@ import {fastifySession} from "@fastify/session";
 interface BuildOpts extends FastifyServerOptions {
     exposeDocs?: boolean,
     cache?: any
-    routes?: string[]
+    idGenerator: () => string
 }
 
 const build = (opts?: BuildOpts): FastifyInstance => {
@@ -18,7 +18,7 @@ const build = (opts?: BuildOpts): FastifyInstance => {
     app.register(fastifyCookie)
     app.register(fastifySession, {
         secret: "cNaoPYAwF60HZJzkcNaoPYAwF60HZJzk",
-        cookie: { secure: false, maxAge: 60*60*60*24 },
+        cookie: { secure: false, maxAge: 1000*60*60*60*24 },
     })
     app.register(fastifyCors, {
         origin:  (origin, cb) => {
@@ -46,7 +46,7 @@ const build = (opts?: BuildOpts): FastifyInstance => {
         dir: `${import.meta.dirname}/actions`,
         options:{
             cache: opts!.cache,
-            routes: opts!.routes
+            idGenerator: opts!.idGenerator
         }
     })
 

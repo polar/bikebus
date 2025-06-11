@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "server": "/home/polar/.nvm/versions/node/v23.11.0/bin/node --import file:/snap/webstorm/459/plugins/nodeJS/js/ts-file-loader/node_modules/tsx/dist/loader.cjs /home/polar/WebstormProjects/bikebus/src/server/server.ts"
+    "server": "/home/polar/.nvm/versions/node/v23.11.0/bin/node --import file:/snap/webstorm/current/plugins/nodeJS/js/ts-file-loader/node_modules/tsx/dist/loader.cjs /home/polar/WebstormProjects/bikebus/src/server/server.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -37,7 +37,8 @@
     "react-leaflet": "^5.0.0",
     "react-router": "^7.5.0",
     "react-window": "^1.8.11",
-    "use-immer": "^0.11.0"
+    "use-immer": "^0.11.0",
+    "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
     "@fastify/vite": "^8.0.0",

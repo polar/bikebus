@@ -11,9 +11,18 @@ module.exports = (fastify, options, next) => {
                 .send('Route not found.')
         }
 
-        const {type} = request.query
+        const {type, user} = request.query
 
-        return reply.code(200).type('application/json').send({type: type, route: route})
+        let userName = user
+        if (!user && request.session.user) {
+            userName = request.session.user
+        } else {
+            userName = options.idGenerator()
+            reply.session.user = userName
+        }
+
+
+        return reply.code(200).type('application/json').send({type: type, user: userName, route: route})
     }
 
     cache = options.cache
