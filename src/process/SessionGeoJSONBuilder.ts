@@ -17,6 +17,7 @@ export class SessionGeoJSONBuilder extends BaseSession {
         this.coordinates = [...this.session.coordinates];
         this.timestamps = [...this.session.timestamps];
         this.deleteCalled = this.session.deleteCalled;
+        this.names = this.session.names;
         this.minMetersPerSecond = opts.minMetersPerSecond !== undefined ? opts.minMetersPerSecond : this.minMetersPerSecond;
         this.straightLineThreshold = opts.straightLineThreshold !== undefined ? opts.straightLineThreshold : this.straightLineThreshold;
         this.minLineLength = opts.minLineLength !== undefined ? opts.minLineLength : this.minLineLength;
@@ -46,6 +47,7 @@ export class SessionGeoJSONBuilder extends BaseSession {
             averageTimeDifference: this.getAverageTimeDifference(),
             summary: this.getSummary(),
             deleteCalled: this.deleteCalled,
+            names: this.names,
             timestamps: this.timestamps
         }
     }
@@ -58,7 +60,7 @@ export class SessionGeoJSONBuilder extends BaseSession {
         return {
             type: "Feature",
             properties: {
-                name: this.route,
+                route: this.route,
                 sessionId: this.sessionId,
                 numCoordinates: this.coordinates.length,
                 startTime: new Date(this.startTime).toTimeString(),
@@ -66,6 +68,7 @@ export class SessionGeoJSONBuilder extends BaseSession {
                 duration: this.getSessionDuration(),
                 flyDistance: this.getFlyDistance(),
                 summary: this.getSummary(),
+                names: this.names.reduce((acc, name) => acc.includes(name) ? acc : [...acc,name], [] as string[]),
                 deleteCalled: this.deleteCalled,
             },
             geometry: {
@@ -122,7 +125,7 @@ export class SessionGeoJSONBuilder extends BaseSession {
             timestamps = timestamps.concat(this.timestamps.slice(l.start, l.end))
 
         })
-        let session = new BaseSession(this.sessionId, this.route, this.coordinates, this.timestamps, this.deleteCalled)
+        let session = new BaseSession(this.sessionId, this.route, coords, timestamps, this.deleteCalled)
         return new SessionGeoJSONBuilder({session: session, minMetersPerSecond: this.minMetersPerSecond, straightLineThreshold: this.straightLineThreshold, minLineLength: this.minLineLength, distanceThreshold: this.distanceThreshold})
     }
 

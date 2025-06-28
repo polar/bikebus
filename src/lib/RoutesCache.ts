@@ -61,7 +61,7 @@ export class RoutesCache {
        });
     }
 
-    has(route: string) {
+    has(route?: string) {
         return this.cache.get(route);
     }
 

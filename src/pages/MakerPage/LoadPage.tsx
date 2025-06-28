@@ -6,6 +6,7 @@ import {ensureBusInfoTitle} from "../../lib/BusInfo.ts";
 interface LoadPageProps {
     name?: string
     copy: boolean
+    prefix: string
 }
 
 interface LoadPageState {
@@ -44,18 +45,18 @@ export class LoadPage extends React.Component<LoadPageProps, LoadPageState> {
             if (this.state.geojson) {
                 if (this.props.copy) {
                     return (
-                        <MakerPage geojson={this.state.geojson} name={this.props.name}/>
+                        <MakerPage prefix={this.props.prefix} geojson={this.state.geojson} name={this.props.name}/>
                     )
                 } else {
                     return (
-                        <MakerPage geojson={this.state.geojson}/>
+                        <MakerPage prefix={this.props.prefix} geojson={this.state.geojson}/>
                     )
                 }
             }
             if (this.state.error != "") {
                 return <div><div>Error getting {this.props.name},  {this.state.error}</div>
                 <ButtonGroup>
-                    <Button href={"/make"}>Make</Button>
+                    <Button href={`${this.props.prefix}/make`}>Make</Button>
                 </ButtonGroup>
                 </div>
             }
@@ -63,7 +64,7 @@ export class LoadPage extends React.Component<LoadPageProps, LoadPageState> {
                 <div> Loading....</div>
             )
         } else {
-            return (<MakerPage/>)
+            return (<MakerPage prefix={this.props.prefix}/>)
         }
     }
 

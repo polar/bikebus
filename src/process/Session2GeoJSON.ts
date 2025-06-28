@@ -475,11 +475,11 @@
 //         this.name = `${this.route} - ${this.sessions.length} sessions`
 //         this.startTime = sessions[0].startTime
 //         this.endTime = sessions[sessions.length - 1].endTime
-//         this.coordinates = sessions.reduce((a, b) => [...a, ...b.coordinates], [] as number[][])
+//         this.coordinates = sessions.refine((a, b) => [...a, ...b.coordinates], [] as number[][])
 //         this.startTime = sessions[0].startTime
 //         this.endTime = sessions[sessions.length - 1].endTime
-//         this.coordinates = sessions.reduce((a, b) => [...a, ...b.coordinates], [] as number[][])
-//         this.timestamps = sessions.reduce((a, b) => [...a, ...b.timestamps], [] as number[])
+//         this.coordinates = sessions.refine((a, b) => [...a, ...b.coordinates], [] as number[][])
+//         this.timestamps = sessions.refine((a, b) => [...a, ...b.timestamps], [] as number[])
 //     }
 //
 //     getMovingCumulative(minMetersPerSecond: number) : number[] {
@@ -626,13 +626,13 @@
 //         return this.coordinates.length > 0
 //     }
 //     getFlyDistance() : number {
-//         return this.sessions.reduce((a, b) => a + b.getFlyDistance(), 0)
+//         return this.sessions.refine((a, b) => a + b.getFlyDistance(), 0)
 //     }
 //     getSessionDuration() : number {
-//         return this.sessions.reduce((a, b) => a + b.getSessionDuration(), 0)
+//         return this.sessions.refine((a, b) => a + b.getSessionDuration(), 0)
 //     }
 //     getAverageTimeDifference() : number {
-//         return this.sessions.reduce((a, b) => a + b.getAverageTimeDifference(), 0)/this.sessions.length
+//         return this.sessions.refine((a, b) => a + b.getAverageTimeDifference(), 0)/this.sessions.length
 //     }
 //
 //     reduceLines(lines: Line[], distanceThreshold: number) {
@@ -654,7 +654,7 @@
 //     // @ts-ignore
 //     toFeatureCollection(minMetersPerSecond: number = 4) {
 //
-//         // want to reduce lines so that there are no clusters.
+//         // want to refine lines so that there are no clusters.
 //
 //         let [_pivots,lines,pivotSetions] = findPivotsByStraightLines(this.coordinates, this.timestamps, 3, 30, 80, 150)
 //         // @ts-ignore
@@ -787,7 +787,7 @@ let processor = new SessionProcessor({
     minMetersPerSecond: 4,
     straightLineThreshold: 20,
     minLineLength: 4,
-    distanceThreshold: 100
+    distanceThreshold: 32
 })
 
 processor.processLogsToSessions("logs", "logsessions")

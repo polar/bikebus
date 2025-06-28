@@ -1,13 +1,19 @@
 import React from "react";
 import {Button, ButtonGroup, ListItemButton} from "@mui/material";
 import {DirectionsPage} from "./DirectionsPage.tsx";
+import {HOST} from "../../Settings.ts"
+import "./EditChooserPage.css"
+
+interface EditChooserPageProps {
+    prefix: string
+}
 
 interface EditChooserPageState {
     routes: string[]
 }
 const PAGE_UPDATE_SECONDS = 10
 
-export class EditChooserPage extends React.Component<{},EditChooserPageState> {
+export class EditChooserPage extends React.Component<EditChooserPageProps,EditChooserPageState> {
 
     state =  {
         routes: []
@@ -44,22 +50,22 @@ export class EditChooserPage extends React.Component<{},EditChooserPageState> {
     render() {
         if (this.state.routes) {
             return (
-                <div>
+                <div className={"scrollable-page"}>
                     <h1>Edit Route</h1>
                     <ButtonGroup size={"small"} orientation={"vertical"}>
                         {
                             this.state.routes.map(
                                 (route: string) =>
-                                    <ListItemButton dense={true} href={`/make/${route}`}>{route}</ListItemButton>
+                                    <ListItemButton dense={true} href={`${this.props.prefix}/make/${route}`}>{route}</ListItemButton>
 
                             )
                         }
                     </ButtonGroup>
                     <h1>New</h1>
                     <ButtonGroup size={"small"} orientation={"vertical"}>
-                        <Button href={"/make"}>Make New</Button>
+                        <Button href={`${this.props.prefix}/make`}>Make New</Button>
                     </ButtonGroup>
-                    <DirectionsPage></DirectionsPage>
+                    <DirectionsPage prefix={this.props.prefix} host={HOST}/>
                 </div>
             )
         }

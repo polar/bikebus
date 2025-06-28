@@ -6,6 +6,7 @@ import "./TrackerPage.css"
 
 interface TrackerProps {
     geojson: any
+    prefix: string
 }
 
 export class TrackerPage extends React.Component<TrackerProps> {
@@ -45,7 +46,7 @@ export class TrackerPage extends React.Component<TrackerProps> {
                         <div className={"map-title"}>{name}</div>
                         <div>Dr. Polar Humenn</div>
                     </div>
-                    <MapElement geojson={this.props.geojson} editor={false} enableTracker={false}/>
+                    <MapElement prefix={this.props.prefix} geojson={this.props.geojson} editor={false} enableTracker={false}/>
                 </div>
             </div>
         )

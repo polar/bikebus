@@ -5,6 +5,8 @@ import {getBusInfoTitle} from "../../lib/BusInfo.ts";
 
 interface OperatorPageProps {
     geojson: any
+    prefix: string
+    enableTracker: boolean
 }
 export class OperatorPage extends React.Component<OperatorPageProps> {
 
@@ -39,7 +41,7 @@ export class OperatorPage extends React.Component<OperatorPageProps> {
                         <div className={"map-title"}>{name}</div>
                         <div>Dr. Polar Humenn</div>
                     </div>
-                    <MapElement enableTracker={true} editor={false} geojson={this.props.geojson}/>
+                    <MapElement prefix={this.props.prefix} enableTracker={this.props.enableTracker} editor={false} geojson={this.props.geojson}/>
                 </div>
             </div>
         )

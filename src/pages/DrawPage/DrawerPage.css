@@ -1,0 +1,12 @@
+
+.dark {
+    color: white;
+    background-color: rgb(43, 73, 110);
+}
+.dark button {
+    color: white;
+}
+
+.raise-over-map {
+    z-index: 1000;
+}

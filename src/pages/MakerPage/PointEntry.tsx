@@ -101,7 +101,7 @@ export class PointEntry extends React.Component<PointEntryProps, { update: numbe
     }
 
     render() {
-        let text = this.props.feature.properties.name || this.props.feature.properties.label.split(",")[0]
+        let text = this.props.feature.properties.name || this.props.feature.properties.label?.split(",")[0]
         // @ts-ignore
         return (
             <div style={{background: "rgba(230,30,40,0.1)"}}>

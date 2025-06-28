@@ -13,7 +13,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@fastify/autoload": "^6.3.0",
+    "@fastify/autoload": "^6.3.1",
     "@fastify/cookie": "^11.0.2",
     "@fastify/cors": "^11.0.1",
     "@fastify/session": "^11.1.0",
@@ -23,8 +23,8 @@
     "@mui/icons-material": "^7.1.0",
     "@mui/material": "^7.1.0",
     "@types/leaflet": "^1.9.17",
-    "fastify": "^5.2.2",
-    "fastify-cookie": "^5.6.1",
+    "fastify": "^5.4.0",
+    "fastify-cookie": "^5.7.0",
     "font-awesome": "^4.7.0",
     "leaflet": "^1.9.4",
     "geolib": "^3.3.4",
@@ -38,9 +38,13 @@
     "react-router": "^7.5.0",
     "react-window": "^1.8.11",
     "use-immer": "^0.11.0",
-    "unique-names-generator": "^4.7.1"
+    "unique-names-generator": "^4.7.1",
+    "xmldom": "^0.6.0",
+    "@tmcw/togeojson": "^7.1.2"
   },
   "devDependencies": {
+    "@types/xmldom": "^0.1.34",
+    "@types/geojson": "^7946.0.16",
     "@fastify/vite": "^8.0.0",
     "@types/line-reader": "^0.0.37",
     "@types/nano-cache": "^1.1.4",

@@ -4,6 +4,7 @@ import {getPreciseDistance} from "geolib";
 export class BaseSession {
     sessionId: string
     route: string
+    names: string[] = []
     coordinates: LineCoords = []
     timestamps: number[] = []
     deleteCalled: boolean = false
@@ -26,7 +27,7 @@ export class BaseSession {
     static combine(sessions: BaseSession[]): BaseSession {
         let combined = new BaseSession(sessions[0].sessionId, sessions[0].route)
         for (let i = 0; i < sessions.length; i++) {
-            combined.addSession(sessions[i].coordinates, sessions[i].timestamps)
+            combined.addSession(sessions[i].coordinates, sessions[i].timestamps, sessions[i].names)
         }
         return combined
     }
@@ -36,18 +37,25 @@ export class BaseSession {
     }
 
     addCoordinate(payload: any) {
-        this.coordinates.push([payload.longitude, payload.latitude])
-        this.timestamps.push(payload.timestamp)
+        if (payload.location) {
+            this.coordinates.push([payload.location.longitude, payload.location.latitude])
+            this.timestamps.push(payload.location.timestamp)
+        } else {
+            this.coordinates.push([payload.longitude, payload.latitude])
+            this.timestamps.push(payload.timestamp)
+        }
+        this.names = this.names.includes(payload.sessionUser) ? this.names : [...this.names, payload.sessionUser]
         return this
     }
 
-    addSession(coordinates: LineCoords, timestamps: number[]) {
+    addSession(coordinates: LineCoords, timestamps: number[], names: string[]) {
         if (this.coordinates.length != this.timestamps.length) {
             throw new Error("Malformed Session: Cannot add session with different lengths for coordinates and timestamps")
         }
 
         this.coordinates = this.coordinates. concat(coordinates)
         this.timestamps = this.timestamps.concat(timestamps)
+        this.names = this.names.concat(names).reduce((a,b) => a.includes(b) ? a : [...a,b], [] as string[])
         return this
     }
 

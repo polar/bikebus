@@ -1,7 +1,6 @@
 import React from "react";
 
 interface CenterControlProps {
-    icon: string;
     on: boolean;
     onClick: () => void;
 }
@@ -9,10 +8,11 @@ interface CenterControlProps {
 export class CenterControl extends React.Component<CenterControlProps, {}> {
 
     render() {
+        let icon = "/api/Maps-Center-Direction-icon.png"
         return (
             <button
                 className={"leaflet-control " + (this.props.on ? "center-button-on" : "center-button")}>
-                <img src={this.props.icon} alt={"center"} height={"20px"} onClick={_ => this.props.onClick()}/>
+                <img src={icon} alt={"center"} height={"20px"} onClick={_ => this.props.onClick()}/>
             </button>
         )
     }

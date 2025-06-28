@@ -4,7 +4,7 @@ import {RouteOperationEntry} from "./RouteOperationEntry.tsx";
 import {Button, ButtonGroup} from "@mui/material";
 
 export interface FrontPageOps {
-    api: string
+    prefix: string
 }
 
 export interface FrontPageState {
@@ -37,7 +37,7 @@ export default class OperatePage extends Component<FrontPageOps, FrontPageState>
     }
 
     private updatePage() {
-        return fetch(this.props.api)
+        return fetch('/api/tracker/routes')
             .then(res => res.json() as unknown as string[])
             .then(data =>  this.setAState({names: data}))
     }
@@ -54,9 +54,9 @@ export default class OperatePage extends Component<FrontPageOps, FrontPageState>
                 </div>
                 {this.state.names ? this.getNames() : null}
                 <ButtonGroup>
-                    <Button href={"/"}>home</Button>
-                    <Button href={"/make"}>make</Button>
-                    <Button href={"/list"}>list</Button>
+                    <Button href={`/${this.props.prefix}`}>home</Button>
+                    <Button href={`/${this.props.prefix}make`}>make</Button>
+                    <Button href={`/${this.props.prefix}list`}>list</Button>
                 </ButtonGroup>
             </div>
         )
@@ -69,7 +69,7 @@ export default class OperatePage extends Component<FrontPageOps, FrontPageState>
                 <h1 className={"name"}>Bike Bus</h1>
                 <table className={"container"}>
                     <tbody>
-                    {this.state.names!.map(name => <RouteOperationEntry key={name} name={name}/>)}
+                    {this.state.names!.map(name => <RouteOperationEntry prefix={this.props.prefix} key={name} name={name}/>)}
                     </tbody>
                 </table>
             </div>

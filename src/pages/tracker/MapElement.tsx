@@ -17,6 +17,7 @@ interface MapElementProps {
     geojson: any,
     enableTracker: boolean,
     editor: boolean
+    prefix: string
 }
 
 interface MapElementState {
@@ -175,8 +176,6 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
         let name = getBusInfoTitle(this.props.geojson) || "notsupposedtohappen"
 
         let positions =  this.getPositions()
-
-        let icon = "/api/Maps-Center-Direction-icon.png"
         // setTimeout(() => {
         //     self.myRef.current.fitBounds(bounds)
         // }, 100);
@@ -209,11 +208,10 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
                                panMapToMarker={this.state.panToBusMarker}/>
                 }
                 {this.props.enableTracker && <TrackerControl geojson={this.props.geojson}/>}
-                <CenterControl icon={icon} on={this.state.panToBusMarker} onClick={() => this.onCenterControlClick()}/>
+                <CenterControl  on={this.state.panToBusMarker} onClick={() => this.onCenterControlClick()}/>
                 {
                     !this.props.enableTracker &&
-                        <LocationControl icon={icon}
-                                         state={this.state.locationControl}
+                        <LocationControl state={this.state.locationControl}
                                          onClick={() => this.onLocationControlClick()}/>
                 }
                 {

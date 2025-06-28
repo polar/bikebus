@@ -2,7 +2,12 @@ import React from "react";
 import {SvgIcon} from "@mui/material";
 
 
-export class DirectionsPage extends React.Component<{}, {}> {
+interface DirectionsPageProps {
+    prefix: string
+    host: string
+}
+
+export class DirectionsPage extends React.Component<DirectionsPageProps, {}> {
 
     DirectionsIcon() {
         return (
@@ -59,45 +64,86 @@ export class DirectionsPage extends React.Component<{}, {}> {
     render() {
         return (
             <div>
-                <h1>Directions</h1>
+                <h1>Directions for Browsers (Phone or Desktop)</h1>
+                <h2>Observing the Route Tracking</h2>
+                <p>
+                    If you are looking for the Bike Bus for a particular route, you just go to
+                    the home page <a href={`${this.props.prefix}/`}>https://{this.props.host}</a> and
+                    you will be presented with a list of available routes. Click on the link for your desired
+                    route. If somebody is operating the route from their phone, you should see the bus icon on your
+                    map.  It updates about once every 10 seconds or so, so you should see it moving if the group is
+                    moving. If the bus icon disappears, it means that the group has stopped the tracker.
+                </p>
                 <h2>Operating the Route</h2>
                 <p>
-                    If you are planning on tracking the group, open a browser on your phone and go to <a href={"/op"}>https://adiron.com/op</a>.
+                    If you are planning on tracking the group, open a browser on your phone and go to <a href={`${this.props.prefix}/op`}>https://{this.props.host}/op</a>.
                     This url will bring you to a list of routes on our system. To "operate" the route, click on the "Operate" link
                     next to the route you want to operate.
                 </p>
                 <p>
                     You will be presented with the route displayed on the map, and there will be a green "GO" button in
-                    the top right corner. If you press that, you may be asked to share your location. If you deny this
-                    capability, it will not work. You must go to your settings and re-enable it.
+                    the top right corner. If you press the "GO" button, you may be asked to share your location.
+                    If you deny this capability, tracking will not work. You must go to your settings and re-enable it.
                 </p>
                 <p>
-                    Another point, is that you must keep your phone alive while you are using it. Most phones have a setting
-                    where it has got a time to sleep setting. Most can go up to 30 minutes. Otherwise, you just have to
-                    keep touching your phone to keep the screen alive. You must keep the phone on the page for the tracking
-                    to work. If the phone goes to sleep it will stop sending locations to our servers.
+                    You must keep your phone alive while you are using it. Most phones have a 'time to sleep' setting.
+                    Most phones can be set to stay alive for up to 30 minutes. Otherwise, you just have to
+                    keep touching your phone to keep the screen alive. You must keep the phone on the page for the
+                    tracking to work. If the phone goes to sleep it will stop sending locations to our servers.
                 </p>
-                <h2>Observing the Route Tracking</h2>
                 <p>
-                    If you are looking for the Bike Bus for the route, you just go to the home page <a href={"/"}>https://adiron.com</a> and
-                    you will be presented with a list of available routes. Click on the link for your desired
-                    route. If somebody is operating the route from their phone, you should see the bus icon on your
-                    map.  It updates about once every 10 seconds or so, so you should see it moving if the group is moving.
+                    <b>NOTE:</b> Experience has told us that the iPhone is not good at staying alive and to keep
+                    reporting your location. In using a phone's browser, the Android is better at operating the route
+                </p>
+                <h2>Android App</h2>
+                <p>
+                    There will soon be an Android app on the Google Store for Bike Bus. It is called "Bike Bus".
+                    Tracking is much better if you are
+                    using the Android app as it uses native Android capabilities to track your location.
+                </p>
+                <p>
+                    The Android app has the ability to turn on tracking and have it work in the background. So, you
+                    can start tracking by hitting the "GO" button and then you
+                    can put your phone in a pocket and not worry about it. The app will stop after one hour from the
+                    minute you hit the "GO" button. You may reset it at any time by hitting the "GO" button to stop
+                    tracking and immediately hit the "GO" button again to track for another hour. The time limit is
+                    so that if you forget about it, the app will not run your battery down by retrieving locations
+                    in the background from the GPS unit on the phone and sending them to our servers.
+                </p>
+                <p>
+                    The Android App may also be used to simply observe the route. And this may be all you need. However,
+                    there will be buttons to operate the route, draw routes, etc. You may enabled operation of routes
+                    by hitting on a special invisible button enough times to enable the operation screens.
+
+                    The Android app will be available on the Google Play Store
+                    at <a href="https://play.google.com/store/apps/details?id=com.adiron.bikebus">https://play.google.com/store/apps/details?id=com.adiron.bikebus</a>.
+                    It will be free.
+                </p>
+                <h2>No iPhone App!</h2>
+                <p>
+                    If you are looking for an iPhone app, there will not be one. Apple Development is too costly and
+                    requires special Apple equipment that this developer is not going to buy or maintain.
                 </p>
                 <h2>Make New Route From Scratch</h2>
                 <p>
-                    An easy way to make a route is to
-                    go <a href="/make" target="_blank" rel="noopener noreferrer">https://adiron.com/make</a> or use "MAKE NEW" button above.
+                    Making a new route is a bit tricky. You need to make a route on the Open Street Maps Route
+                    Service website, and then import it into the Bike Bus system. The Open Street Maps Route Service
+                    is at <a href="https://maps.openrouteservice.org">https://maps.openrouteservice.org</a> and works
+                    best on a desktop computer. There are links to it on the Maker Page.
+                </p>
+                <p>
+                    Go to <a href={`${this.props.prefix}/make`}>https://{this.props.host}/make</a> or use "MAKE NEW" button above.
                     This brings you to the "Maker" page.
                 </p>
                 <p>
                     You can go to the link <a href={"https://maps.openrouteservice.org"}>Create a New Route</a>, which
-                    is <a href="https://maps.openrouteservice.org" target="_blank" rel="noopener noreferrer">https://maps.openrouteservice.org</a>.
-                    It is the <a href={"https://openstreetmaps.org"}>Open Street Maps</a> Special Route Finding service. It has bike routes.
+                    is <a href="https://maps.openrouteservice.org">https://maps.openrouteservice.org</a>.
+                    It is the <a href={"https://openstreetmaps.org"}>Open Street Maps</a> Special Route Finding service.
+                    It has biking profile to help direct the route through bike paths if available.
                 </p>
                 <p>
                     On the Open Street Maps Route Service Page, you go to the "Directions" { this.DirectionsIcon() }
-                    icon and create your route using this website. It is a bit tricky, but play with it.
+                    icon and create your route. It is a bit tricky, but play with it.
                     It may require clicking on the "Map" icon { this.MapIcon()}
                     and then clicking on a location on the map, which will fill it in the sidebar.
                 </p>
@@ -112,8 +158,9 @@ export class DirectionsPage extends React.Component<{}, {}> {
                         <li>Click on the "DOWLOAD" button</li>
                         <li>You may have to rename the file, depending if the file name already resides on your computer.</li>
                     </ul>
-                    You are now ready to import this GeoJSON file into the Bike Bus system.
-                    Go to <a href={"/make"} target="_blank" rel="noopener noreferrer">https://adiron.com/make</a>.
+                    Once you do the procedure listed above, you are now ready to import this GeoJSON file into the
+                    Bike Bus system.
+                    Go to <a href={`${this.props.prefix}/make`}>https://{this.props.host}/make</a>.
                     <ul>
                         <li>Click on the "CHOOSE FILE" Button</li>
                         <li>Select your recently downloaded file</li>
@@ -133,9 +180,20 @@ export class DirectionsPage extends React.Component<{}, {}> {
                 </p>
                 <h2>Modifying an Existing Route</h2>
                 <p>
-                    To modify a route, you go to <a href={"/list"}>https://adiron.com/list</a> and click on your desired route.
-                    This brings you to the page in which you may alter the way point names and placements, and
-                    choose the bus icon. You <b>CANNOT</b> alter the route from this page. You must do the following to
+                    <b>Please modify routes with a desktop computer that has a larger screen and a mouse.</b>
+                </p>
+                <p>
+                    To modify a route, you go to <a href={`/${this.props.prefix}/make`}>https://{this.props.host}/make</a> and
+                    click on your <a href={`${this.props.prefix}/makes`}>Edit List</a> link to bring to the list
+                    of current routes. From there, you may select the route you want to alter.
+                </p>
+                <p>
+                    <b>Please do not alter routes that do not belong to you!</b>
+                </p>
+                <p>
+                    This action brings you to the page in which you may alter the way point names and placements, and
+                    choose the bus icon. However, you <b>CANNOT</b> alter the route from this page because it does
+                    not have any route finding capability. You must do the following to
                     bring the route and import it into
                     the <a href={"https://maps.openrouteservice.org"}>https://maps.openrouteservice.org</a> service
                     to alter the route.
@@ -148,7 +206,7 @@ export class DirectionsPage extends React.Component<{}, {}> {
                     on the right.
                 </p>
                 <p>
-                    From there, do the following:
+                    From there on the Open Street Maps Route Service page, do the following:
                 </p>
                 <ul>
                     <li>Click on the "Directions" { this.DirectionsIcon() } button</li>
@@ -164,8 +222,7 @@ export class DirectionsPage extends React.Component<{}, {}> {
                 <p>
                     Once the file is imported, the side bar will contain the waypoints and the route
                     will appear on the map. However, the "Route details" section will not
-                    appear. <b>This state is fragile.</b> You may have to replay the process if you
-                    mess it up.
+                    appear. <b>This state is fragile.</b> You may have to replay the process if it messes up.
                 </p>
                 <ul>
                     <li><b>Do NOT</b> click on the map other than to close any pop ups.</li>
@@ -177,7 +234,8 @@ export class DirectionsPage extends React.Component<{}, {}> {
                         "Route details" side bar.</li>
                 </ul>
                 <p>
-                    You may now alter the route, and go through the download/import process into <a href={"/make"}>BikeBus</a>.
+                    You may now alter the route, and go through the download/import process
+                    into <a href={`${this.props.prefix}/make`}>BikeBus Maker Page</a>.
                 </p>
                 <ul>
                     <li>Click on the "Download"  { this.CloudDownloadIcon() } button</li>
@@ -188,8 +246,44 @@ export class DirectionsPage extends React.Component<{}, {}> {
                     <li>You may have to rename the file, depending if the file name already resides on your computer.</li>
                 </ul>
                 <p>
-                    From there you would go to the <a href={"/make"}>Make</a> page and click on "CHOOSE FILE" button
-                    to import the route to the Bike Bus system.
+                    From there you would go to the <a href={`${this.props.prefix}/make`}>Bike Bus Maker Page</a> page
+                    and click on "CHOOSE FILE" button to import the route to the Bike Bus system.
+                </p>
+                <h2>Drawing a Route</h2>
+                <p>
+                    If you have an Android Phone, you can draw a route from the phone. From the Android Phone
+                    click on the <a href={`${this.props.prefix}/draw`}>DRAW</a> button. This will bring up a map
+                    where you can draw a route by driving, biking, or walking with the phone.
+                </p>
+                <p>
+                    Once you go to this page, the Bike Bus system will give you a unique name for the "draw".
+                    You must personally remember this name if you want to find it later.
+                </p>
+                <p>
+                    You start drawing a route by clicking on the green "GO" button in the top right corner and
+                    stop recording by hitting the "GO" button again. The "GO" button will pulse if it is recording.
+                </p>
+                <p>
+                    If you are using the Android Bike Bus App, recording will happen in the background, so there is
+                    no need for you to keep the phone alive on the page. You may put it in your pocket, pull it out,
+                    and hit the "GO" button to stop recording. The route will be saved to the Bike Bus system. You
+                    must remember the name given to the "draw".
+                </p>
+                <p>
+                    From there, on the desktop,
+                    you can go to the <a href={`${this.props.prefix}/draws`}>https://{this.props.host}/draws</a> and
+                    download the Geo JSON file for the name you were given.
+                </p>
+                <p>
+                    Once, you have the file, you can import it into the Bike Bus system. However, if you do that, you
+                    will only get two way points, the start and finish. If you want to refine the route, you must
+                    go to the Open Street Maps Route Service and import the route.
+                </p>
+                <p>
+                    You can download a refined route to give to the Open Street Maps Route Service that will reduce
+                    a number of recorded locations that are close together, and figure out way points that may
+                    resemble turns that are over 30 degrees or so. It is not perfect, but will work better with the
+                    Open Street Maps Route Service, because the service will only reroute between way points.
                 </p>
             </div>
         )

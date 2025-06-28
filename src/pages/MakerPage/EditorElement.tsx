@@ -4,6 +4,7 @@ import {PointEditor} from "./PointEditor.tsx";
 import {MapElement} from "../tracker/MapElement.tsx";
 
 interface EditorElementProps {
+    prefix: string
     geojson: any;
     onChange?: () => void;
     editTitleEnabled: boolean
@@ -61,7 +62,7 @@ export class EditorElement extends React.Component<EditorElementProps, EditorEle
                             </div>
                         </div>
                         <PointEditor geojson={geojson} onChange={this.myUpdate.bind(this)}/>
-                        <MapElement geojson={geojson} editor={true} enableTracker={false}/>
+                        <MapElement prefix={this.props.prefix} geojson={geojson} editor={true} enableTracker={false}/>
                     </div>
                 )
             }

@@ -1,0 +1,14 @@
+.tableContainer {
+    height: 75vh;
+    position: relative;
+    overflow-y: scroll;
+    border-width: thin;
+    border-style: solid;
+}
+.tableContainer thead {
+    background-color: lightgray;
+    position: sticky;
+    top: 0px;
+    margin: 0 0 0 0;
+    z-index: 1;
+}

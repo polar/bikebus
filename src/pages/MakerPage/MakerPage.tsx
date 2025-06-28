@@ -4,12 +4,15 @@ import {Helmet} from "react-helmet"
 import "../tracker/TrackerPage.css"
 import {Button, ButtonGroup, ListItemButton, SvgIcon} from "@mui/material";
 import {EditorElement} from "./EditorElement.tsx";
+import * as TJ from "@tmcw/togeojson"
+
 
 const ROUTE_URL = "https://maps.openrouteservice.org"
 
 interface MakerPageProps {
     geojson?: any;
     name?: string
+    prefix: string
 }
 
 interface MakerPageState {
@@ -75,9 +78,30 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
     }
 
     handleFile(event: any) {
-        let geoJson = JSON.parse(event.target.result)
-        if (geoJson.features.length > 0) {
-            this.updateState(geoJson)
+        try {
+            let geoJson = JSON.parse(event.target.result)
+            if (geoJson.features.length > 0) {
+                this.updateState(geoJson)
+            }
+        } catch (e) {
+            let parser = new DOMParser()
+            let xmlDoc = parser.parseFromString(event.target.result, "text/xml")
+            let geoJson = TJ.kml(xmlDoc)
+            if (geoJson) {
+                if (geoJson.features.length > 0) {
+                    this.updateState(geoJson)
+                    return
+                }
+            }
+            let geoJson2 = TJ.gpx(xmlDoc)
+            if (geoJson2) {
+                if (geoJson2.features.length > 0) {
+                    this.updateState(geoJson2)
+                    return
+                } else {
+                    alert("Invalid File Format")
+                }
+            }
         }
     }
 
@@ -134,7 +158,7 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
                     } else if (response.status === 403) {
                         alert("You are not authorized to upload.")
                     } else if (response.status === 452) {
-                        alert("Cannot save route. There are too many routes on the server.")
+                        alert("Cannot save route. There are too many draws on the server.")
                     } else if (response.status === 400) {
                         alert("Invalid File Format.")
                     }
@@ -247,14 +271,17 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
                     { this.SaveToServer() }
                     { this.Delete() }
                     { this.SwitchToCopyMode() }
-                    { this.state.name  && <ListItemButton disabled={this.state.disableUrl} href={`/${this.state.name}/op`}>{`/${this.state.name}/op`}</ListItemButton>}
+                    { this.state.name  && <ListItemButton disabled={this.state.disableUrl} href={`${this.props.prefix}/${this.state.name}/op`}>{`${this.props.prefix}/${this.state.name}/op`}</ListItemButton>}
                 </ButtonGroup>
                 <ButtonGroup style={{float:"right"}}>
-                    <ListItemButton href={"/list"}>Edit List</ListItemButton>
-                    <ListItemButton href={"/directions"}>Directions</ListItemButton>
+                    <ListItemButton href={`${this.props.prefix}/home`}>Home</ListItemButton>
+                    <ListItemButton href={`${this.props.prefix}/makes`}>Edit List</ListItemButton>
+                    <ListItemButton href={`${this.props.prefix}/draws`}>Draws List</ListItemButton>
+                    <ListItemButton href={`${this.props.prefix}/draw`}>Draw a Route</ListItemButton>
+                    <ListItemButton href={`${this.props.prefix}/directions`}>Directions</ListItemButton>
                     <ListItemButton href={ROUTE_URL}>Create a Route File</ListItemButton>
                 </ButtonGroup>
-                <EditorElement editTitleEnabled={!this.isInEditMode()} geojson={this.state.geojson} onChange={this.onChange.bind(this)}/>
+                <EditorElement prefix={this.props.prefix} editTitleEnabled={!this.isInEditMode()} geojson={this.state.geojson} onChange={this.onChange.bind(this)}/>
             </div>
         )
     }

@@ -6,13 +6,16 @@ import {ensureBusInfoTitle} from "./lib/BusInfo.ts";
 interface MainProps {
     name: string;
     operator: boolean
+    enableTracker: boolean
+    prefix: string
 }
 
 interface MainState     {
     loading: boolean,
     geojson?: any
 }
-export class Main extends React.Component<MainProps, MainState> {
+
+export class PreLoadOperatorTrackerPages extends React.Component<MainProps, MainState> {
     constructor(props: MainProps) {
         super(props);
         this.state = {
@@ -60,9 +63,9 @@ export class Main extends React.Component<MainProps, MainState> {
         }
         if (this.state.geojson) {
             if (this.props.operator) {
-                return (<OperatorPage geojson={this.state.geojson}/>)
+                return (<OperatorPage prefix={this.props.prefix} enableTracker={this.props.enableTracker} geojson={this.state.geojson}/>)
             } else {
-                return (<TrackerPage geojson={this.state.geojson}/>)
+                return (<TrackerPage prefix={this.props.prefix} geojson={this.state.geojson}/>)
             }
         }
         return this.noRoute()

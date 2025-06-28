@@ -10,6 +10,7 @@ import {fastifySession} from "@fastify/session";
 interface BuildOpts extends FastifyServerOptions {
     exposeDocs?: boolean,
     cache?: any
+    drawStore?: any
     idGenerator: () => string
 }
 
@@ -46,6 +47,7 @@ const build = (opts?: BuildOpts): FastifyInstance => {
         dir: `${import.meta.dirname}/actions`,
         options:{
             cache: opts!.cache,
+            drawStore: opts!.drawStore,
             idGenerator: opts!.idGenerator
         }
     })

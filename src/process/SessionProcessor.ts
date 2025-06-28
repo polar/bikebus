@@ -84,6 +84,13 @@ export class SessionProcessor {
         fs.writeFileSync(`${dir}/${session.sessionId}/${session.route}-features.json`, json)
     }
 
+    writeReducedCumulativeSession(session: BaseSession, dir: string) {
+        let builder = new SessionGeoJSONBuilder({session: session,...this.opts})
+        let json = JSON.stringify(builder.reduce().toGeoJSON(), null, 2)
+        fs.mkdirSync(`${dir}/${session.sessionId}`, {recursive: true})
+        fs.writeFileSync(`${dir}/${session.sessionId}/${session.route}-reduced.json`, json)
+    }
+
     writeNonEmptySessions(dir: string, routeSessions: Map<string, BaseSession[]>) {
         routeSessions.forEach((sessions) => {
             let ss = sessions.filter((s: BaseSession) => s.hasCoordinates())
@@ -93,6 +100,7 @@ export class SessionProcessor {
             if (ss.length > 0) {
                 let session = BaseSession.combine(ss)
                 this.writeCumulativeSession(session, dir)
+                this.writeReducedCumulativeSession(session, dir)
             }
         })
     }
