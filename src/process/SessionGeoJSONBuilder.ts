@@ -48,7 +48,6 @@ export class SessionGeoJSONBuilder extends BaseSession {
             summary: this.getSummary(),
             deleteCalled: this.deleteCalled,
             names: this.names,
-            timestamps: this.timestamps
         }
     }
 
@@ -70,6 +69,7 @@ export class SessionGeoJSONBuilder extends BaseSession {
                 summary: this.getSummary(),
                 names: this.names.reduce((acc, name) => acc.includes(name) ? acc : [...acc,name], [] as string[]),
                 deleteCalled: this.deleteCalled,
+                timestamps: this.timestamps
             },
             geometry: {
                 type: "LineString",

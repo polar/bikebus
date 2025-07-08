@@ -155,7 +155,7 @@ export class DirectionsPage extends React.Component<DirectionsPageProps, {}> {
                         <li>Select "GeoJSON" for the "Download format". </li>
                         <li>Name the file in the "Download file name" to an appropriate name.</li>
                         <li>This will save the JSON file locally. Make sure you select the "GeoJSON" option!</li>
-                        <li>Click on the "DOWLOAD" button</li>
+                        <li>Click on the "DOWNLOAD" button</li>
                         <li>You may have to rename the file, depending if the file name already resides on your computer.</li>
                     </ul>
                     Once you do the procedure listed above, you are now ready to import this GeoJSON file into the

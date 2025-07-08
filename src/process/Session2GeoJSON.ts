@@ -36,7 +36,7 @@
 //     return sum/Math.abs(end-start)
 // }
 //
-// function findIndexOfStraightLine(coordinates: number[][], start: number, threshholdDegrees: number = 10) : number {
+// function findIndexOfStraightLine(coordinates: number[][], start: number, thresholdDegrees: number = 10) : number {
 //     let initial = coordinates[start] as GeolibGeoJSONPoint
 //     let bearingSum = getGreatCircleBearing(initial, coordinates[start + 1] as GeolibGeoJSONPoint)
 //     let bearingCount = 1
@@ -48,7 +48,7 @@
 //         let bearingInitial = getGreatCircleBearing(initial, point)
 //         let angleDiff = getAngleDifference(bearing1, bearingAverage())
 //         let initAngleDiff = getAngleDifference(bearing1, bearingInitial)
-//         if (Math.abs(angleDiff) > threshholdDegrees && Math.abs(initAngleDiff) > threshholdDegrees) {
+//         if (Math.abs(angleDiff) > thresholdDegrees && Math.abs(initAngleDiff) > thresholdDegrees) {
 //             return i
 //         } else {
 //             bearingSum += bearing1
@@ -138,7 +138,7 @@
 //     end: number
 //     length: number
 // }
-// function findPivotsByStraightLines(coordinates: number[][], timestamps: number[], lineCountThreshold: number, lineThresholdBearing: number, turnThreshold: number, uTurnThreaholdDegress: number) : [Pivot[], Line[], PivotSection[]] {
+// function findPivotsByStraightLines(coordinates: number[][], timestamps: number[], lineCountThreshold: number, lineThresholdBearing: number, turnThreshold: number, uTurnThresholdDegrees: number) : [Pivot[], Line[], PivotSection[]] {
 //     let lines : Line[] = findStraightLines(coordinates, lineThresholdBearing)
 //     let pivots: Pivot[] = []
 //     let pivotSections: PivotSection[] = findPivotSections(lines, lineCountThreshold)
@@ -159,7 +159,7 @@
 //     //             let turnType: 'Left' | 'Right' | 'U-Turn' | undefined;
 //     //             let angleChange = getAngleDifference(bearingIn, bearingOut)
 //     //             if (Math.abs(angleChange)) {
-//     //                 if (Math.abs(angleChange) >= uTurnThreaholdDegress) {
+//     //                 if (Math.abs(angleChange) >= uTurnThresholdDegrees) {
 //     //                     turnType = 'U-Turn';
 //     //                 } else if (angleChange > 0) {
 //     //                     turnType = 'Right';
@@ -397,7 +397,7 @@
 //                 duration += this.getTimeDifferenceAt(i)
 //             }
 //         }
-//         return [distance, duration, duration > 0 ? distance/duration : Infinity, minMetersPerSecond] // meters, duration(ms), average
+//         return [distance, duration, duration > 0? distance/duration : Infinity, minMetersPerSecond] // meters, duration(ms), average
 //     }
 //
 //     getCumulative() : number[] {
@@ -656,7 +656,7 @@
 //
 //         // want to refine lines so that there are no clusters.
 //
-//         let [_pivots,lines,pivotSetions] = findPivotsByStraightLines(this.coordinates, this.timestamps, 3, 30, 80, 150)
+//         let [_pivots,lines,pivotSections] = findPivotsByStraightLines(this.coordinates, this.timestamps, 3, 30, 80, 150)
 //         // @ts-ignore
 //         lines = this.reduceLines(lines, 30)
 //         let lineFeatures = lines.map((l) => this.toLineFeature(l, "blue"))

@@ -1,3 +1,4 @@
+// noinspection GrazieInspection,SpellCheckingInspection
 
 import fs from "node:fs";
 
@@ -34,9 +35,10 @@ export async function replay(file: string, scale: number = 1, toRoute?: string):
         const index = coordinates.indexOf(coordinate);
         let timestamp = timestamps[index] || (lasttimestamp || (new Date()).getTime()) + 3000;
 
+        console.log(`Replaying ${index} ${timestamps[index]} of ${coordinates.length} at ${timestamp}`);
         let diff = timestamp - (lasttimestamp ? lasttimestamp : timestamp - 1);
         if (diff > 0) {
-            await waitFor(diff * scale)
+            await waitFor(diff / scale)
             let response: Response = await fetch(`http://localhost:9090/tracker/${route}/location`, {
                 method: "POST",
                 headers: {

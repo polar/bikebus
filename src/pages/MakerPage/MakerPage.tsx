@@ -5,6 +5,7 @@ import "../tracker/TrackerPage.css"
 import {Button, ButtonGroup, ListItemButton, SvgIcon} from "@mui/material";
 import {EditorElement} from "./EditorElement.tsx";
 import * as TJ from "@tmcw/togeojson"
+import {GeoJSONProcessor} from "../../process/GeoJSONProcessor.ts";
 
 
 const ROUTE_URL = "https://maps.openrouteservice.org"
@@ -81,6 +82,11 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
         try {
             let geoJson = JSON.parse(event.target.result)
             if (geoJson.features.length > 0) {
+                if (geoJson.features.length === 1) {
+                    let g2 = new GeoJSONProcessor("", geoJson).raw()
+                    this.updateState(g2)
+                    return
+                }
                 this.updateState(geoJson)
             }
         } catch (e) {
@@ -89,6 +95,11 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
             let geoJson = TJ.kml(xmlDoc)
             if (geoJson) {
                 if (geoJson.features.length > 0) {
+                    if (geoJson.features.length === 1) {
+                        let g2 = new GeoJSONProcessor("", geoJson).raw()
+                        this.updateState(g2)
+                        return
+                    }
                     this.updateState(geoJson)
                     return
                 }
@@ -96,6 +107,11 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
             let geoJson2 = TJ.gpx(xmlDoc)
             if (geoJson2) {
                 if (geoJson2.features.length > 0) {
+                    if (geoJson2.features.length === 1) {
+                        let g2 = new GeoJSONProcessor("", geoJson2).raw()
+                        this.updateState(g2)
+                        return
+                    }
                     this.updateState(geoJson2)
                     return
                 } else {
@@ -158,7 +174,7 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
                     } else if (response.status === 403) {
                         alert("You are not authorized to upload.")
                     } else if (response.status === 452) {
-                        alert("Cannot save route. There are too many draws on the server.")
+                        alert("Cannot save route. There are too many makes on the server.")
                     } else if (response.status === 400) {
                         alert("Invalid File Format.")
                     }
@@ -252,6 +268,22 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
             )
         }
     }
+
+    refine() {
+        if (this.state.geojson) {
+            let geojson = new GeoJSONProcessor("", this.state.geojson).refine()
+            this.updateState(geojson)
+        }
+    }
+    RefineButton() {
+        if (this.state.geojson) {
+            return (
+                <Button onClick={this.refine.bind(this)}>
+                    Refine
+                </Button>
+            )
+        }
+    }
     render() {
         return (
             <div suppressHydrationWarning={true}>
@@ -267,6 +299,7 @@ export class MakerPage extends React.Component<MakerPageProps,MakerPageState> {
                 <h1><a href={"/"}>Bike Bus</a> Maker Page</h1>
                 <ButtonGroup>
                     { this.ChooseFile() }
+                    { this.RefineButton() }
                     { this.Download() }
                     { this.SaveToServer() }
                     { this.Delete() }

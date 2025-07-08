@@ -1,3 +1,5 @@
+// noinspection SpellCheckingInspection
+
 import React from "react";
 import "../tracker/TrackerControl.css"
 import {BusLocation} from "../tracker/BusMarker.tsx";
@@ -93,6 +95,8 @@ export class DrawTrackerControl extends React.Component<DrawTrackerControlProps,
                     },
                     body: JSON.stringify(this.busLocation)
                 })
+                    .then(res => res.json())
+                    .then(data => console.log(data))
                 this.busLocation = undefined
             }
         }, 1000 * UPDATE_LOCATION_INTERVAL_SECONDS)

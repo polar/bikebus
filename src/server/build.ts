@@ -1,3 +1,5 @@
+// noinspection SpellCheckingInspection
+
 import fastify, { FastifyInstance, FastifyServerOptions } from "fastify";
 import { userSchema } from "../schemas/user.ts";
 import { errorSchema } from "../schemas/error.ts";
@@ -11,6 +13,8 @@ interface BuildOpts extends FastifyServerOptions {
     exposeDocs?: boolean,
     cache?: any
     drawStore?: any
+    routeStore?: any
+    archiveStore?: any
     idGenerator: () => string
 }
 
@@ -48,6 +52,8 @@ const build = (opts?: BuildOpts): FastifyInstance => {
         options:{
             cache: opts!.cache,
             drawStore: opts!.drawStore,
+            routeStore: opts!.routeStore,
+            archiveStore: opts!.archiveStore,
             idGenerator: opts!.idGenerator
         }
     })

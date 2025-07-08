@@ -1,3 +1,5 @@
+// noinspection SpellCheckingInspection
+
 import {FastifyPluginCallback, FastifyPluginOptions, FastifyReply, FastifyRequest} from "fastify";
 import {RoutesCache} from "../../lib/RoutesCache.ts";
 

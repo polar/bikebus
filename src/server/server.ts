@@ -6,6 +6,7 @@ import {DEFAULT_ROUTES_LIMIT, RoutesCache} from "../lib/RoutesCache.ts";
 import fs from "node:fs";
 import {uniqueNamesGenerator, names} from "unique-names-generator";
 import {DrawStore} from "../lib/DrawStore.ts";
+import {MakeStore} from "../lib/MakeStore.ts";
 
 const loggerConfig : FastifyLoggerOptions = {
     // @ts-ignore
@@ -51,21 +52,30 @@ const SERVER_ROUTES_LIMIT = DEFAULT_ROUTES_LIMIT
 let exposeDocs = true;
 let cache = new RoutesCache(SERVER_ROUTES_LIMIT);
 let store = new DrawStore(SERVER_ROUTES_LIMIT);
+let routeStore = new MakeStore("routes", SERVER_ROUTES_LIMIT);
+let archiveStore = new MakeStore("archive", SERVER_ROUTES_LIMIT);
 
 let namesGenerator = () => uniqueNamesGenerator({dictionaries: [names]})
 cache.initialize();
 store.initialize();
+routeStore.initialize();
+archiveStore.initialize();
 cache.startUpdate();
 store.startUpdate();
+routeStore.startUpdate();
+archiveStore.startUpdate();
 
 if (process.env.NODE_ENV === "production") {
     exposeDocs = true;
 }
+
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build({
     logger: loggerConfig,
     exposeDocs: exposeDocs,
     cache: cache,
     drawStore: store,
+    routeStore: routeStore,
+    archiveStore: archiveStore,
     idGenerator: namesGenerator
 });
 

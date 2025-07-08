@@ -16,10 +16,10 @@ async function handleRequest(request: FastifyRequest , reply: FastifyReply ) {
         let name = getBusInfoTitle(json)
         if (name) {
             console.log(name, "WTF")
-            // Fastify has a built-in 1M limit on the body of the request.
-            // So, we just limit the number of draws we will store. Use the cache.
+            // Fastify has a built-in 1 M limit on the body of the request.
+            // So, we just limit the number of makes we will store. Use the cache.
             if (cache.atLimit() && !cache.has(name)) {
-                return reply.code(452).type("text/plain").send("Too many draws on the server")
+                return reply.code(452).type("text/plain").send("Too many makes on the server")
             }
             //                      actions / server / src /
             let fname = path.join(import.meta.dirname, "../..", "stuff/routes", name + ".json")

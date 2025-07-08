@@ -93,7 +93,7 @@ export class BusIconChooser extends React.Component<BusIconChooserProps, BusIcon
                         {
                             this.state.icons.map(item =>
                                 <ToggleButton size={"small"} value={item}>
-                                    <img src={item} width={"30px"}/>
+                                    <img src={item} width={"30px"} alt={"toggle"}/>
                                 </ToggleButton>)
                         }
                     </ToggleButtonGroup>

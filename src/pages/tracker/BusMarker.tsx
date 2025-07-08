@@ -1,3 +1,5 @@
+// noinspection SpellCheckingInspection
+
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import L, {divIcon, LatLngExpression} from "leaflet";
@@ -22,7 +24,7 @@ interface BusMarkerState {
     location?: BusLocation;
 }
 
-const UPDATE_LOCATION_INTERVAL_SECONDS = 10
+const UPDATE_LOCATION_INTERVAL_SECONDS = 1
 
 export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
 

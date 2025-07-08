@@ -1,16 +1,16 @@
 .polar .navigation-buttons {
     position: absolute;
-    top: 55px;
+    top: 75px;
     right: 0px;
     border-color: lightgray;
 }
 .polar .home-buttons {
-    position: absolute;
-    top: 50px;
-    left: 0px;
-    z-index: 800;
-    border-color: lightgray;
-}
+     position: absolute;
+     top: 50px;
+     left: 0px;
+     z-index: 800;
+     border-color: lightgray;
+ }
 .polar .download-button {
     z-index: 800;
     border-color: lightgray;
@@ -23,7 +23,7 @@
 
 .draw-name {
     position: absolute;
-    top: 35px;
+    top: 80px;
     width: 100%;
     z-index: 800;
     text-align: center;

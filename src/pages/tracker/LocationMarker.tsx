@@ -74,7 +74,7 @@ export class MyLocationMarker extends React.Component<MyLocationMarkerProps, MyL
                 // for IE 9, use the 2D rotation
                 marker._icon.style[L.DomUtil.TRANSFORM] = `rotate(${rotationAngle} deg)`;
             } else {
-                // for modern browsers, prefer the 3D accelerated version
+                // for modern browsers, prefer the 3D-accelerated version
                 marker._icon.style[
                     L.DomUtil.TRANSFORM
                     ] += ` rotateZ(${rotationAngle}deg)`;

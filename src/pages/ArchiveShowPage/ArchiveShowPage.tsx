@@ -1,16 +1,16 @@
 import React from "react";
 import {Helmet} from "react-helmet"
-import {DrawShowMapElement} from "./DrawShowMapElement.tsx";
+import {ArchiveShowMapElement} from "./ArchiveShowMapElement.tsx";
 import {Button, ButtonGroup, ListItemButton, SvgIcon} from "@mui/material";
-import "./DrawsShowPage.css"
+import "./ArchiveShowPage.css"
 import {GeoJSONProcessor} from "../../process/GeoJSONProcessor.ts";
 
-interface DrawShowProps {
+interface ArchiveShowProps {
     name: string
     prefix: string
 }
 
-interface DrawShowState {
+interface ArchiveShowState {
     geojson?: any
     downloadHref?: string
 }
@@ -41,11 +41,11 @@ class DownloadButton extends React.Component<DownloadButtonProps,{}> {
 }
 
 const ROUTE_URL = "https://maps.openrouteservice.org"
-export class DrawShowPage extends React.Component<DrawShowProps, DrawShowState> {
+export class ArchiveShowPage extends React.Component<ArchiveShowProps, ArchiveShowState> {
 
-    state: DrawShowState = {}
+    state: ArchiveShowState = {}
 
-    constructor(props: DrawShowProps) {
+    constructor(props: ArchiveShowProps) {
         super(props);
     }
 
@@ -84,7 +84,7 @@ export class DrawShowPage extends React.Component<DrawShowProps, DrawShowState> 
     }
 
     componentDidMount() {
-        fetch(`/api/draw/${this.props.name}`)
+        fetch(`/api/archive/${this.props.name}`)
             .then(response => response.json())
             .then(data => {
                 if (data) {
@@ -112,7 +112,7 @@ export class DrawShowPage extends React.Component<DrawShowProps, DrawShowState> 
                 </Helmet>
                 <div className={"container"}>
                     <div className={"polar center"}>
-                        <h1 className={"map-title"}>Drawn Route</h1>
+                        <h1>Archived Route</h1>
                         <ButtonGroup orientation={"horizontal"} className={"home-buttons"}>
                             <ListItemButton href={`${this.props.prefix}/home`}>Home</ListItemButton>
                             <ListItemButton href={`${this.props.prefix}/make`}>Make</ListItemButton>
@@ -126,7 +126,7 @@ export class DrawShowPage extends React.Component<DrawShowProps, DrawShowState> 
                             {this.state.downloadHref && <DownloadButton href={this.state.downloadHref} name={this.props.name}/>}
                             {this.DirectionsIcon()}
                         </ButtonGroup>
-                        <DrawShowMapElement prefix={this.props.prefix} name={this.props.name} geojson={this.state.geojson}/>
+                        <ArchiveShowMapElement prefix={this.props.prefix} name={this.props.name} geojson={this.state.geojson}/>
                     </div>
                 </div>
             </div>

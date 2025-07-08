@@ -1,6 +1,7 @@
 import {FastifyPluginCallback, FastifyPluginOptions, FastifyReply, FastifyRequest} from "fastify";
 import {DrawStore} from "../../lib/DrawStore.ts";
-var store : DrawStore
+
+let store: DrawStore;
 let self = this
 
 async function handleRequest(request:FastifyRequest, reply:FastifyReply) {
@@ -10,14 +11,14 @@ async function handleRequest(request:FastifyRequest, reply:FastifyReply) {
         return reply
             .code(404)
             .type('text/plain')
-            .send('Draw not found.')
+            .send('Archive not found.')
     }
 
     let draw = store.getDraw(name!)
     if (!draw) {
         return reply.code(404)
             .type('text/plain')
-            .send('Draw not found')
+            .send('Archive not found')
     }
     return reply.code(200).type('application/json').send(JSON.stringify(draw))
 }

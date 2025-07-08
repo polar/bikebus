@@ -1,3 +1,5 @@
+// noinspection SpellCheckingInspection
+
 import React from "react";
 import {MapContainer, Polyline, TileLayer} from "react-leaflet";
 import "./MapElement.css"
@@ -187,9 +189,9 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
             >
                 {
                     /**
-                     * We need to use an SvgIcon explicitly so MUI installs the propper CSS
+                     * We need to use an SvgIcon explicitly, so MUI installs the propper CSS
                      * for the SvgIcons used in the map element. The problem is that the
-                     * PointMarkers are dynamically generated, this.getPointMarkers(), So effectively, the declarative
+                     * PointMarkers are dynamically generated, this.getPointMarkers(); So effectively, the declarative
                      * system does not realize that the CSS is needed for the SvgIcon inside
                      * the PointMarkers. And, apparently, the MUI system does not insert the CSS
                      * for css-xxxxx-MuiSvgIcon-root into the head of the page.

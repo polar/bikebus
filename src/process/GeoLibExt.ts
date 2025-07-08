@@ -1,4 +1,6 @@
 
+// noinspection SpellCheckingInspection
+
 import {getPreciseDistance, getGreatCircleBearing} from "geolib"
 import {GeolibGeoJSONPoint} from "geolib/es/types";
 
@@ -26,11 +28,11 @@ export function normalizeBearing(bearing: number) : number {
 }
 
 /**
- * Returns the angle difference between two bearings. Bearings are normalized to 0 <= d < 360, before calculating and
+ * Returns the angle difference between two bearings. Bearings are normalized to 0 <= d < 360 before calculating, and
  * the difference is normalized between -180 < d <= 180. A negative angle difference means b is left of a. A
  * positive difference means that b is "right" of a.
  * This means the difference between 359 and 1 is 2, not -358, and the difference between 1 and 359 is -2, not 358.
- * The difference between 1 and 181 is 180 (b is right of a) and the difference between 1 and 182 is -179 (b is left
+ * The difference between 1 and 181 is 180 (b is right of a), and the difference between 1 and 182 is -179 (b is left
  * of a).
  *
  * @param bearing1 The first bearing.
@@ -48,6 +50,7 @@ export function getAngleDifference(bearing1: number, bearing2: number): number {
     return c > 180 ? c-360 : c
 }
 
+// noinspection GrazieInspection
 /**
  * Find the average bearing of the route from all the bearings from the starting point to each point up to, but
  * not including the end. The default range is start = 0 and end = coordinates.length. The range may be
@@ -103,19 +106,22 @@ export type LineCoords = PointCoords[]
  * Returns the cumulative distance and duration of a line from start, up to, but not including, end.
  *
  * @param coordinates The coordinates of a route.
- * @param timestamps The corresponding timestamps for each coordinate. Must be the same size as coordinates.
+ * @param timestamps The corresponding timestamps for each coordinate. Must be the same size as coordinates. If
+ *                   not defined, duration will be calculated with minMetersPerSecond.
  * @param start The index of the starting coordinate in the given line.
  * @param end The up to, but not including index.
+ * @param minMetersPerSecond The minimum speed for calculating duration, if no timestamps are available.
  */
-export function getCumulativeDistanceAndDuration(coordinates: LineCoords, timestamps: number[], start: number = 0, end: number = coordinates.length) : [number,number] {
+export function getCumulativeDistanceAndDuration(coordinates: LineCoords, timestamps?: number[], start: number = 0, end: number = coordinates.length, minMetersPerSecond: number =3) : [number,number] {
     let sum = 0
     let dur = 0
     if (start <= end) {
         for (let i = start; i < end && i < coordinates.length - 1; i++) {
             let prev = coordinates[i]
             let next = coordinates[i + 1]
-            sum += getPreciseDistance(prev, next)
-            dur += timestamps[i + 1] - timestamps[i]
+            let d = getPreciseDistance(prev, next)
+            sum += d
+            dur += timestamps && timestamps.length > i+1 ? timestamps[i + 1] - timestamps[i] : d * minMetersPerSecond*1000
         }
         return [sum, dur]
     }
@@ -123,8 +129,9 @@ export function getCumulativeDistanceAndDuration(coordinates: LineCoords, timest
         for (let i = start; i > end && i < coordinates.length; i--) {
             let prev = coordinates[i]
             let next = coordinates[i - 1]
-            sum += getPreciseDistance(prev, next)
-            dur += timestamps[i] - timestamps[i - 1]
+            let d = getPreciseDistance(prev, next)
+            sum += d
+            dur += timestamps && timestamps.length > i ? timestamps[i] - timestamps[i - 1] : d * minMetersPerSecond*1000
         }
         return [sum, dur]
     }
@@ -132,7 +139,7 @@ export function getCumulativeDistanceAndDuration(coordinates: LineCoords, timest
 
 
 /**
- * Returns the index from the first point of a line that is NOT at least threshold from the average bearing of
+ * Returns the index from the first point of a line that is NOT at least the threshold from the average bearing of
  * the line from the start point up to that point. That is to say that the index returned is the first point of
  * the potential next line. That point is not inclusive of the implied line. If all the coordinates from the
  * start are within the threshold, the index returned is the length of the line.

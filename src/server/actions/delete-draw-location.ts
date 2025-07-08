@@ -15,7 +15,7 @@ async function handleRequest(request : FastifyRequest , reply: FastifyReply ) {
             .type('text/plain')
             .send('Route not found.');
     }
-    var geojson = store.getDraw(name!)
+    const geojson = store.getDraw(name!);
     if (geojson) {
         let ls = getBusInfoLineString(geojson)
         if (ls) {
@@ -23,13 +23,13 @@ async function handleRequest(request : FastifyRequest , reply: FastifyReply ) {
             let timestamp = new Date().getTime()
             let lastTimeStamp = ls.properties.timestamps[ls.properties.timestamps.length - 1]
             if (lastTimeStamp == undefined || timestamp - lastTimeStamp > 1000) {
-                var last = ls.geometry.coordinates[ls.geometry.coordinates.length - 1]
+                const last = ls.geometry.coordinates[ls.geometry.coordinates.length - 1];
                 if (last) {
-                    var location = {
+                    const location = {
                         timestamp: timestamp,
                         latitude: last[1],
                         longitude: last[0],
-                    }
+                    };
                     store.addLocation(name!, location)
                 }
             }

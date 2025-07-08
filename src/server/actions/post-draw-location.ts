@@ -11,7 +11,7 @@ async function handleRequest(request: FastifyRequest , reply: FastifyReply ) {
         return reply
             .code(404)
             .type('text/plain')
-            .send('Draw not found.');
+            .send('Archive not found.');
     }
 
     let location = {

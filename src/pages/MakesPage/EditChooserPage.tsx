@@ -1,7 +1,5 @@
 import React from "react";
 import {Button, ButtonGroup, ListItemButton} from "@mui/material";
-import {DirectionsPage} from "./DirectionsPage.tsx";
-import {HOST} from "../../Settings.ts"
 import "./EditChooserPage.css"
 
 interface EditChooserPageProps {
@@ -65,7 +63,6 @@ export class EditChooserPage extends React.Component<EditChooserPageProps,EditCh
                     <ButtonGroup size={"small"} orientation={"vertical"}>
                         <Button href={`${this.props.prefix}/make`}>Make New</Button>
                     </ButtonGroup>
-                    <DirectionsPage prefix={this.props.prefix} host={HOST}/>
                 </div>
             )
         }

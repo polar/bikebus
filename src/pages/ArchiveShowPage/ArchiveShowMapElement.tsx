@@ -18,7 +18,7 @@ interface DrawShowMapElementProps {
 interface DrawShowMapElementState {
 }
 
-export class DrawShowMapElement extends React.Component<DrawShowMapElementProps, DrawShowMapElementState> {
+export class ArchiveShowMapElement extends React.Component<DrawShowMapElementProps, DrawShowMapElementState> {
 
     state : DrawShowMapElementState = {
     }
@@ -75,8 +75,8 @@ export class DrawShowMapElement extends React.Component<DrawShowMapElementProps,
         return (
             <MapContainer ref={(ref) => this.setupMapEvent(ref)}
                           attributionControl={true} style={{height: "100vh"}}
-                          zoomControl={false}
                           bounds={bounds}
+                          zoomControl={false}
                           scrollWheelZoom={true}
             >
                 {

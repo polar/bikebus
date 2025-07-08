@@ -5,6 +5,7 @@ import {Button, ButtonGroup} from "@mui/material";
 
 export interface FrontPageOps {
     prefix: string
+    show: string[]
 }
 
 export interface FrontPageState {
@@ -46,6 +47,12 @@ export default class OperatePage extends Component<FrontPageOps, FrontPageState>
         clearInterval(this.intervalID)
     }
 
+    ifShow(name: string) {
+        return this.props.show.includes(name)
+            ||this.props.show.includes("*")
+            ||this.props.show.includes("all")
+    }
+
     render() {
         return (
             <div className="container front-page">
@@ -53,10 +60,10 @@ export default class OperatePage extends Component<FrontPageOps, FrontPageState>
                     <img className={"main-image"} src={"/api/planets-align.jpg"} alt={"background"}/>
                 </div>
                 {this.state.names ? this.getNames() : null}
-                <ButtonGroup>
-                    <Button href={`/${this.props.prefix}`}>home</Button>
-                    <Button href={`/${this.props.prefix}make`}>make</Button>
-                    <Button href={`/${this.props.prefix}list`}>list</Button>
+                <ButtonGroup className={"float-bottom"}>
+                    {this.ifShow("draw") && <Button href={`${this.props.prefix}/draw`}>draw</Button> }
+                    {this.ifShow("make") && <Button href={`${this.props.prefix}/make`}>make</Button>}
+                    {this.ifShow("makes") && <Button href={`${this.props.prefix}/makes`}>Routes</Button>}
                 </ButtonGroup>
             </div>
         )

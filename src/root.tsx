@@ -7,12 +7,14 @@ import FrontPage from "./pages/FrontPage/FrontPage.tsx";
 import OperatePage from "./pages/FrontPage/OperatePage.tsx";
 import {MakerPage} from "./pages/MakerPage/MakerPage.tsx";
 import {LoadPage} from "./pages/MakerPage/LoadPage.tsx";
-import {EditChooserPage} from "./pages/MakerPage/EditChooserPage.tsx";
 import {DirectionsPage} from "./pages/MakerPage/DirectionsPage.tsx";
 import {DrawerPage} from "./pages/DrawPage/DrawerPage.tsx";
 import {DrawsPage} from "./pages/DrawsPage/DrawsPage.tsx";
 import {DrawShowPage} from "./pages/DrawShowPage/DrawShowPage.tsx";
 import {HOST} from "./Settings.ts"
+import {MakesPage} from "./pages/MakesPage/MakesPage.tsx";
+import {ArchivePage} from "./pages/ArchivePage/ArchivePage.tsx";
+import {ArchiveShowPage} from "./pages/ArchiveShowPage/ArchiveShowPage.tsx";
 
 const root = document.getElementById("root");
 
@@ -76,6 +78,19 @@ function DrawShower() {
 
     }
 }
+function ArchiveMakeShower() {
+    let {device, name} = useParams()
+    name = name || ""
+    switch(device) {
+        case "android":
+            return (<ArchiveShowPage prefix={`/${device}`} name={name}/>)
+        case "desktop":
+            return (<ArchiveShowPage prefix={`/${device}`} name={name}/>)
+        default:
+            return (<ArchiveShowPage prefix={`/desktop`} name={name}/>)
+
+    }
+}
 
 function DrawListShower() {
     let {device} = useParams()
@@ -91,8 +106,7 @@ function DrawListShower() {
 }
 
 function DirectionsShower() {
-    let {device, name} = useParams()
-    name = name || ""
+    let {device} = useParams()
     switch(device) {
         case "android":
             return (<DirectionsPage prefix={`/${device}`} host={HOST}/>)
@@ -105,15 +119,26 @@ function DirectionsShower() {
 }
 
 function MakesListShower() {
-    let {device, name} = useParams()
-    name = name || ""
+    let {device} = useParams()
     switch(device) {
         case "android":
-            return (<EditChooserPage prefix={`/${device}`}/>)
+            return (<MakesPage prefix={`/${device}`}/>)
         case "desktop":
-            return (<EditChooserPage prefix={`/${device}`}/>)
+            return (<MakesPage prefix={`/${device}`}/>)
         default:
-            return (<EditChooserPage prefix={`/desktop`}/>)
+            return (<MakesPage prefix={`/desktop`}/>)
+
+    }
+}
+function ArchiveShower() {
+    let {device} = useParams()
+    switch(device) {
+        case "android":
+            return (<ArchivePage prefix={`/${device}`}/>)
+        case "desktop":
+            return (<ArchivePage prefix={`/${device}`}/>)
+        default:
+            return (<ArchivePage prefix={`/desktop`}/>)
 
     }
 }
@@ -186,11 +211,11 @@ function OperatorPageShower() {
     let {device} = useParams()
     switch(device) {
         case "android":
-            return (<OperatePage prefix={`/${device}`}/>)
+            return (<OperatePage prefix={`/${device}`} show={["draw"]}/>)
         case "desktop":
-            return (<OperatePage prefix={`/${device}`}/>)
+            return (<OperatePage prefix={`/${device}`} show={["all"]}/>)
         default:
-            return (<OperatePage prefix={`/desktop`}/>)
+            return (<OperatePage prefix={`/desktop`} show={["all"]}/>)
 
     }
 }
@@ -203,10 +228,12 @@ ReactDOM.createRoot(root!).render(
             <Route path="/:device/draw/:name/op" element={<Drawer/>} />
             <Route path="/:device/draw/:name" element={<Drawer/>} />
             <Route path="/:device/draw" element={<Drawer/>} />
-            <Route path="/:device/draws/:name" element={<DrawShower/>} />
-            <Route path="/:device/draws" element={<DrawListShower/>} />
             <Route path="/:device/directions" element={<DirectionsShower/>} />
+            <Route path="/:device/draws" element={<DrawListShower/>} />
+            <Route path="/:device/draws/:name" element={<DrawShower/>} />
             <Route path="/:device/makes" element={<MakesListShower/>} />
+            <Route path="/:device/archive" element={<ArchiveShower/>} />
+            <Route path="/:device/archive/:name" element={<ArchiveMakeShower/>} />
             <Route path="/:device/make/:route" element={<MakeEditorShower/>} />
             <Route path="/:device/make/:route/copy" element={<MakeCopyEditorShower/>} />
             <Route path="/:device/make" element={<MakerShower/>} />
@@ -221,8 +248,8 @@ ReactDOM.createRoot(root!).render(
 
             <Route path="/makes" element={<MakesListShower/>} />
             <Route path="/make" element={<MakerShower/>} />
-            <Route path="/draws" element={<DrawListShower/>} />
-            <Route path="/op" element={<OperatePage prefix={"/desktop"}/>} />
+            <Route path="/makes" element={<DrawListShower/>} />
+            <Route path="/op" element={<OperatePage prefix={"/desktop"} show={[]}/>} />
             <Route path="/" element={<FrontPage prefix={"/desktop"} displayNavigation={false} displayOperator={false}/>} />
         </Routes>
     </BrowserRouter>

@@ -34,13 +34,13 @@ export class DrawsPage extends React.Component<DrawsPageProps, DrawsPageState> {
                 <div className={"container"}>
                     <div className={"polar center"}>
                         <h1 className={"map-title"}>Drawn Routes</h1>
-                        <h2>
-                            <ButtonGroup>
-                                <ListItemButton href={`${this.props.prefix}/draw`}>Draw</ListItemButton>
-                                <ListItemButton href={`${this.props.prefix}/make`}>Make</ListItemButton>
-                                <ListItemButton href={`${this.props.prefix}/home`}>Home</ListItemButton>
-                            </ButtonGroup></h2>
-                        <DrawsList/>
+                                <ButtonGroup orientation={"horizontal"} className={"button-group"}>
+                                    <ListItemButton href={`${this.props.prefix}/home`}>Home</ListItemButton>
+                                    <ListItemButton href={`${this.props.prefix}/make`}>Make</ListItemButton>
+                                    <ListItemButton href={`${this.props.prefix}/makes`}>Routes</ListItemButton>
+                                    <ListItemButton href={`${this.props.prefix}/archive`}>Archive</ListItemButton>
+                                </ButtonGroup>
+                        <DrawsList prefix={this.props.prefix}/>
                     </div>
                 </div>
             </div>

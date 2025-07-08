@@ -19,7 +19,7 @@ async function handleRequest(request: FastifyRequest, reply: FastifyReply) {
 
     let userName = user
     // @ts-ignore
-    if (!user && request.session && request.session.user) {
+    if (!userName && request.session && request.session.user) {
         // @ts-ignore
         userName = request.session.user
     } else {

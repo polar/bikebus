@@ -26,7 +26,7 @@ export function getBusInfoLineString(geojson: any): any {
 
 export function getBusInfoLineStringLastTimestamp(geojson: any): number | undefined {
     let ls = getBusInfoLineString(geojson);
-    if (ls) {
+    if (ls && ls.properties.timestamps && ls.properties.timestamps.length > 0) {
         return ls.properties.timestamps[ls.properties.timestamps.length - 1]
     }
 }

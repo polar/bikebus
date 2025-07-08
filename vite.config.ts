@@ -18,7 +18,7 @@ function getPostData(req: any) : Promise<any> {
       resolve(JSON.parse(data));
     });
   });
-};
+}
 
 // https://vite.dev/config/
 export default defineConfig({

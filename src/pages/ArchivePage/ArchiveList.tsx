@@ -9,51 +9,69 @@ import {
     TableHead,
     TableRow
 } from "@mui/material";
-import "./DrawsList.css"
+import "./ArchiveList.css"
 
-interface DrawsListProps {
+interface ArchiveListProps {
     prefix: string,
 }
 
-type Draw = {
-    name: string,
-    lastModified: number
+type Archive = {
+    name: string
 }
 
-interface DrawsListState {
-    draws: Draw[]
+interface ArchiveListState {
+    archive: Archive[]
     page: number
 }
 
-export class DrawsList extends React.Component<DrawsListProps, DrawsListState> {
+export class ArchiveList extends React.Component<ArchiveListProps, ArchiveListState> {
 
-    state: DrawsListState = {
-        draws: [],
+    state: ArchiveListState = {
+        archive: [],
         page: 0
     }
 
     componentDidMount() {
-        fetch("/api/draws")
+        fetch("/api/archive")
             .then(res => res.json())
             .then(json => {
-                let draws = json.sort((a: Draw, b: Draw) => a.name.localeCompare(b.name));
-                this.setState({ draws: draws });
+                let archive = json.sort((a: Archive, b: Archive) => a.name.localeCompare(b.name));
+                this.setState({ archive: archive });
             })
     }
-    deleteDraw(name: string) {
-        fetch(`/api/draws/${name}`, {
+
+    deleteMake(name: string) {
+        fetch(`/api/archive/${name}`, {
             method: "DELETE"
         })
-            .then(res => res.json() as unknown as Draw[])
-            .then((json : Draw[]) => {
-                this.setState({draws:json});
+            .then(res => res.json() as unknown as Archive[])
+            .then((json : Archive[]) => {
+                this.setState({archive:json});
+            })
+    }
+
+    restore(name: string) {
+        fetch(`/api/archive/${name}/restore`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                name: name,
+                archived: false
+            })
+        })
+            .then(res => res.json() as unknown as Archive[])
+            .then((json : Archive[]) => {
+                this.setState({archive:json});
             })
     }
 
     Delete(name: string) {
         return (
             <ButtonGroup>
-                <Button onClick={() => this.deleteDraw(name)}>
+                <Button onClick={() => this.deleteMake(name)} title={"Delete"}>
                     <SvgIcon>
                         <svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 512 512">
@@ -81,29 +99,21 @@ export class DrawsList extends React.Component<DrawsListProps, DrawsListState> {
         )
     }
 
-    Download(name: string) {
+    RestoreButton(name: string) {
         return (
             <ButtonGroup>
-                <Button download={`${name}.json`} href={`/api/draws/${name}`}>
+                <Button onClick={() => this.restore(name)} title={"Restore to Routes"}>
                     <SvgIcon>
-                        <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24"
-                             viewBox="0 0 24 24" width="24">
-                            <g>
-                                <rect fill="none" height="24" width="24"/>
-                            </g>
-                            <g>
-                                <path d="M5,20h14v-2H5V20z M19,9h-4V3H9v6H5l7,7L19,9z"/>
-                            </g>
-                        </svg>
+                        <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21.706 5.292-2.999-2.999A.996.996 0 0 0 18 2H6a.996.996 0 0 0-.707.293L2.294 5.292A.994.994 0 0 0 2 6v13c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6a.994.994 0 0 0-.294-.708zM6.414 4h11.172l1 1H5.414l1-1zM4 19V7h16l.002 12H4z"/><path d="M7 14h3v3h4v-3h3l-5-5z"/></svg>
                     </SvgIcon>
                 </Button>
             </ButtonGroup>
         )
     }
-    DownloadRefined(name: string) {
+    Download(name: string) {
         return (
             <ButtonGroup>
-                <Button download={`${name}.json`} href={`/api/draws/${name}/refine`}>
+                <Button download={`${name}.json`} href={`/api/archive/${name}`} title={"Download"}>
                     <SvgIcon>
                         <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24"
                              viewBox="0 0 24 24" width="24">
@@ -120,14 +130,13 @@ export class DrawsList extends React.Component<DrawsListProps, DrawsListState> {
         )
     }
 
-    drawElement(draw: Draw, index: number) {
+    drawElement(make: Archive, index: number) {
         return (
             <TableRow key={index}>
-                <TableCell><a href={`${this.props.prefix}/draws/${draw.name}`}>{draw.name}</a></TableCell>
-                <TableCell>{new Date(draw.lastModified).toLocaleString()}</TableCell>
-                <TableCell>{this.Download(draw.name)}</TableCell>
-                <TableCell>{this.DownloadRefined(draw.name)}</TableCell>
-                <TableCell>{this.Delete(draw.name)}</TableCell>
+                <TableCell><a href={`${this.props.prefix}/archive/${make.name}`}>{make.name}</a></TableCell>
+                <TableCell>{this.Download(make.name)}</TableCell>
+                <TableCell>{this.Delete(make.name)}</TableCell>
+                <TableCell>{this.RestoreButton(make.name)}</TableCell>
             </TableRow>
         )
     }
@@ -137,15 +146,14 @@ export class DrawsList extends React.Component<DrawsListProps, DrawsListState> {
             <TableContainer className={"tableContainer"}>
                 <TableHead>
                     <TableRow>
-                        <TableCell>Draw</TableCell>
-                        <TableCell>LastModified</TableCell>
-                        <TableCell>Raw</TableCell>
-                        <TableCell>Refined</TableCell>
+                        <TableCell>Route</TableCell>
+                        <TableCell>Download</TableCell>
                         <TableCell>Delete</TableCell>
+                        <TableCell>Restore</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {this.state.draws.map((draw: Draw, i) => this.drawElement(draw, i))}
+                    {this.state.archive.map((make: Archive, i) => this.drawElement(make, i))}
                 </TableBody>
             </TableContainer>
         )

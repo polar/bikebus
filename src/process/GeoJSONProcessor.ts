@@ -36,20 +36,20 @@ export class GeoJSONProcessor {
 
     get startTime() {
         let ls = B.getBusInfoLineString(this.geojson)
-        return ls?.properties?.timestamps[0]
+        return ls?.properties?.timestamps?.length > 0 && ls?.properties?.timestamps[0]
     }
     get endTime() {
         let ls = B.getBusInfoLineString(this.geojson)
-        return ls?.properties?.timestamps[ls?.properties?.timestamps.length - 1]
+        return ls?.properties?.timestamps?.length > 0 && ls?.properties?.timestamps[ls?.properties?.timestamps.length - 1]
     }
 
-    getMovingCumulative(minMetersPerSecond: number): number[] {
+    getMovingCumulative(): number[] {
         let ls = B.getBusInfoLineString(this.geojson)
-        return getCumulativeDistanceAndDuration(ls.geometry.coordinates, ls.properties.timestamps, minMetersPerSecond)// meters, duration(ms), average
+        return getCumulativeDistanceAndDuration(ls.geometry.coordinates, ls.properties.timestamps, this.minMetersPerSecond)// meters, duration(ms), average
     }
 
     getSummary() {
-        let [distance, duration, _a, _m] = this.getMovingCumulative(this.minMetersPerSecond)
+        let [distance, duration, _a, _m] = this.getMovingCumulative()
         return {
             distance: distance/1000,
             duration: duration/1000,
@@ -74,7 +74,26 @@ export class GeoJSONProcessor {
         })
     }
 
+    ensureTimestamps() {
+        let ls = B.getBusInfoLineString(this.geojson)
+        if (ls) {
+            let timestamps = ls.properties.timestamps || []
+            if (timestamps.length < ls.geometry.coordinates.length) {
+                let last = ls.geometry.coordinates[timestamps.length]
+                let lastTimestamp = timestamps[timestamps.length]
+                for (let i = 1; i < ls.geometry.coordinates.length; i++) {
+                    let curr = ls.geometry.coordinates[i]
+                    let distance = getPreciseDistance(last, curr)
+                    let time = distance / this.minMetersPerSecond
+                    let newTimestamp = lastTimestamp + time
+                    timestamps.push(newTimestamp)
+                }
+            }
+            ls.properties.timestamps = timestamps
+        }
+    }
     raw() {
+        this.ensureTimestamps()
         let ls = B.getBusInfoLineString(this.geojson)
         if (ls) {
             let line = this.createLineStringFeature(this.name, ls.geometry.coordinates, ls.properties.timestamps)

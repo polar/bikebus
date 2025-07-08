@@ -39,7 +39,6 @@
     "react-window": "^1.8.11",
     "use-immer": "^0.11.0",
     "unique-names-generator": "^4.7.1",
-    "xmldom": "^0.6.0",
     "@tmcw/togeojson": "^7.1.2"
   },
   "devDependencies": {

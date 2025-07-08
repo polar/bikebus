@@ -87,6 +87,8 @@ export class TrackerControl extends React.Component<TrackerControlProps, Tracker
                     },
                     body: JSON.stringify(this.busLocation)
                 })
+                    .then(res => res.json())
+                    .then(data => console.log(data))
                 this.busLocation = undefined
             }
         }, 1000 * UPDATE_LOCATION_INTERVAL_SECONDS)
