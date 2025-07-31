@@ -133,7 +133,7 @@ export class MakesList extends React.Component<MakesListProps, MakesListState> {
     drawElement(make: Make, index: number) {
         return (
             <TableRow key={index}>
-                <TableCell><a href={`${this.props.prefix}/makes/${make.name}`}>{make.name}</a></TableCell>
+                <TableCell><a href={`${this.props.prefix}/make/${make.name}`}>{make.name}</a></TableCell>
                 <TableCell>{this.Download(make.name)}</TableCell>
                 <TableCell>{this.Delete(make.name)}</TableCell>
                 <TableCell>{this.ArchiveButton(make.name)}</TableCell>

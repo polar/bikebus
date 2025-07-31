@@ -15,20 +15,20 @@ async function handleRequest(request: FastifyRequest, reply: FastifyReply) {
             .send('Route not found.')
     }
 
-    const {type, user} = request.query as {type?: string, user?: string}
+    const {type, name} = request.query as {type?: string, name?: string}
 
-    let userName = user
+    let hello = name
     // @ts-ignore
-    if (!userName && request.session && request.session.user) {
+    if (!name && request.session && request.session.hello) {
         // @ts-ignore
-        userName = request.session.user
+        hello = request.session.hello
     } else {
-        userName = idGenerator()
+        hello = idGenerator()
         // @ts-ignore
-        request.session.user = userName
+        request.session.hello = hello
     }
 
-    return reply.code(200).type('application/json').send({type: type, user: userName, route: route})
+    return reply.code(200).type('application/json').send({type: type, hello: hello, route: route})
 }
 const plugin: FastifyPluginCallback = (fastify, options: FastifyPluginOptions, next) => {
 

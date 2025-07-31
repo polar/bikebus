@@ -26,7 +26,7 @@ async function handleRequest(request: FastifyRequest , reply: FastifyReply ) {
 
 
     // @ts-ignore
-    let ans = {location: location, draw: name, sessionName: request.session.name}
+    let ans = {location: location, draw: name, sessionName: request.session.hello}
 
     return reply.code(200)
         .type("application/json")

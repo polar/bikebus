@@ -248,7 +248,6 @@ ReactDOM.createRoot(root!).render(
 
             <Route path="/makes" element={<MakesListShower/>} />
             <Route path="/make" element={<MakerShower/>} />
-            <Route path="/makes" element={<DrawListShower/>} />
             <Route path="/op" element={<OperatePage prefix={"/desktop"} show={[]}/>} />
             <Route path="/" element={<FrontPage prefix={"/desktop"} displayNavigation={false} displayOperator={false}/>} />
         </Routes>

@@ -7,6 +7,9 @@ import fs from "node:fs";
 import {uniqueNamesGenerator, names} from "unique-names-generator";
 import {DrawStore} from "../lib/DrawStore.ts";
 import {MakeStore} from "../lib/MakeStore.ts";
+import db from "dotenv";
+
+db.config()
 
 const loggerConfig : FastifyLoggerOptions = {
     // @ts-ignore
@@ -69,7 +72,7 @@ if (process.env.NODE_ENV === "production") {
     exposeDocs = true;
 }
 
-const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build({
+let opts = {
     logger: loggerConfig,
     exposeDocs: exposeDocs,
     cache: cache,
@@ -77,7 +80,9 @@ const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build({
     routeStore: routeStore,
     archiveStore: archiveStore,
     idGenerator: namesGenerator
-});
+}
+
+const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = build(opts);
 
 let listenOpts = {
     port: 9090,
@@ -106,7 +111,8 @@ app.addHook('preHandler', function (request, _reply, done) {
             body: request.body,
             user_agent: request.headers["user-agent"],
             path: request.routeOptions.url,
-            sessionId: request.session && request.session.sessionId,
+            sessionId: request.session?.sessionId,
+            hello: request.session?.hello
         }
         fs.appendFileSync(`logs/${request.session.sessionId}.json.log`, JSON.stringify(log) + "\n")
     }
@@ -140,7 +146,8 @@ app.addHook('onSend', function (request, reply, payload, done) {
                 body: request.body,
                 payload: payloadBody,
                 user_agent: request.headers["user-agent"],
-                sessionId: request.session && request.session.sessionId,
+                sessionId: request.session?.sessionId,
+                hello: request.session?.hello,
             }
             fs.appendFileSync(`logs/${request.session.sessionId}.json.log`, JSON.stringify(log) + "\n")
         }

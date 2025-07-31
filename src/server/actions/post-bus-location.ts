@@ -6,7 +6,7 @@ let self = this
 
 async function handleRequest(request: FastifyRequest , reply: FastifyReply ) {
 
-    const {route, user} = request.params as {route?: string, user?: string}
+    const {route, hello} = request.params as {route?: string, hello?: string}
     if (!cache.has(route)) {
         return reply
             .code(404)
@@ -26,7 +26,7 @@ async function handleRequest(request: FastifyRequest , reply: FastifyReply ) {
 
 
     //@ts-ignore
-    let ans = {location: location, requestUser: user, sessionUser: request.session.user}
+    let ans = {location: location, requestUser: hello, sessionUser: request.session.hello}
 
     return reply.code(200)
         .type("application/json")
