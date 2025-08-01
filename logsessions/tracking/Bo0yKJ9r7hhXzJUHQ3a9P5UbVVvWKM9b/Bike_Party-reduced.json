@@ -1,0 +1,177 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "Bo0yKJ9r7hhXzJUHQ3a9P5UbVVvWKM9b",
+    "title": "Bike_Party",
+    "numCoordinates": 19,
+    "startTime": "20:43:19 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "20:52:13 GMT-0400 (Eastern Daylight Time)",
+    "duration": 534001,
+    "flyDistance": 1644,
+    "cumulative": [
+      1820,
+      534001
+    ],
+    "moving": [
+      1636,
+      492000
+    ],
+    "averageTimeDifference": 28105.315789473683,
+    "summary": {
+      "distance": 1.636,
+      "duration": 492
+    },
+    "deleteCalled": false,
+    "names": []
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "Bo0yKJ9r7hhXzJUHQ3a9P5UbVVvWKM9b",
+        "numCoordinates": 19,
+        "startTime": "20:43:19 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "20:52:13 GMT-0400 (Eastern Daylight Time)",
+        "duration": 534001,
+        "flyDistance": 1644,
+        "summary": {
+          "distance": 1.636,
+          "duration": 492
+        },
+        "names": [],
+        "deleteCalled": false,
+        "timestamps": [
+          1751157799815,
+          1751157811816,
+          1751157820815,
+          1751157829816,
+          1751157841816,
+          1751157850816,
+          1751157862816,
+          1751157871816,
+          1751157880815,
+          1751157892816,
+          1751157901816,
+          1751157913816,
+          1751157973816,
+          1751158033816,
+          1751158093816,
+          1751158153816,
+          1751158213816,
+          1751158273815,
+          1751158333816
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1667238,
+            43.0362999
+          ],
+          [
+            -76.1673336,
+            43.0365671
+          ],
+          [
+            -76.1677642,
+            43.0366983
+          ],
+          [
+            -76.1681938,
+            43.0368457
+          ],
+          [
+            -76.1687178,
+            43.0370707
+          ],
+          [
+            -76.1690807,
+            43.0372899
+          ],
+          [
+            -76.1696011,
+            43.0375422
+          ],
+          [
+            -76.1700006,
+            43.037752
+          ],
+          [
+            -76.1703927,
+            43.0379539
+          ],
+          [
+            -76.1709118,
+            43.0382209
+          ],
+          [
+            -76.1713025,
+            43.0384049
+          ],
+          [
+            -76.1718063,
+            43.038665
+          ],
+          [
+            -76.172585,
+            43.0390539
+          ],
+          [
+            -76.1742802,
+            43.040007
+          ],
+          [
+            -76.1739003,
+            43.0418078
+          ],
+          [
+            -76.1740343,
+            43.0429179
+          ],
+          [
+            -76.1751342,
+            43.0458579
+          ],
+          [
+            -76.1777469,
+            43.0476308
+          ],
+          [
+            -76.1791838,
+            43.0479416
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1667238,
+          43.0362999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 14,
+        "end": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1739003,
+          43.0418078
+        ]
+      }
+    }
+  ]
+}

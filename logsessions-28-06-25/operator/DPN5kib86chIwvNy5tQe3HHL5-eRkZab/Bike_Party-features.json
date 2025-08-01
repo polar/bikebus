@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "DPN5kib86chIwvNy5tQe3HHL5-eRkZab",
+    "title": "Bike_Party",
+    "numCoordinates": 4,
+    "startTime": "22:23:56 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "22:24:05 GMT-0400 (Eastern Daylight Time)",
+    "duration": 9001,
+    "flyDistance": 2,
+    "cumulative": [
+      2,
+      9001
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 2250.25,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "names": [
+      "Felipa"
+    ],
+    "timestamps": [
+      1751077436721,
+      1751077439722,
+      1751077442722,
+      1751077445722
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "DPN5kib86chIwvNy5tQe3HHL5-eRkZab",
+        "numCoordinates": 4,
+        "startTime": "22:23:56 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "22:24:05 GMT-0400 (Eastern Daylight Time)",
+        "duration": 9001,
+        "flyDistance": 2,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "names": [
+          "Felipa"
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1158183,
+            43.0303
+          ],
+          [
+            -76.1158197,
+            43.0302841
+          ],
+          [
+            -76.1158198,
+            43.0302818
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ]
+        ]
+      }
+    }
+  ]
+}

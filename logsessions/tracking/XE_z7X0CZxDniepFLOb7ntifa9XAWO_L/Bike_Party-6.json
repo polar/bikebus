@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "XE_z7X0CZxDniepFLOb7ntifa9XAWO_L",
+    "title": "Bike_Party",
+    "numCoordinates": 5,
+    "startTime": "19:46:44 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "20:24:31 GMT-0400 (Eastern Daylight Time)",
+    "duration": 2267047,
+    "flyDistance": 353,
+    "cumulative": [
+      643,
+      2267047
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 453409.4,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "names": [
+      null
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "XE_z7X0CZxDniepFLOb7ntifa9XAWO_L",
+        "numCoordinates": 5,
+        "startTime": "19:46:44 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "20:24:31 GMT-0400 (Eastern Daylight Time)",
+        "duration": 2267047,
+        "flyDistance": 353,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "names": [
+          null
+        ],
+        "deleteCalled": false,
+        "timestamps": [
+          1751154404746,
+          1751154413746,
+          1751154503746,
+          1751154512746,
+          1751156671793
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1316666,
+            43.0381164
+          ],
+          [
+            -76.1315534,
+            43.0377223
+          ],
+          [
+            -76.1303013,
+            43.0362174
+          ],
+          [
+            -76.1301478,
+            43.0362347
+          ],
+          [
+            -76.1275906,
+            43.0391863
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1316666,
+          43.0381164
+        ]
+      }
+    }
+  ]
+}

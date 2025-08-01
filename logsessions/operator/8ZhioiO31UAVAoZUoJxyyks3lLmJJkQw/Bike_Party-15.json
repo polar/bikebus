@@ -1,0 +1,338 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "8ZhioiO31UAVAoZUoJxyyks3lLmJJkQw",
+    "title": "Bike_Party",
+    "numCoordinates": 28,
+    "startTime": "20:21:54 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "20:23:19 GMT-0400 (Eastern Daylight Time)",
+    "duration": 85236,
+    "flyDistance": 0,
+    "cumulative": [
+      0,
+      85236
+    ],
+    "moving": [
+      0,
+      71985
+    ],
+    "averageTimeDifference": 3044.1428571428573,
+    "summary": {
+      "distance": 0,
+      "duration": 71.985
+    },
+    "deleteCalled": true,
+    "names": [
+      "Corabella"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "8ZhioiO31UAVAoZUoJxyyks3lLmJJkQw",
+        "numCoordinates": 28,
+        "startTime": "20:21:54 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "20:23:19 GMT-0400 (Eastern Daylight Time)",
+        "duration": 85236,
+        "flyDistance": 0,
+        "summary": {
+          "distance": 0,
+          "duration": 71.985
+        },
+        "names": [
+          "Corabella"
+        ],
+        "deleteCalled": true,
+        "timestamps": [
+          1751156514554,
+          1751156518791,
+          1751156521791,
+          1751156524746,
+          1751156527805,
+          1751156530791,
+          1751156533790,
+          1751156536791,
+          1751156539803,
+          1751156542829,
+          1751156545791,
+          1751156548791,
+          1751156551791,
+          1751156554791,
+          1751156557791,
+          1751156560790,
+          1751156563791,
+          1751156566791,
+          1751156569791,
+          1751156572791,
+          1751156575791,
+          1751156578791,
+          1751156581791,
+          1751156584791,
+          1751156590791,
+          1751156593791,
+          1751156596791,
+          1751156599790
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1275973,
+            43.0391836
+          ],
+          [
+            -76.1275978,
+            43.0391835
+          ],
+          [
+            -76.1275997,
+            43.0391809
+          ],
+          [
+            -76.1275999,
+            43.0391803
+          ],
+          [
+            -76.127598,
+            43.0391814
+          ],
+          [
+            -76.1275945,
+            43.0391825
+          ],
+          [
+            -76.1275926,
+            43.0391828
+          ],
+          [
+            -76.1275922,
+            43.0391833
+          ],
+          [
+            -76.1275918,
+            43.0391835
+          ],
+          [
+            -76.1275928,
+            43.0391824
+          ],
+          [
+            -76.127593,
+            43.0391824
+          ],
+          [
+            -76.1275937,
+            43.0391829
+          ],
+          [
+            -76.1275937,
+            43.0391838
+          ],
+          [
+            -76.1275944,
+            43.0391843
+          ],
+          [
+            -76.1275957,
+            43.0391847
+          ],
+          [
+            -76.1275957,
+            43.0391845
+          ],
+          [
+            -76.1275946,
+            43.0391829
+          ],
+          [
+            -76.1275963,
+            43.0391816
+          ],
+          [
+            -76.1275959,
+            43.0391846
+          ],
+          [
+            -76.1275985,
+            43.0391849
+          ],
+          [
+            -76.1275952,
+            43.0391845
+          ],
+          [
+            -76.127596,
+            43.0391829
+          ],
+          [
+            -76.1275961,
+            43.0391845
+          ],
+          [
+            -76.1275965,
+            43.0391846
+          ],
+          [
+            -76.1275963,
+            43.0391846
+          ],
+          [
+            -76.1275963,
+            43.0391846
+          ],
+          [
+            -76.1275963,
+            43.0391845
+          ],
+          [
+            -76.1275961,
+            43.0391847
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1275973,
+          43.0391836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 4,
+        "end": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.127598,
+          43.0391814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 7,
+        "end": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1275922,
+          43.0391833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 10,
+        "end": 12
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.127593,
+          43.0391824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 12,
+        "end": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1275937,
+          43.0391838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 15,
+        "end": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1275957,
+          43.0391845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 17,
+        "end": 19
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1275963,
+          43.0391816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 19,
+        "end": 21
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1275985,
+          43.0391849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 21,
+        "end": 23
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.127596,
+          43.0391829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 23,
+        "end": 25
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1275965,
+          43.0391846
+        ]
+      }
+    }
+  ]
+}

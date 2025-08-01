@@ -1,0 +1,146 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "8ZhioiO31UAVAoZUoJxyyks3lLmJJkQw",
+    "title": "Bike_Party",
+    "numCoordinates": 12,
+    "startTime": "19:06:41 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "19:07:15 GMT-0400 (Eastern Daylight Time)",
+    "duration": 34401,
+    "flyDistance": 19,
+    "cumulative": [
+      22,
+      34401
+    ],
+    "moving": [
+      1,
+      21000
+    ],
+    "averageTimeDifference": 2866.75,
+    "summary": {
+      "distance": 0.001,
+      "duration": 21
+    },
+    "deleteCalled": true,
+    "names": [
+      "Corabella"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "8ZhioiO31UAVAoZUoJxyyks3lLmJJkQw",
+        "numCoordinates": 12,
+        "startTime": "19:06:41 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "19:07:15 GMT-0400 (Eastern Daylight Time)",
+        "duration": 34401,
+        "flyDistance": 19,
+        "summary": {
+          "distance": 0.001,
+          "duration": 21
+        },
+        "names": [
+          "Corabella"
+        ],
+        "deleteCalled": true,
+        "timestamps": [
+          1751152001298,
+          1751152005699,
+          1751152008699,
+          1751152011699,
+          1751152014699,
+          1751152017699,
+          1751152020699,
+          1751152023699,
+          1751152026699,
+          1751152029699,
+          1751152032699,
+          1751152035699
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1538663,
+            43.0498152
+          ],
+          [
+            -76.1539629,
+            43.0497551
+          ],
+          [
+            -76.15403,
+            43.0497338
+          ],
+          [
+            -76.1540851,
+            43.0497176
+          ],
+          [
+            -76.1540891,
+            43.0497164
+          ],
+          [
+            -76.1540892,
+            43.049718
+          ],
+          [
+            -76.1540876,
+            43.0497184
+          ],
+          [
+            -76.1540859,
+            43.0497182
+          ],
+          [
+            -76.1540854,
+            43.0497221
+          ],
+          [
+            -76.1540839,
+            43.0497225
+          ],
+          [
+            -76.1540753,
+            43.0497255
+          ],
+          [
+            -76.1540697,
+            43.0497273
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1538663,
+          43.0498152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 5,
+        "end": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1540892,
+          43.049718
+        ]
+      }
+    }
+  ]
+}

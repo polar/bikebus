@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "WGNir4avSSiwCaR42d6HmonQYCWYGkf1",
+    "title": "Nottingham",
+    "numCoordinates": 1,
+    "startTime": "08:06:50 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "08:06:50 GMT-0400 (Eastern Daylight Time)",
+    "duration": 0,
+    "flyDistance": 0,
+    "cumulative": [
+      0,
+      0
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 0,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "timestamps": [
+      1749643610806
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nottingham",
+        "sessionId": "WGNir4avSSiwCaR42d6HmonQYCWYGkf1",
+        "numCoordinates": 1,
+        "startTime": "08:06:50 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "08:06:50 GMT-0400 (Eastern Daylight Time)",
+        "duration": 0,
+        "flyDistance": 0,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1100899,
+            43.0321531
+          ]
+        ]
+      }
+    }
+  ]
+}

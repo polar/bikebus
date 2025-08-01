@@ -1,0 +1,194 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "a2Ta9n3TfsGr6vYSfWtpD--w6fKx_QOT",
+    "title": "Nottingham",
+    "numCoordinates": 16,
+    "startTime": "08:01:50 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "08:21:04 GMT-0400 (Eastern Daylight Time)",
+    "duration": 1153842,
+    "flyDistance": 1319,
+    "cumulative": [
+      1493,
+      1153842
+    ],
+    "moving": [
+      887,
+      787831
+    ],
+    "averageTimeDifference": 72115.125,
+    "summary": {
+      "distance": 0.887,
+      "duration": 787.831
+    },
+    "deleteCalled": false,
+    "names": [
+      null
+    ],
+    "timestamps": [
+      1750852910805,
+      1750852922805,
+      1750852931805,
+      1750852940805,
+      1750853276816,
+      1750853285816,
+      1750853297816,
+      1750853306816,
+      1750853327816,
+      1750853336816,
+      1750853345560,
+      1750853357816,
+      1750854034827,
+      1750854043827,
+      1750854055827,
+      1750854064647
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Nottingham",
+        "sessionId": "a2Ta9n3TfsGr6vYSfWtpD--w6fKx_QOT",
+        "numCoordinates": 16,
+        "startTime": "08:01:50 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "08:21:04 GMT-0400 (Eastern Daylight Time)",
+        "duration": 1153842,
+        "flyDistance": 1319,
+        "summary": {
+          "distance": 0.887,
+          "duration": 787.831
+        },
+        "names": [
+          null
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1092453,
+            43.0357384
+          ],
+          [
+            -76.1094935,
+            43.0353276
+          ],
+          [
+            -76.109789,
+            43.0348926
+          ],
+          [
+            -76.1099475,
+            43.0345023
+          ],
+          [
+            -76.1122529,
+            43.0307555
+          ],
+          [
+            -76.1122529,
+            43.0307555
+          ],
+          [
+            -76.1122525,
+            43.0307543
+          ],
+          [
+            -76.1122525,
+            43.0307543
+          ],
+          [
+            -76.1122448,
+            43.0307532
+          ],
+          [
+            -76.1123613,
+            43.0307233
+          ],
+          [
+            -76.1123453,
+            43.0307187
+          ],
+          [
+            -76.1136646,
+            43.0306504
+          ],
+          [
+            -76.1228952,
+            43.0293582
+          ],
+          [
+            -76.122899,
+            43.0293548
+          ],
+          [
+            -76.1228986,
+            43.0293559
+          ],
+          [
+            -76.1228889,
+            43.0293597
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1092453,
+          43.0357384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 5,
+        "end": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1122529,
+          43.0307555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 7,
+        "end": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1122525,
+          43.0307543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 10,
+        "end": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1123453,
+          43.0307187
+        ]
+      }
+    }
+  ]
+}

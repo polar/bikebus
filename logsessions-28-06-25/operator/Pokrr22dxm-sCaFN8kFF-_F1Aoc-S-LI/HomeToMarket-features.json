@@ -1,0 +1,63 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "Pokrr22dxm-sCaFN8kFF-_F1Aoc-S-LI",
+    "title": "HomeToMarket",
+    "numCoordinates": 1,
+    "startTime": "10:57:56 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "10:57:56 GMT-0400 (Eastern Daylight Time)",
+    "duration": 0,
+    "flyDistance": 0,
+    "cumulative": [
+      0,
+      0
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 0,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "names": [
+      "Marjy"
+    ],
+    "timestamps": [
+      1751122676879
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "HomeToMarket",
+        "sessionId": "Pokrr22dxm-sCaFN8kFF-_F1Aoc-S-LI",
+        "numCoordinates": 1,
+        "startTime": "10:57:56 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "10:57:56 GMT-0400 (Eastern Daylight Time)",
+        "duration": 0,
+        "flyDistance": 0,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "names": [
+          "Marjy"
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1171864,
+            43.0338314
+          ]
+        ]
+      }
+    }
+  ]
+}

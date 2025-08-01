@@ -1,0 +1,116 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "7bcZiECzdUavuBvOM5hpCZBSXp29qIi_",
+    "title": "Nottingham",
+    "numCoordinates": 6,
+    "startTime": "14:29:32 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "14:29:47 GMT-0400 (Eastern Daylight Time)",
+    "duration": 15000,
+    "flyDistance": 0,
+    "cumulative": [
+      0,
+      15000
+    ],
+    "moving": [
+      0,
+      3001
+    ],
+    "averageTimeDifference": 2500,
+    "summary": {
+      "distance": 0,
+      "duration": 3.001
+    },
+    "deleteCalled": true,
+    "names": [
+      "Fran"
+    ],
+    "timestamps": [
+      1749925772205,
+      1749925775204,
+      1749925778204,
+      1749925781204,
+      1749925784204,
+      1749925787205
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Nottingham",
+        "sessionId": "7bcZiECzdUavuBvOM5hpCZBSXp29qIi_",
+        "numCoordinates": 6,
+        "startTime": "14:29:32 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "14:29:47 GMT-0400 (Eastern Daylight Time)",
+        "duration": 15000,
+        "flyDistance": 0,
+        "summary": {
+          "distance": 0,
+          "duration": 3.001
+        },
+        "names": [
+          "Fran"
+        ],
+        "deleteCalled": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1153766,
+            43.0357337
+          ],
+          [
+            -76.1153767,
+            43.0357338
+          ],
+          [
+            -76.1153769,
+            43.035734
+          ],
+          [
+            -76.115376,
+            43.0357344
+          ],
+          [
+            -76.1153774,
+            43.0357339
+          ],
+          [
+            -76.1153777,
+            43.0357343
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1153766,
+          43.0357337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 3,
+        "end": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.115376,
+          43.0357344
+        ]
+      }
+    }
+  ]
+}

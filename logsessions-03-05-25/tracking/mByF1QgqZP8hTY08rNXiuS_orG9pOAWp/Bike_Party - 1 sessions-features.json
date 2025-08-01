@@ -1,0 +1,160 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "mByF1QgqZP8hTY08rNXiuS_orG9pOAWp",
+    "title": "Bike_Party",
+    "name": "Bike_Party - 1 sessions",
+    "numCoordinates": 12,
+    "startTime": "19:17:33 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "19:19:25 GMT-0400 (Eastern Daylight Time)",
+    "duration": 112004,
+    "flyDistance": 382,
+    "cumulative": [
+      405,
+      112004,
+      0.0036159422877754368,
+      0
+    ],
+    "moving": [
+      405,
+      112004,
+      0.0036159422877754368,
+      1
+    ],
+    "averageTimeDifference": 9333.666666666666,
+    "summary": {
+      "distance": 0.405,
+      "duration": 112.004
+    },
+    "numLines": 1,
+    "lines": [
+      {
+        "start": 0,
+        "end": 7,
+        "length": 7,
+        "averageBearing": 155.93923467703658,
+        "angleDiff": 14.39022914307506
+      }
+    ],
+    "numPivots": 3,
+    "pivots": [
+      [],
+      [
+        {
+          "start": 0,
+          "end": 7,
+          "length": 7,
+          "averageBearing": 155.93923467703658,
+          "angleDiff": 14.39022914307506
+        }
+      ],
+      []
+    ],
+    "numTurns": 0,
+    "turns": []
+  },
+  "features": [
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "session": "mByF1QgqZP8hTY08rNXiuS_orG9pOAWp",
+            "title": "Bike_Party",
+            "numCoordinates": 12,
+            "startTime": "19:17:33 GMT-0400 (Eastern Daylight Time)",
+            "endTime": "19:19:25 GMT-0400 (Eastern Daylight Time)",
+            "deleteCalled": false,
+            "duration": 112004,
+            "flyDistance": 382,
+            "cumulative": [
+              405,
+              112004,
+              0.0036159422877754368,
+              0
+            ],
+            "moving": [
+              405,
+              112004,
+              0.0036159422877754368,
+              1
+            ],
+            "averageTimeDifference": 9333.666666666666,
+            "summary": {
+              "distance": 0.405,
+              "duration": 112.004
+            },
+            "timestamps": [
+              1748733453388,
+              1748733465388,
+              1748733475244,
+              1748733485392,
+              1748733494392,
+              1748733503392,
+              1748733515391,
+              1748733524392,
+              1748733533392,
+              1748733545391,
+              1748733553391,
+              1748733565392
+            ]
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -76.1493185,
+                43.0489819
+              ],
+              [
+                -76.1493476,
+                43.0485649
+              ],
+              [
+                -76.1494536,
+                43.0483296
+              ],
+              [
+                -76.149341,
+                43.0478521
+              ],
+              [
+                -76.149355,
+                43.0475444
+              ],
+              [
+                -76.1493402,
+                43.0473151
+              ],
+              [
+                -76.1492064,
+                43.0470218
+              ],
+              [
+                -76.1488393,
+                43.0469268
+              ],
+              [
+                -76.1488463,
+                43.0466468
+              ],
+              [
+                -76.1488531,
+                43.0462377
+              ],
+              [
+                -76.1488285,
+                43.0460232
+              ],
+              [
+                -76.1488346,
+                43.0455636
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

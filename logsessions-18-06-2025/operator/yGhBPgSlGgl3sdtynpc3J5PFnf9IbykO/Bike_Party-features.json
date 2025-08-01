@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "yGhBPgSlGgl3sdtynpc3J5PFnf9IbykO",
+    "title": "Bike_Party",
+    "numCoordinates": 2,
+    "startTime": "16:04:18 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "16:04:22 GMT-0400 (Eastern Daylight Time)",
+    "duration": 4179,
+    "flyDistance": 3,
+    "cumulative": [
+      3,
+      4179
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 2089.5,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "names": [
+      "Shayna"
+    ],
+    "timestamps": [
+      1749758658320,
+      1749758662499
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "yGhBPgSlGgl3sdtynpc3J5PFnf9IbykO",
+        "numCoordinates": 2,
+        "startTime": "16:04:18 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "16:04:22 GMT-0400 (Eastern Daylight Time)",
+        "duration": 4179,
+        "flyDistance": 3,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "names": [
+          "Shayna"
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1172064,
+            43.0338262
+          ],
+          [
+            -76.1172153,
+            43.0337989
+          ]
+        ]
+      }
+    }
+  ]
+}

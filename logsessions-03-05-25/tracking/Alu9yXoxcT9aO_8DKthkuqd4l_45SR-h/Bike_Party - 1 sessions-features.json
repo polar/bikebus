@@ -1,0 +1,6397 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "Alu9yXoxcT9aO_8DKthkuqd4l_45SR-h",
+    "title": "Bike_Party",
+    "name": "Bike_Party - 1 sessions",
+    "numCoordinates": 395,
+    "startTime": "19:33:32 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "20:39:20 GMT-0400 (Eastern Daylight Time)",
+    "duration": 3947996,
+    "flyDistance": 3264,
+    "cumulative": [
+      9039,
+      3947996,
+      0.00228951599748328,
+      0
+    ],
+    "moving": [
+      8873,
+      2115925,
+      0.004193437858147146,
+      1
+    ],
+    "averageTimeDifference": 9994.926582278482,
+    "summary": {
+      "distance": 8.873,
+      "duration": 2115.925
+    },
+    "numLines": 101,
+    "lines": [
+      {
+        "start": 0,
+        "end": 9,
+        "length": 9,
+        "averageBearing": 224.46647580589453,
+        "angleDiff": 32.1947080077322
+      },
+      {
+        "start": 9,
+        "end": 12,
+        "length": 3,
+        "averageBearing": 119.10431744113482,
+        "angleDiff": -132.03910710983206
+      },
+      {
+        "start": 12,
+        "end": 21,
+        "length": 9,
+        "averageBearing": 291.190241437513,
+        "angleDiff": 28.79333654708364
+      },
+      {
+        "start": 21,
+        "end": 28,
+        "length": 7,
+        "averageBearing": 240.1231338738618,
+        "angleDiff": 44.32111683941159
+      },
+      {
+        "start": 28,
+        "end": 32,
+        "length": 4,
+        "averageBearing": 96.75517821174564,
+        "angleDiff": -103.07500600277683
+      },
+      {
+        "start": 32,
+        "end": 37,
+        "length": 5,
+        "averageBearing": 217.93111116088443,
+        "angleDiff": 47.86921517645027
+      },
+      {
+        "start": 37,
+        "end": 45,
+        "length": 8,
+        "averageBearing": 176.15266829310315,
+        "angleDiff": 10.763050101391002
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "length": 3,
+        "averageBearing": 113.22637443796543,
+        "angleDiff": 67.00040024437027
+      },
+      {
+        "start": 48,
+        "end": 50,
+        "length": 2,
+        "averageBearing": 133.03869366862318,
+        "angleDiff": 172.87438033876202
+      },
+      {
+        "start": 50,
+        "end": 52,
+        "length": 2,
+        "averageBearing": 9.42087268137513,
+        "angleDiff": -24.199916206985336
+      },
+      {
+        "start": 52,
+        "end": 54,
+        "length": 2,
+        "averageBearing": 79.68984389848151,
+        "angleDiff": 95.91548322733718
+      },
+      {
+        "start": 54,
+        "end": 56,
+        "length": 2,
+        "averageBearing": 169.8057038776762,
+        "angleDiff": 169.05251293146455
+      },
+      {
+        "start": 56,
+        "end": 58,
+        "length": 2,
+        "averageBearing": 1.7725275945239787,
+        "angleDiff": 14.097429943650297
+      },
+      {
+        "start": 58,
+        "end": 61,
+        "length": 3,
+        "averageBearing": 84.40340061250386,
+        "angleDiff": 20.294826852174353
+      },
+      {
+        "start": 61,
+        "end": 65,
+        "length": 4,
+        "averageBearing": 174.40810178632395,
+        "angleDiff": 148.73016062676433
+      },
+      {
+        "start": 65,
+        "end": 68,
+        "length": 3,
+        "averageBearing": 169.00873089628453,
+        "angleDiff": 94.35084362215252
+      },
+      {
+        "start": 68,
+        "end": 70,
+        "length": 2,
+        "averageBearing": 101.84160680036216,
+        "angleDiff": 57.44575382475735
+      },
+      {
+        "start": 70,
+        "end": 72,
+        "length": 2,
+        "averageBearing": 60.464638049534756,
+        "angleDiff": 61.862188683175646
+      },
+      {
+        "start": 72,
+        "end": 75,
+        "length": 3,
+        "averageBearing": 94.76957411430347,
+        "angleDiff": 89.20128420962443
+      },
+      {
+        "start": 75,
+        "end": 78,
+        "length": 3,
+        "averageBearing": 90.30740160557097,
+        "angleDiff": 121.04217741662139
+      },
+      {
+        "start": 78,
+        "end": 81,
+        "length": 3,
+        "averageBearing": 16.518194730840417,
+        "angleDiff": -6.087258591894038
+      },
+      {
+        "start": 81,
+        "end": 83,
+        "length": 2,
+        "averageBearing": 7.852113954500538,
+        "angleDiff": -19.649697303379185
+      },
+      {
+        "start": 83,
+        "end": 85,
+        "length": 2,
+        "averageBearing": 34.05564859720917,
+        "angleDiff": -9.041075597922628
+      },
+      {
+        "start": 85,
+        "end": 87,
+        "length": 2,
+        "averageBearing": 161.31869666302023,
+        "angleDiff": -144.0238709950098
+      },
+      {
+        "start": 87,
+        "end": 90,
+        "length": 3,
+        "averageBearing": 84.16012841987123,
+        "angleDiff": 8.740219443679848
+      },
+      {
+        "start": 90,
+        "end": 92,
+        "length": 2,
+        "averageBearing": 0,
+        "angleDiff": -64.55488090869153
+      },
+      {
+        "start": 92,
+        "end": 94,
+        "length": 2,
+        "averageBearing": 68.78958675827838,
+        "angleDiff": 91.13220091872424
+      },
+      {
+        "start": 94,
+        "end": 97,
+        "length": 3,
+        "averageBearing": 132.4111119784728,
+        "angleDiff": -81.36040752601176
+      },
+      {
+        "start": 97,
+        "end": 99,
+        "length": 2,
+        "averageBearing": 139.66101555283905,
+        "angleDiff": 64.89446215736012
+      },
+      {
+        "start": 99,
+        "end": 101,
+        "length": 2,
+        "averageBearing": 37.058714368240544,
+        "angleDiff": 86.08074365473158
+      },
+      {
+        "start": 101,
+        "end": 103,
+        "length": 2,
+        "averageBearing": 152.97416393842175,
+        "angleDiff": 150.37033907036758
+      },
+      {
+        "start": 103,
+        "end": 105,
+        "length": 2,
+        "averageBearing": 149.34308522555096,
+        "angleDiff": -124.1718930247435
+      },
+      {
+        "start": 105,
+        "end": 108,
+        "length": 3,
+        "averageBearing": 195.12815807952026,
+        "angleDiff": 84.38067783480383
+      },
+      {
+        "start": 108,
+        "end": 110,
+        "length": 2,
+        "averageBearing": 79.47776940024687,
+        "angleDiff": 27.43063680191591
+      },
+      {
+        "start": 110,
+        "end": 112,
+        "length": 2,
+        "averageBearing": 65.45205891014294,
+        "angleDiff": 60.17077109287865
+      },
+      {
+        "start": 112,
+        "end": 114,
+        "length": 2,
+        "averageBearing": 131.10535381590768,
+        "angleDiff": 95.13698451221705
+      },
+      {
+        "start": 114,
+        "end": 117,
+        "length": 3,
+        "averageBearing": 49.847290467396796,
+        "angleDiff": 33.06397576802893
+      },
+      {
+        "start": 117,
+        "end": 119,
+        "length": 2,
+        "averageBearing": 170.36455227490774,
+        "angleDiff": 123.44570433852488
+      },
+      {
+        "start": 119,
+        "end": 121,
+        "length": 2,
+        "averageBearing": 31.421718763578838,
+        "angleDiff": 38.78039448719369
+      },
+      {
+        "start": 121,
+        "end": 123,
+        "length": 2,
+        "averageBearing": 110.48066760538501,
+        "angleDiff": -164.72825277438625
+      },
+      {
+        "start": 123,
+        "end": 125,
+        "length": 2,
+        "averageBearing": 48.003423226000564,
+        "angleDiff": 124.28693701228144
+      },
+      {
+        "start": 125,
+        "end": 128,
+        "length": 3,
+        "averageBearing": 42.04681384193543,
+        "angleDiff": -26.176843901544316
+      },
+      {
+        "start": 128,
+        "end": 130,
+        "length": 2,
+        "averageBearing": 64.47464703287787,
+        "angleDiff": 167.1476426114382
+      },
+      {
+        "start": 130,
+        "end": 132,
+        "length": 2,
+        "averageBearing": 12.657586456368193,
+        "angleDiff": 51.954027133486676
+      },
+      {
+        "start": 132,
+        "end": 134,
+        "length": 2,
+        "averageBearing": 122.74409375931465,
+        "angleDiff": 65.57400015015928
+      },
+      {
+        "start": 134,
+        "end": 136,
+        "length": 2,
+        "averageBearing": 109.71716235525857,
+        "angleDiff": 144.98197877398292
+      },
+      {
+        "start": 136,
+        "end": 138,
+        "length": 2,
+        "averageBearing": 131.7483542465788,
+        "angleDiff": -145.44317317212568
+      },
+      {
+        "start": 138,
+        "end": 140,
+        "length": 2,
+        "averageBearing": 113.53567636808518,
+        "angleDiff": 68.13925262816247
+      },
+      {
+        "start": 140,
+        "end": 142,
+        "length": 2,
+        "averageBearing": 158.78958730317825,
+        "angleDiff": 178.85762894419432
+      },
+      {
+        "start": 142,
+        "end": 144,
+        "length": 2,
+        "averageBearing": 110.62927642441907,
+        "angleDiff": 130.68455369626457
+      },
+      {
+        "start": 144,
+        "end": 146,
+        "length": 2,
+        "averageBearing": 92.32185550729584,
+        "angleDiff": -23.66920054853007
+      },
+      {
+        "start": 146,
+        "end": 149,
+        "length": 3,
+        "averageBearing": 84.02432953043476,
+        "angleDiff": -177.4279875303665
+      },
+      {
+        "start": 149,
+        "end": 151,
+        "length": 2,
+        "averageBearing": 36.76174062762729,
+        "angleDiff": 55.247085313346844
+      },
+      {
+        "start": 151,
+        "end": 153,
+        "length": 2,
+        "averageBearing": 118.40313542374882,
+        "angleDiff": 155.3238085777428
+      },
+      {
+        "start": 153,
+        "end": 155,
+        "length": 2,
+        "averageBearing": 93.39623448076959,
+        "angleDiff": 89.59862094925727
+      },
+      {
+        "start": 155,
+        "end": 158,
+        "length": 3,
+        "averageBearing": 16.711159237671172,
+        "angleDiff": -15.309770285724102
+      },
+      {
+        "start": 158,
+        "end": 160,
+        "length": 2,
+        "averageBearing": 19.402027533196645,
+        "angleDiff": -72.67388604085761
+      },
+      {
+        "start": 160,
+        "end": 163,
+        "length": 3,
+        "averageBearing": 72.90623843839886,
+        "angleDiff": 66.74320196477585
+      },
+      {
+        "start": 163,
+        "end": 165,
+        "length": 2,
+        "averageBearing": 163.69739982503296,
+        "angleDiff": 175.8149263858735
+      },
+      {
+        "start": 165,
+        "end": 169,
+        "length": 4,
+        "averageBearing": 71.78898282220786,
+        "angleDiff": -89.78816363723536
+      },
+      {
+        "start": 169,
+        "end": 172,
+        "length": 3,
+        "averageBearing": 59.28065491514508,
+        "angleDiff": 45.6407239528948
+      },
+      {
+        "start": 172,
+        "end": 175,
+        "length": 3,
+        "averageBearing": 165.3924015931697,
+        "angleDiff": 94.56877971530335
+      },
+      {
+        "start": 175,
+        "end": 177,
+        "length": 2,
+        "averageBearing": 8.261530667903628,
+        "angleDiff": 18.761121021398594
+      },
+      {
+        "start": 177,
+        "end": 180,
+        "length": 3,
+        "averageBearing": 69.21643876669249,
+        "angleDiff": 97.08874222619998
+      },
+      {
+        "start": 180,
+        "end": 182,
+        "length": 2,
+        "averageBearing": 156.55253325461106,
+        "angleDiff": -175.3895616992746
+      },
+      {
+        "start": 182,
+        "end": 184,
+        "length": 2,
+        "averageBearing": 106.67106665221456,
+        "angleDiff": 163.32893359706577
+      },
+      {
+        "start": 184,
+        "end": 186,
+        "length": 2,
+        "averageBearing": 148.43428130181587,
+        "angleDiff": -69.49156031608027
+      },
+      {
+        "start": 186,
+        "end": 189,
+        "length": 3,
+        "averageBearing": 164.65234675683402,
+        "angleDiff": 86.46791720273873
+      },
+      {
+        "start": 189,
+        "end": 191,
+        "length": 2,
+        "averageBearing": 32.631870189301026,
+        "angleDiff": 26.738886946269247
+      },
+      {
+        "start": 191,
+        "end": 193,
+        "length": 2,
+        "averageBearing": 120.02970103286768,
+        "angleDiff": 103.97978973968304
+      },
+      {
+        "start": 193,
+        "end": 195,
+        "length": 2,
+        "averageBearing": 143.75980767488193,
+        "angleDiff": 158.32650784994712
+      },
+      {
+        "start": 195,
+        "end": 199,
+        "length": 4,
+        "averageBearing": 166.72520560553457,
+        "angleDiff": -29.660521233036803
+      },
+      {
+        "start": 199,
+        "end": 203,
+        "length": 4,
+        "averageBearing": 105.17247063512369,
+        "angleDiff": 172.81401460061952
+      },
+      {
+        "start": 203,
+        "end": 205,
+        "length": 2,
+        "averageBearing": 23.710670020843082,
+        "angleDiff": -0.6842391221640867
+      },
+      {
+        "start": 205,
+        "end": 208,
+        "length": 3,
+        "averageBearing": 199.1895679419982,
+        "angleDiff": 70.34440942337315
+      },
+      {
+        "start": 208,
+        "end": 210,
+        "length": 2,
+        "averageBearing": 86.37318060593634,
+        "angleDiff": 75.16002956688521
+      },
+      {
+        "start": 210,
+        "end": 217,
+        "length": 7,
+        "averageBearing": 125.90879899694232,
+        "angleDiff": 34.46537266953328
+      },
+      {
+        "start": 217,
+        "end": 219,
+        "length": 2,
+        "averageBearing": 115.46917163731246,
+        "angleDiff": 132.6166840838277
+      },
+      {
+        "start": 219,
+        "end": 223,
+        "length": 4,
+        "averageBearing": 220.69121161601595,
+        "angleDiff": 52.13625941958003
+      },
+      {
+        "start": 223,
+        "end": 225,
+        "length": 2,
+        "averageBearing": 125.10493488614338,
+        "angleDiff": 143.88227462847573
+      },
+      {
+        "start": 225,
+        "end": 235,
+        "length": 10,
+        "averageBearing": 303.91518564142854,
+        "angleDiff": 33.63133338582571
+      },
+      {
+        "start": 235,
+        "end": 237,
+        "length": 2,
+        "averageBearing": 2.8789031169715713,
+        "angleDiff": 29.135823746360643
+      },
+      {
+        "start": 237,
+        "end": 242,
+        "length": 5,
+        "averageBearing": 211.6514562821833,
+        "angleDiff": 69.94404693442476
+      },
+      {
+        "start": 242,
+        "end": 244,
+        "length": 2,
+        "averageBearing": 116.81278779151145,
+        "angleDiff": 116.81278779151145
+      },
+      {
+        "start": 244,
+        "end": 254,
+        "length": 10,
+        "averageBearing": 66.01217043492174,
+        "angleDiff": 15.464143815601531
+      },
+      {
+        "start": 254,
+        "end": 258,
+        "length": 4,
+        "averageBearing": 70.0892328381783,
+        "angleDiff": 22.718530176803426
+      },
+      {
+        "start": 258,
+        "end": 263,
+        "length": 5,
+        "averageBearing": 93.44986525513562,
+        "angleDiff": -60.74238085865355
+      },
+      {
+        "start": 263,
+        "end": 273,
+        "length": 10,
+        "averageBearing": 316.4128532481797,
+        "angleDiff": 47.88356696297507
+      },
+      {
+        "start": 273,
+        "end": 290,
+        "length": 17,
+        "averageBearing": 81.72211583785894,
+        "angleDiff": 3.500751735347947
+      },
+      {
+        "start": 290,
+        "end": 293,
+        "length": 3,
+        "averageBearing": 41.6801277577321,
+        "angleDiff": 7.085416696761023
+      },
+      {
+        "start": 293,
+        "end": 311,
+        "length": 18,
+        "averageBearing": 178.87380942293416,
+        "angleDiff": 173.9172255173818
+      },
+      {
+        "start": 311,
+        "end": 315,
+        "length": 4,
+        "averageBearing": 236.98560926513272,
+        "angleDiff": 103.40017827424339
+      },
+      {
+        "start": 315,
+        "end": 328,
+        "length": 13,
+        "averageBearing": 41.46110433637378,
+        "angleDiff": 3.226959698760396
+      },
+      {
+        "start": 328,
+        "end": 334,
+        "length": 6,
+        "averageBearing": 30.82038810941795,
+        "angleDiff": 11.71120490781821
+      },
+      {
+        "start": 334,
+        "end": 337,
+        "length": 3,
+        "averageBearing": 118.73841978427195,
+        "angleDiff": -118.26216977503866
+      },
+      {
+        "start": 337,
+        "end": 365,
+        "length": 28,
+        "averageBearing": 76.4567963496519,
+        "angleDiff": -6.704086327758105
+      },
+      {
+        "start": 365,
+        "end": 369,
+        "length": 4,
+        "averageBearing": 13.94483507871324,
+        "angleDiff": 53.52747544581088
+      },
+      {
+        "start": 369,
+        "end": 382,
+        "length": 13,
+        "averageBearing": 83.45225522464733,
+        "angleDiff": 9.863804717138748
+      },
+      {
+        "start": 382,
+        "end": 384,
+        "length": 2,
+        "averageBearing": 75.2811511390579,
+        "angleDiff": 76.84763880929393
+      },
+      {
+        "start": 384,
+        "end": 387,
+        "length": 3,
+        "averageBearing": 35.45105989128475,
+        "angleDiff": 29.20249008229903
+      },
+      {
+        "start": 387,
+        "end": 391,
+        "length": 4,
+        "averageBearing": 149.19744694494221,
+        "angleDiff": 67.92073997092419
+      }
+    ],
+    "numPivots": 3,
+    "pivots": [
+      [],
+      [
+        {
+          "start": 0,
+          "end": 9,
+          "length": 9,
+          "averageBearing": 224.46647580589453,
+          "angleDiff": 32.1947080077322
+        },
+        {
+          "start": 9,
+          "end": 22,
+          "length": 13,
+          "averageBearing": 286.1211467904353,
+          "angleDiff": 37.21302048216978
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "length": 7,
+          "averageBearing": 248.17692811051157,
+          "angleDiff": 49.54158435857144
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "length": 5,
+          "averageBearing": 217.93111116088443,
+          "angleDiff": 47.86921517645027
+        },
+        {
+          "start": 37,
+          "end": 45,
+          "length": 8,
+          "averageBearing": 176.15266829310315,
+          "angleDiff": 10.763050101391002
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "length": 4,
+          "averageBearing": 129.97647449905799,
+          "angleDiff": 63.85171131470878
+        },
+        {
+          "start": 49,
+          "end": 53,
+          "length": 4,
+          "averageBearing": 255.43278809889716,
+          "angleDiff": 83.42110337429995
+        },
+        {
+          "start": 55,
+          "end": 61,
+          "length": 6,
+          "averageBearing": 102.49417049249196,
+          "angleDiff": 4.52488103356022
+        },
+        {
+          "start": 61,
+          "end": 68,
+          "length": 7,
+          "averageBearing": 224.9194741232766,
+          "angleDiff": 61.15144817263371
+        },
+        {
+          "start": 70,
+          "end": 74,
+          "length": 4,
+          "averageBearing": 91.34087939599897,
+          "angleDiff": 37.931895750250305
+        },
+        {
+          "start": 81,
+          "end": 85,
+          "length": 4,
+          "averageBearing": 102.48198496811342,
+          "angleDiff": -86.18235036297314
+        },
+        {
+          "start": 90,
+          "end": 94,
+          "length": 4,
+          "averageBearing": 122.69385653312654,
+          "angleDiff": 129.4645995443427
+        },
+        {
+          "start": 155,
+          "end": 159,
+          "length": 4,
+          "averageBearing": 12.883716666240147,
+          "angleDiff": -10.62083174629565
+        },
+        {
+          "start": 159,
+          "end": 163,
+          "length": 4,
+          "averageBearing": 116.56896094547646,
+          "angleDiff": 42.903532357139696
+        },
+        {
+          "start": 165,
+          "end": 169,
+          "length": 4,
+          "averageBearing": 71.78898282220786,
+          "angleDiff": -89.78816363723536
+        },
+        {
+          "start": 177,
+          "end": 181,
+          "length": 4,
+          "averageBearing": 93.48862432324248,
+          "angleDiff": 165.4540974844148
+        },
+        {
+          "start": 195,
+          "end": 199,
+          "length": 4,
+          "averageBearing": 166.72520560553457,
+          "angleDiff": -29.660521233036803
+        },
+        {
+          "start": 199,
+          "end": 203,
+          "length": 4,
+          "averageBearing": 105.17247063512369,
+          "angleDiff": 172.81401460061952
+        },
+        {
+          "start": 208,
+          "end": 218,
+          "length": 10,
+          "averageBearing": 141.73267417253186,
+          "angleDiff": 25.59968137216589
+        },
+        {
+          "start": 218,
+          "end": 223,
+          "length": 5,
+          "averageBearing": 230.09583529870196,
+          "angleDiff": 44.009806064749284
+        },
+        {
+          "start": 225,
+          "end": 235,
+          "length": 10,
+          "averageBearing": 303.91518564142854,
+          "angleDiff": 33.63133338582571
+        },
+        {
+          "start": 237,
+          "end": 242,
+          "length": 5,
+          "averageBearing": 211.6514562821833,
+          "angleDiff": 69.94404693442476
+        },
+        {
+          "start": 244,
+          "end": 258,
+          "length": 14,
+          "averageBearing": 70.72913857270629,
+          "angleDiff": 12.363655768096066
+        },
+        {
+          "start": 258,
+          "end": 264,
+          "length": 6,
+          "averageBearing": 83.32613511202669,
+          "angleDiff": -62.598332464635575
+        },
+        {
+          "start": 264,
+          "end": 273,
+          "length": 9,
+          "averageBearing": 314.40213676604594,
+          "angleDiff": 51.32307034580333
+        },
+        {
+          "start": 273,
+          "end": 290,
+          "length": 17,
+          "averageBearing": 81.72211583785894,
+          "angleDiff": 3.500751735347947
+        },
+        {
+          "start": 290,
+          "end": 311,
+          "length": 21,
+          "averageBearing": 50.56997169625726,
+          "angleDiff": -52.71126752784312
+        },
+        {
+          "start": 311,
+          "end": 315,
+          "length": 4,
+          "averageBearing": 236.98560926513272,
+          "angleDiff": 103.40017827424339
+        },
+        {
+          "start": 315,
+          "end": 328,
+          "length": 13,
+          "averageBearing": 41.46110433637378,
+          "angleDiff": 3.226959698760396
+        },
+        {
+          "start": 328,
+          "end": 334,
+          "length": 6,
+          "averageBearing": 30.82038810941795,
+          "angleDiff": 11.71120490781821
+        },
+        {
+          "start": 337,
+          "end": 365,
+          "length": 28,
+          "averageBearing": 76.4567963496519,
+          "angleDiff": -6.704086327758105
+        },
+        {
+          "start": 365,
+          "end": 382,
+          "length": 17,
+          "averageBearing": 64.64991895864588,
+          "angleDiff": 23.330008634447807
+        },
+        {
+          "start": 387,
+          "end": 391,
+          "length": 4,
+          "averageBearing": 149.19744694494221,
+          "angleDiff": 67.92073997092419
+        }
+      ],
+      [
+        {
+          "start": 29,
+          "end": 32,
+          "length": 3
+        },
+        {
+          "start": 53,
+          "end": 55,
+          "length": 2
+        },
+        {
+          "start": 68,
+          "end": 70,
+          "length": 2
+        },
+        {
+          "start": 74,
+          "end": 81,
+          "length": 7
+        },
+        {
+          "start": 85,
+          "end": 90,
+          "length": 5
+        },
+        {
+          "start": 94,
+          "end": 155,
+          "length": 61
+        },
+        {
+          "start": 163,
+          "end": 165,
+          "length": 2
+        },
+        {
+          "start": 169,
+          "end": 177,
+          "length": 8
+        },
+        {
+          "start": 181,
+          "end": 195,
+          "length": 14
+        },
+        {
+          "start": 203,
+          "end": 208,
+          "length": 5
+        },
+        {
+          "start": 223,
+          "end": 225,
+          "length": 2
+        },
+        {
+          "start": 235,
+          "end": 237,
+          "length": 2
+        },
+        {
+          "start": 242,
+          "end": 244,
+          "length": 2
+        },
+        {
+          "start": 334,
+          "end": 337,
+          "length": 3
+        },
+        {
+          "start": 382,
+          "end": 387,
+          "length": 5
+        }
+      ]
+    ],
+    "numTurns": 123,
+    "turns": [
+      {
+        "index": 31,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.161866,
+            43.0289251
+          ],
+          [
+            -76.161737,
+            43.0292791
+          ],
+          [
+            -76.1623419,
+            43.0293934
+          ]
+        ],
+        "distanceToPrev": 41,
+        "distanceToNext": 51,
+        "bearingIn": 14.916250666613564,
+        "bearingOut": 284.4933192515332,
+        "angleChange": -90.42293141508037,
+        "duration": 21000,
+        "flyDistance": 65,
+        "distance": 92,
+        "timestamp": 1748734721413
+      },
+      {
+        "index": 52,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1651398,
+            43.0268435
+          ],
+          [
+            -76.1653642,
+            43.0269784
+          ],
+          [
+            -76.1653205,
+            43.0268935
+          ]
+        ],
+        "distanceToPrev": 24,
+        "distanceToNext": 10,
+        "bearingIn": 309.4319386118671,
+        "bearingOut": 159.37968779696303,
+        "angleChange": -150.05225081490408,
+        "duration": 20013,
+        "flyDistance": 16,
+        "distance": 34,
+        "timestamp": 1748734931413
+      },
+      {
+        "index": 54,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1653205,
+            43.0268935
+          ],
+          [
+            -76.1653519,
+            43.0268614
+          ],
+          [
+            -76.1653821,
+            43.0269208
+          ]
+        ],
+        "distanceToPrev": 4,
+        "distanceToNext": 7,
+        "bearingIn": 215.56827231966207,
+        "bearingOut": 339.6114077553524,
+        "angleChange": 124.04313543569032,
+        "duration": 21000,
+        "flyDistance": 6,
+        "distance": 11,
+        "timestamp": 1748734951426
+      },
+      {
+        "index": 55,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1653519,
+            43.0268614
+          ],
+          [
+            -76.1653821,
+            43.0269208
+          ],
+          [
+            -76.1653811,
+            43.0269166
+          ]
+        ],
+        "distanceToPrev": 7,
+        "distanceToNext": 0,
+        "bearingIn": 339.6114077553524,
+        "bearingOut": 170.1262689573806,
+        "angleChange": -169.48513879797179,
+        "duration": 20004,
+        "flyDistance": 7,
+        "distance": 7,
+        "timestamp": 1748734963426
+      },
+      {
+        "index": 56,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1653821,
+            43.0269208
+          ],
+          [
+            -76.1653811,
+            43.0269166
+          ],
+          [
+            -76.1653806,
+            43.0269225
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 1,
+        "bearingIn": 170.1262689573806,
+        "bearingOut": 3.5450551890479574,
+        "angleChange": -166.58121376833265,
+        "duration": 20000,
+        "flyDistance": 0,
+        "distance": 1,
+        "timestamp": 1748734971430
+      },
+      {
+        "index": 57,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1653811,
+            43.0269166
+          ],
+          [
+            -76.1653806,
+            43.0269225
+          ],
+          [
+            -76.1653804,
+            43.0269184
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 3.5450551890479574,
+        "bearingOut": 177.9576888584661,
+        "angleChange": 174.41263366941814,
+        "duration": 20791,
+        "flyDistance": 0,
+        "distance": 1,
+        "timestamp": 1748734983426
+      },
+      {
+        "index": 61,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1653309,
+            43.0269026
+          ],
+          [
+            -76.1653173,
+            43.0269063
+          ],
+          [
+            -76.1653209,
+            43.0269063
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 69.58691782725856,
+        "bearingOut": 270.00000124640246,
+        "angleChange": -159.5869165808561,
+        "duration": 18184,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748735022426
+      },
+      {
+        "index": 62,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1653173,
+            43.0269063
+          ],
+          [
+            -76.1653209,
+            43.0269063
+          ],
+          [
+            -76.1653164,
+            43.0269063
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 270.00000124640246,
+        "bearingOut": 89.99999844892136,
+        "angleChange": 179.9999972025189,
+        "duration": 20996,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735031426
+      },
+      {
+        "index": 63,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1653209,
+            43.0269063
+          ],
+          [
+            -76.1653164,
+            43.0269063
+          ],
+          [
+            -76.1653258,
+            43.0269214
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 2,
+        "bearingIn": 89.99999844892136,
+        "bearingOut": 335.5306560602319,
+        "angleChange": -114.46934238868948,
+        "duration": 21000,
+        "flyDistance": 2,
+        "distance": 2,
+        "timestamp": 1748735043422
+      },
+      {
+        "index": 67,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1653825,
+            43.0269187
+          ],
+          [
+            -76.1654113,
+            43.0269052
+          ],
+          [
+            -76.165389,
+            43.0269214
+          ]
+        ],
+        "distanceToPrev": 3,
+        "distanceToNext": 3,
+        "bearingIn": 237.33138073095694,
+        "bearingOut": 45.17987494036862,
+        "angleChange": 167.84849420941168,
+        "duration": 18000,
+        "flyDistance": 1,
+        "distance": 6,
+        "timestamp": 1748735082439
+      },
+      {
+        "index": 68,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1654113,
+            43.0269052
+          ],
+          [
+            -76.165389,
+            43.0269214
+          ],
+          [
+            -76.1653908,
+            43.0269184
+          ]
+        ],
+        "distanceToPrev": 3,
+        "distanceToNext": 0,
+        "bearingIn": 45.17987494036862,
+        "bearingOut": 203.68321360072432,
+        "angleChange": 158.5033386603557,
+        "duration": 17987,
+        "flyDistance": 2,
+        "distance": 3,
+        "timestamp": 1748735091426
+      },
+      {
+        "index": 69,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.165389,
+            43.0269214
+          ],
+          [
+            -76.1653908,
+            43.0269184
+          ],
+          [
+            -76.1653875,
+            43.0269185
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 203.68321360072432,
+        "bearingOut": 87.62631410978997,
+        "angleChange": -116.05689949093434,
+        "duration": 18022,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735100426
+      },
+      {
+        "index": 75,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652443,
+            43.0268329
+          ],
+          [
+            -76.1652556,
+            43.0268223
+          ],
+          [
+            -76.1652542,
+            43.0268226
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 217.92965165220008,
+        "bearingOut": 73.66272742517162,
+        "angleChange": -144.26692422702845,
+        "duration": 18000,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748735162431
+      },
+      {
+        "index": 76,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652556,
+            43.0268223
+          ],
+          [
+            -76.1652542,
+            43.0268226
+          ],
+          [
+            -76.1652573,
+            43.0268183
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 1,
+        "bearingIn": 73.66272742517162,
+        "bearingOut": 207.7903427403954,
+        "angleChange": 134.12761531522378,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 1,
+        "timestamp": 1748735171431
+      },
+      {
+        "index": 78,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652573,
+            43.0268183
+          ],
+          [
+            -76.1652601,
+            43.0268169
+          ],
+          [
+            -76.1652555,
+            43.0268258
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 1,
+        "bearingIn": 235.62934339473344,
+        "bearingOut": 20.698467933878476,
+        "angleChange": 145.06912453914504,
+        "duration": 18000,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748735192431
+      },
+      {
+        "index": 83,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652522,
+            43.0268469
+          ],
+          [
+            -76.1652546,
+            43.0268492
+          ],
+          [
+            -76.1652403,
+            43.0268534
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 1,
+        "bearingIn": 322.6629557068567,
+        "bearingOut": 68.11129719441834,
+        "angleChange": 105.44834148756166,
+        "duration": 21001,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748735243431
+      },
+      {
+        "index": 84,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652546,
+            43.0268492
+          ],
+          [
+            -76.1652403,
+            43.0268534
+          ],
+          [
+            -76.1652456,
+            43.0268633
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 1,
+        "bearingIn": 68.11129719441834,
+        "bearingOut": 338.6265350532434,
+        "angleChange": -89.48476214117494,
+        "duration": 18000,
+        "flyDistance": 2,
+        "distance": 2,
+        "timestamp": 1748735252431
+      },
+      {
+        "index": 86,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652456,
+            43.0268633
+          ],
+          [
+            -76.165255,
+            43.0268723
+          ],
+          [
+            -76.1652433,
+            43.0268687
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 1,
+        "bearingIn": 322.63739332604047,
+        "bearingOut": 112.82623425463669,
+        "angleChange": 150.18884092859622,
+        "duration": 18000,
+        "flyDistance": 1,
+        "distance": 2,
+        "timestamp": 1748735273431
+      },
+      {
+        "index": 88,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652433,
+            43.0268687
+          ],
+          [
+            -76.1652433,
+            43.026868
+          ],
+          [
+            -76.1652407,
+            43.0268693
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 180,
+        "bearingOut": 55.629319353546066,
+        "angleChange": -124.37068064645393,
+        "duration": 23000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735293465
+      },
+      {
+        "index": 89,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652433,
+            43.026868
+          ],
+          [
+            -76.1652407,
+            43.0268693
+          ],
+          [
+            -76.1652406,
+            43.0268686
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 55.629319353546066,
+        "bearingOut": 174.03801878702393,
+        "angleChange": 118.40869943347786,
+        "duration": 17966,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735302431
+      },
+      {
+        "index": 90,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652407,
+            43.0268693
+          ],
+          [
+            -76.1652406,
+            43.0268686
+          ],
+          [
+            -76.1652406,
+            43.0268695
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 174.03801878702393,
+        "bearingOut": 0,
+        "angleChange": -174.03801878702393,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735311431
+      },
+      {
+        "index": 91,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652406,
+            43.0268686
+          ],
+          [
+            -76.1652406,
+            43.0268695
+          ],
+          [
+            -76.1652429,
+            43.0268694
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 0,
+        "bearingOut": 266.596342182879,
+        "angleChange": -93.40365781712097,
+        "duration": 20999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735323431
+      },
+      {
+        "index": 92,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652406,
+            43.0268695
+          ],
+          [
+            -76.1652429,
+            43.0268694
+          ],
+          [
+            -76.1652409,
+            43.0268678
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 266.596342182879,
+        "bearingOut": 137.57917351655675,
+        "angleChange": -129.01716866632228,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735332430
+      },
+      {
+        "index": 93,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652429,
+            43.0268694
+          ],
+          [
+            -76.1652409,
+            43.0268678
+          ],
+          [
+            -76.1652423,
+            43.0268682
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 137.57917351655675,
+        "bearingOut": 291.3473452610326,
+        "angleChange": 153.76817174447586,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735341431
+      },
+      {
+        "index": 95,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652423,
+            43.0268682
+          ],
+          [
+            -76.1652426,
+            43.0268682
+          ],
+          [
+            -76.1652405,
+            43.0268672
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 270,
+        "bearingOut": 123.07994808647601,
+        "angleChange": -146.920051913524,
+        "duration": 17999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735362431
+      },
+      {
+        "index": 96,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652426,
+            43.0268682
+          ],
+          [
+            -76.1652405,
+            43.0268672
+          ],
+          [
+            -76.1652401,
+            43.0268695
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 123.07994808647601,
+        "bearingOut": 7.245502876460364,
+        "angleChange": -115.83444521001564,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735371430
+      },
+      {
+        "index": 97,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652405,
+            43.0268672
+          ],
+          [
+            -76.1652401,
+            43.0268695
+          ],
+          [
+            -76.1652451,
+            43.0268701
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 7.245502876460364,
+        "bearingOut": 279.3220311056781,
+        "angleChange": -87.92347177078227,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735380431
+      },
+      {
+        "index": 98,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652401,
+            43.0268695
+          ],
+          [
+            -76.1652451,
+            43.0268701
+          ],
+          [
+            -76.1652411,
+            43.0268679
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 279.3220311056781,
+        "bearingOut": 126.95630836086139,
+        "angleChange": -152.3657227448167,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735392430
+      },
+      {
+        "index": 100,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652411,
+            43.0268679
+          ],
+          [
+            -76.1652286,
+            43.0268705
+          ],
+          [
+            -76.1652323,
+            43.0268637
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 1,
+        "bearingIn": 74.11742873648109,
+        "bearingOut": 201.6911007936552,
+        "angleChange": 127.57367205717412,
+        "duration": 21006,
+        "flyDistance": 1,
+        "distance": 2,
+        "timestamp": 1748735413437
+      },
+      {
+        "index": 101,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652286,
+            43.0268705
+          ],
+          [
+            -76.1652323,
+            43.0268637
+          ],
+          [
+            -76.1652406,
+            43.0268681
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 1,
+        "bearingIn": 201.6911007936552,
+        "bearingOut": 305.9483278768435,
+        "angleChange": 104.2572270831883,
+        "duration": 18000,
+        "flyDistance": 1,
+        "distance": 2,
+        "timestamp": 1748735422437
+      },
+      {
+        "index": 102,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652323,
+            43.0268637
+          ],
+          [
+            -76.1652406,
+            43.0268681
+          ],
+          [
+            -76.1652402,
+            43.0268675
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 305.9483278768435,
+        "bearingOut": 154.0174384730036,
+        "angleChange": -151.9308894038399,
+        "duration": 21000,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748735431437
+      },
+      {
+        "index": 103,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652406,
+            43.0268681
+          ],
+          [
+            -76.1652402,
+            43.0268675
+          ],
+          [
+            -76.1652422,
+            43.0268683
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 154.0174384730036,
+        "bearingOut": 298.68617045110193,
+        "angleChange": 144.66873197809832,
+        "duration": 20999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735443437
+      },
+      {
+        "index": 104,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652402,
+            43.0268675
+          ],
+          [
+            -76.1652422,
+            43.0268683
+          ],
+          [
+            -76.1652393,
+            43.0268689
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 298.68617045110193,
+        "bearingOut": 74.19747103003834,
+        "angleChange": 135.5113005789364,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735452436
+      },
+      {
+        "index": 105,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652422,
+            43.0268683
+          ],
+          [
+            -76.1652393,
+            43.0268689
+          ],
+          [
+            -76.1652406,
+            43.026869
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 74.19747103003834,
+        "bearingOut": 276.00684717909144,
+        "angleChange": -158.1906238509469,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735461437
+      },
+      {
+        "index": 107,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652406,
+            43.026869
+          ],
+          [
+            -76.1652423,
+            43.0268707
+          ],
+          [
+            -76.1652442,
+            43.0268695
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 323.83193539476525,
+        "bearingOut": 229.17452146027867,
+        "angleChange": -94.65741393448658,
+        "duration": 18001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735482437
+      },
+      {
+        "index": 109,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652442,
+            43.0268695
+          ],
+          [
+            -76.1652432,
+            43.0268676
+          ],
+          [
+            -76.1652424,
+            43.0268691
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 158.95553880049374,
+        "bearingOut": 21.300049394619634,
+        "angleChange": -137.6554894058741,
+        "duration": 20999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735503437
+      },
+      {
+        "index": 110,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652432,
+            43.0268676
+          ],
+          [
+            -76.1652424,
+            43.0268691
+          ],
+          [
+            -76.1652394,
+            43.0268672
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 21.300049394619634,
+        "bearingOut": 130.90411782028588,
+        "angleChange": 109.60406842566624,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735512436
+      },
+      {
+        "index": 111,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652424,
+            43.0268691
+          ],
+          [
+            -76.1652394,
+            43.0268672
+          ],
+          [
+            -76.1652403,
+            43.026868
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 130.90411782028588,
+        "bearingOut": 320.565676108213,
+        "angleChange": -170.3384417120729,
+        "duration": 18001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735521437
+      },
+      {
+        "index": 113,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652403,
+            43.026868
+          ],
+          [
+            -76.1652413,
+            43.0268679
+          ],
+          [
+            -76.1652413,
+            43.0268673
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 262.21070763181535,
+        "bearingOut": 180,
+        "angleChange": -82.21070763181535,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735542437
+      },
+      {
+        "index": 115,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652413,
+            43.0268673
+          ],
+          [
+            -76.1652409,
+            43.0268671
+          ],
+          [
+            -76.1652404,
+            43.0268687
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 124.37067959160828,
+        "bearingOut": 12.868283652013076,
+        "angleChange": -111.5023959395952,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735563437
+      },
+      {
+        "index": 116,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652409,
+            43.0268671
+          ],
+          [
+            -76.1652404,
+            43.0268687
+          ],
+          [
+            -76.1652402,
+            43.0268674
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 12.868283652013076,
+        "bearingOut": 173.5830947898853,
+        "angleChange": 160.71481113787223,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735572437
+      },
+      {
+        "index": 117,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652404,
+            43.0268687
+          ],
+          [
+            -76.1652402,
+            43.0268674
+          ],
+          [
+            -76.1652413,
+            43.0268697
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 173.5830947898853,
+        "bearingOut": 340.7291045498155,
+        "angleChange": 167.14600975993017,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735581437
+      },
+      {
+        "index": 118,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652402,
+            43.0268674
+          ],
+          [
+            -76.1652413,
+            43.0268697
+          ],
+          [
+            -76.1652433,
+            43.0268684
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 340.7291045498155,
+        "bearingOut": 228.35804810758972,
+        "angleChange": -112.37105644222575,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735593438
+      },
+      {
+        "index": 119,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652413,
+            43.0268697
+          ],
+          [
+            -76.1652433,
+            43.0268684
+          ],
+          [
+            -76.1652409,
+            43.0268693
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 228.35804810758972,
+        "bearingOut": 62.843437527157676,
+        "angleChange": -165.51461058043205,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735602438
+      },
+      {
+        "index": 120,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652433,
+            43.0268684
+          ],
+          [
+            -76.1652409,
+            43.0268693
+          ],
+          [
+            -76.1652414,
+            43.0268689
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 62.843437527157676,
+        "bearingOut": 222.42082602887362,
+        "angleChange": 159.57738850171594,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735611438
+      },
+      {
+        "index": 122,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652414,
+            43.0268689
+          ],
+          [
+            -76.1652433,
+            43.0268673
+          ],
+          [
+            -76.1652433,
+            43.0268699
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 220.96133521077002,
+        "bearingOut": 0,
+        "angleChange": 139.03866478922998,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735632438
+      },
+      {
+        "index": 123,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652433,
+            43.0268673
+          ],
+          [
+            -76.1652433,
+            43.0268699
+          ],
+          [
+            -76.1652407,
+            43.0268697
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 0,
+        "bearingOut": 96.00684645200113,
+        "angleChange": 96.00684645200113,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735641438
+      },
+      {
+        "index": 124,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652433,
+            43.0268699
+          ],
+          [
+            -76.1652407,
+            43.0268697
+          ],
+          [
+            -76.1652428,
+            43.0268672
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 96.00684645200113,
+        "bearingOut": 211.5527714694578,
+        "angleChange": 115.54592501745668,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735653438
+      },
+      {
+        "index": 125,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652407,
+            43.0268697
+          ],
+          [
+            -76.1652428,
+            43.0268672
+          ],
+          [
+            -76.1652403,
+            43.0268678
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 211.5527714694578,
+        "bearingOut": 71.82487785128143,
+        "angleChange": -139.72789361817638,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735662438
+      },
+      {
+        "index": 127,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652403,
+            43.0268678
+          ],
+          [
+            -76.1652388,
+            43.0268693
+          ],
+          [
+            -76.1652421,
+            43.026869
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 36.16806523801881,
+        "bearingOut": 262.911267959602,
+        "angleChange": -133.2567972784168,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735683438
+      },
+      {
+        "index": 128,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652388,
+            43.0268693
+          ],
+          [
+            -76.1652421,
+            43.026869
+          ],
+          [
+            -76.1652399,
+            43.0268677
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 262.911267959602,
+        "bearingOut": 128.94929406575574,
+        "angleChange": -133.96197389384628,
+        "duration": 17999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735692438
+      },
+      {
+        "index": 129,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652421,
+            43.026869
+          ],
+          [
+            -76.1652399,
+            43.0268677
+          ],
+          [
+            -76.165244,
+            43.0268679
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 128.94929406575574,
+        "bearingOut": 273.817579818141,
+        "angleChange": 144.86828575238525,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735701437
+      },
+      {
+        "index": 130,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652399,
+            43.0268677
+          ],
+          [
+            -76.165244,
+            43.0268679
+          ],
+          [
+            -76.1652429,
+            43.0268696
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 273.817579818141,
+        "bearingOut": 25.315172912736386,
+        "angleChange": 111.4975930945954,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735713438
+      },
+      {
+        "index": 132,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652429,
+            43.0268696
+          ],
+          [
+            -76.1652391,
+            43.0268696
+          ],
+          [
+            -76.1652409,
+            43.026869
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 89.99999868799819,
+        "bearingOut": 245.4881875186293,
+        "angleChange": 155.48818883063112,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735731438
+      },
+      {
+        "index": 133,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652391,
+            43.0268696
+          ],
+          [
+            -76.1652409,
+            43.026869
+          ],
+          [
+            -76.1652392,
+            43.0268691
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 245.4881875186293,
+        "bearingOut": 85.39953599184179,
+        "angleChange": -160.08865152678752,
+        "duration": 20999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735743438
+      },
+      {
+        "index": 134,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652409,
+            43.026869
+          ],
+          [
+            -76.1652392,
+            43.0268691
+          ],
+          [
+            -76.1652401,
+            43.0268683
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 85.39953599184179,
+        "bearingOut": 219.43432471051713,
+        "angleChange": 134.03478871867534,
+        "duration": 17999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735752437
+      },
+      {
+        "index": 135,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652392,
+            43.0268691
+          ],
+          [
+            -76.1652401,
+            43.0268683
+          ],
+          [
+            -76.1652402,
+            43.0268689
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 219.43432471051713,
+        "bearingOut": 353.0533801505065,
+        "angleChange": 133.61905543998935,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735761437
+      },
+      {
+        "index": 136,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652401,
+            43.0268683
+          ],
+          [
+            -76.1652402,
+            43.0268689
+          ],
+          [
+            -76.1652426,
+            43.0268687
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 353.0533801505065,
+        "bearingOut": 263.4967084931576,
+        "angleChange": -89.55667165734889,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735773438
+      },
+      {
+        "index": 137,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652402,
+            43.0268689
+          ],
+          [
+            -76.1652426,
+            43.0268687
+          ],
+          [
+            -76.1652405,
+            43.0268698
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 263.4967084931576,
+        "bearingOut": 54.377168503082885,
+        "angleChange": 150.8804600099253,
+        "duration": 17708,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735782438
+      },
+      {
+        "index": 138,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652426,
+            43.0268687
+          ],
+          [
+            -76.1652405,
+            43.0268698
+          ],
+          [
+            -76.165243,
+            43.0268681
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 54.377168503082885,
+        "bearingOut": 227.07135273617035,
+        "angleChange": 172.69418423308747,
+        "duration": 20716,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735791146
+      },
+      {
+        "index": 139,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652405,
+            43.0268698
+          ],
+          [
+            -76.165243,
+            43.0268681
+          ],
+          [
+            -76.1652406,
+            43.0268673
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 227.07135273617035,
+        "bearingOut": 114.51181159575339,
+        "angleChange": -112.55954114041697,
+        "duration": 21292,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735803154
+      },
+      {
+        "index": 140,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.165243,
+            43.0268681
+          ],
+          [
+            -76.1652406,
+            43.0268673
+          ],
+          [
+            -76.1652426,
+            43.0268689
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 114.51181159575339,
+        "bearingOut": 317.5791746063565,
+        "angleChange": -156.93263698939688,
+        "duration": 18284,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735812438
+      },
+      {
+        "index": 141,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652406,
+            43.0268673
+          ],
+          [
+            -76.1652426,
+            43.0268689
+          ],
+          [
+            -76.1652415,
+            43.0268689
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 317.5791746063565,
+        "bearingOut": 89.99999954676298,
+        "angleChange": 132.42082494040648,
+        "duration": 20780,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735821438
+      },
+      {
+        "index": 142,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652426,
+            43.0268689
+          ],
+          [
+            -76.1652415,
+            43.0268689
+          ],
+          [
+            -76.1652427,
+            43.0268679
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 89.99999954676298,
+        "bearingOut": 221.25855284883815,
+        "angleChange": 131.25855330207517,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735833218
+      },
+      {
+        "index": 143,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652415,
+            43.0268689
+          ],
+          [
+            -76.1652427,
+            43.0268679
+          ],
+          [
+            -76.165242,
+            43.0268687
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 221.25855284883815,
+        "bearingOut": 32.6052002860003,
+        "angleChange": 171.34664743716215,
+        "duration": 18220,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735842438
+      },
+      {
+        "index": 144,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652427,
+            43.0268679
+          ],
+          [
+            -76.165242,
+            43.0268687
+          ],
+          [
+            -76.1652421,
+            43.0268678
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 32.6052002860003,
+        "bearingOut": 184.64371101459167,
+        "angleChange": 152.03851072859138,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735851438
+      },
+      {
+        "index": 145,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.165242,
+            43.0268687
+          ],
+          [
+            -76.1652421,
+            43.0268678
+          ],
+          [
+            -76.1652413,
+            43.0268689
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 184.64371101459167,
+        "bearingOut": 27.997833874901005,
+        "angleChange": -156.64587713969067,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735860438
+      },
+      {
+        "index": 147,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652413,
+            43.0268689
+          ],
+          [
+            -76.1652402,
+            43.0268706
+          ],
+          [
+            -76.1652429,
+            43.0268678
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 25.315172551947796,
+        "bearingOut": 215.1809839843604,
+        "angleChange": -170.1341885675874,
+        "duration": 18000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735881438
+      },
+      {
+        "index": 148,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652402,
+            43.0268706
+          ],
+          [
+            -76.1652429,
+            43.0268678
+          ],
+          [
+            -76.1652436,
+            43.0268688
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 215.1809839843604,
+        "bearingOut": 332.9001001016806,
+        "angleChange": 117.7191161173202,
+        "duration": 20999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735890438
+      },
+      {
+        "index": 149,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652429,
+            43.0268678
+          ],
+          [
+            -76.1652436,
+            43.0268688
+          ],
+          [
+            -76.1652399,
+            43.0268696
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 332.9001001016806,
+        "bearingOut": 73.52348125525458,
+        "angleChange": 100.62338115357397,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735902437
+      },
+      {
+        "index": 150,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652436,
+            43.0268688
+          ],
+          [
+            -76.1652399,
+            43.0268696
+          ],
+          [
+            -76.1652397,
+            43.0268687
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 73.52348125525458,
+        "bearingOut": 170.77279582996198,
+        "angleChange": 97.2493145747074,
+        "duration": 18001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735911438
+      },
+      {
+        "index": 152,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652397,
+            43.0268687
+          ],
+          [
+            -76.165242,
+            43.0268676
+          ],
+          [
+            -76.1652418,
+            43.0268688
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 236.80627084749764,
+        "bearingOut": 6.946619842467669,
+        "angleChange": 130.14034899497003,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748735932437
+      },
+      {
+        "index": 153,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.165242,
+            43.0268676
+          ],
+          [
+            -76.1652418,
+            43.0268688
+          ],
+          [
+            -76.1652498,
+            43.0268197
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 5,
+        "bearingIn": 6.946619842467669,
+        "bearingOut": 186.79246896153919,
+        "angleChange": 179.84584911907152,
+        "duration": 31012,
+        "flyDistance": 5,
+        "distance": 5,
+        "timestamp": 1748735941438
+      },
+      {
+        "index": 155,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652498,
+            43.0268197
+          ],
+          [
+            -76.1652455,
+            43.0268171
+          ],
+          [
+            -76.1652291,
+            43.0268287
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 2,
+        "bearingIn": 129.59473599329579,
+        "bearingOut": 45.94467067575596,
+        "angleChange": -83.65006531753983,
+        "duration": 17999,
+        "flyDistance": 2,
+        "distance": 2,
+        "timestamp": 1748735972449
+      },
+      {
+        "index": 157,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652291,
+            43.0268287
+          ],
+          [
+            -76.1652401,
+            43.026871
+          ],
+          [
+            -76.1652438,
+            43.0268679
+          ]
+        ],
+        "distanceToPrev": 5,
+        "distanceToNext": 0,
+        "bearingIn": 349.2363182280693,
+        "bearingOut": 221.1054864353794,
+        "angleChange": -128.13083179268992,
+        "duration": 21001,
+        "flyDistance": 5,
+        "distance": 5,
+        "timestamp": 1748735993448
+      },
+      {
+        "index": 158,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652401,
+            43.026871
+          ],
+          [
+            -76.1652438,
+            43.0268679
+          ],
+          [
+            -76.1652427,
+            43.0268689
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 221.1054864353794,
+        "bearingOut": 38.80405506639329,
+        "angleChange": 177.6985686310139,
+        "duration": 18001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736002449
+      },
+      {
+        "index": 159,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652438,
+            43.0268679
+          ],
+          [
+            -76.1652427,
+            43.0268689
+          ],
+          [
+            -76.1652449,
+            43.0268685
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 38.80405506639329,
+        "bearingOut": 256.0331382051004,
+        "angleChange": -142.7709168612929,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736011449
+      },
+      {
+        "index": 160,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652427,
+            43.0268689
+          ],
+          [
+            -76.1652449,
+            43.0268685
+          ],
+          [
+            -76.1652414,
+            43.0268697
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 256.0331382051004,
+        "bearingOut": 64.87327411041969,
+        "angleChange": 168.8401359053193,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736023449
+      },
+      {
+        "index": 161,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652449,
+            43.0268685
+          ],
+          [
+            -76.1652414,
+            43.0268697
+          ],
+          [
+            -76.1652361,
+            43.0268554
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 2,
+        "bearingIn": 64.87327411041969,
+        "bearingOut": 164.84009631450692,
+        "angleChange": 99.96682220408724,
+        "duration": 20003,
+        "flyDistance": 2,
+        "distance": 2,
+        "timestamp": 1748736032449
+      },
+      {
+        "index": 162,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652414,
+            43.0268697
+          ],
+          [
+            -76.1652361,
+            43.0268554
+          ],
+          [
+            -76.1652406,
+            43.0268648
+          ]
+        ],
+        "distanceToPrev": 2,
+        "distanceToNext": 1,
+        "bearingIn": 164.84009631450692,
+        "bearingOut": 340.7118419556379,
+        "angleChange": 175.87174564113099,
+        "duration": 20002,
+        "flyDistance": 1,
+        "distance": 3,
+        "timestamp": 1748736043452
+      },
+      {
+        "index": 166,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652429,
+            43.0268693
+          ],
+          [
+            -76.1652422,
+            43.0268697
+          ],
+          [
+            -76.1652416,
+            43.0268678
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 51.98625962569071,
+        "bearingOut": 167.00083850276542,
+        "angleChange": 115.01457887707471,
+        "duration": 17999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736082452
+      },
+      {
+        "index": 167,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652422,
+            43.0268697
+          ],
+          [
+            -76.1652416,
+            43.0268678
+          ],
+          [
+            -76.1652334,
+            43.0268696
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 1,
+        "bearingIn": 167.00083850276542,
+        "bearingOut": 73.28622532171443,
+        "angleChange": -93.71461318105099,
+        "duration": 20979,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748736091451
+      },
+      {
+        "index": 168,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652416,
+            43.0268678
+          ],
+          [
+            -76.1652334,
+            43.0268696
+          ],
+          [
+            -76.1652441,
+            43.026872
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 1,
+        "bearingIn": 73.28622532171443,
+        "bearingOut": 287.0572996025784,
+        "angleChange": -146.22892571913604,
+        "duration": 21001,
+        "flyDistance": 1,
+        "distance": 2,
+        "timestamp": 1748736103431
+      },
+      {
+        "index": 169,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652334,
+            43.0268696
+          ],
+          [
+            -76.1652441,
+            43.026872
+          ],
+          [
+            -76.1652401,
+            43.0268704
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 287.0572996025784,
+        "bearingOut": 118.68616983767731,
+        "angleChange": -168.37112976490107,
+        "duration": 17956,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748736112452
+      },
+      {
+        "index": 171,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652401,
+            43.0268704
+          ],
+          [
+            -76.1652244,
+            43.0268806
+          ],
+          [
+            -76.1652364,
+            43.0268705
+          ]
+        ],
+        "distanceToPrev": 2,
+        "distanceToNext": 1,
+        "bearingIn": 48.37198207756177,
+        "bearingOut": 220.97611237362003,
+        "angleChange": 172.60413029605826,
+        "duration": 21090,
+        "flyDistance": 0,
+        "distance": 3,
+        "timestamp": 1748736133389
+      },
+      {
+        "index": 174,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.165243,
+            43.0268689
+          ],
+          [
+            -76.1652453,
+            43.0268674
+          ],
+          [
+            -76.1652449,
+            43.0268694
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 228.26303419062768,
+        "bearingOut": 8.318093791132355,
+        "angleChange": 140.05505960050468,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736163452
+      },
+      {
+        "index": 176,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652449,
+            43.0268694
+          ],
+          [
+            -76.1652421,
+            43.0268763
+          ],
+          [
+            -76.1652419,
+            43.0268737
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 16.523061335807256,
+        "bearingOut": 176.78145529229846,
+        "angleChange": 160.2583939564912,
+        "duration": 21000,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748736181198
+      },
+      {
+        "index": 177,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652421,
+            43.0268763
+          ],
+          [
+            -76.1652419,
+            43.0268737
+          ],
+          [
+            -76.1652417,
+            43.0268748
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 176.78145529229846,
+        "bearingOut": 7.571104943740636,
+        "angleChange": -169.21035034855782,
+        "duration": 21282,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736193452
+      },
+      {
+        "index": 178,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652419,
+            43.0268737
+          ],
+          [
+            -76.1652417,
+            43.0268748
+          ],
+          [
+            -76.1652428,
+            43.0268719
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 7.571104943740636,
+        "bearingOut": 195.49809150309534,
+        "angleChange": -172.0730134406453,
+        "duration": 18001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736202480
+      },
+      {
+        "index": 180,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652428,
+            43.0268719
+          ],
+          [
+            -76.1652409,
+            43.0268707
+          ],
+          [
+            -76.1652447,
+            43.0268733
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 130.82547860352906,
+        "bearingOut": 313.1050665092221,
+        "angleChange": -177.72041209430694,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736220452
+      },
+      {
+        "index": 181,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652409,
+            43.0268707
+          ],
+          [
+            -76.1652447,
+            43.0268733
+          ],
+          [
+            -76.1652416,
+            43.0268722
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 313.1050665092221,
+        "bearingOut": 115.8916134027038,
+        "angleChange": 162.78654689348167,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736232453
+      },
+      {
+        "index": 182,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652447,
+            43.0268733
+          ],
+          [
+            -76.1652416,
+            43.0268722
+          ],
+          [
+            -76.1652425,
+            43.0268712
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 115.8916134027038,
+        "bearingOut": 213.34213330442913,
+        "angleChange": 97.45051990172533,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736241452
+      },
+      {
+        "index": 183,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652416,
+            43.0268722
+          ],
+          [
+            -76.1652425,
+            43.0268712
+          ],
+          [
+            -76.1652426,
+            43.0268722
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 213.34213330442913,
+        "bearingOut": 355.8189231854948,
+        "angleChange": 142.47678988106566,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736253453
+      },
+      {
+        "index": 185,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652426,
+            43.0268722
+          ],
+          [
+            -76.1652453,
+            43.0268732
+          ],
+          [
+            -76.1652412,
+            43.0268724
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 296.86856260363174,
+        "bearingOut": 104.94455804491582,
+        "angleChange": 168.07599544128408,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736271453
+      },
+      {
+        "index": 186,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652453,
+            43.0268732
+          ],
+          [
+            -76.1652412,
+            43.0268724
+          ],
+          [
+            -76.1652423,
+            43.0268721
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 104.94455804491582,
+        "bearingOut": 249.5409291367066,
+        "angleChange": 144.5963710917908,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736283453
+      },
+      {
+        "index": 188,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652423,
+            43.0268721
+          ],
+          [
+            -76.1652452,
+            43.026871
+          ],
+          [
+            -76.1652452,
+            43.0268714
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 242.5766272867746,
+        "bearingOut": 0,
+        "angleChange": 117.4233727132254,
+        "duration": 17999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736301453
+      },
+      {
+        "index": 190,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652452,
+            43.0268714
+          ],
+          [
+            -76.1651971,
+            43.0268876
+          ],
+          [
+            -76.1652318,
+            43.0268772
+          ]
+        ],
+        "distanceToPrev": 4,
+        "distanceToNext": 3,
+        "bearingIn": 65.26374037860205,
+        "bearingOut": 247.70718621992037,
+        "angleChange": -177.55655415868168,
+        "duration": 22596,
+        "flyDistance": 1,
+        "distance": 7,
+        "timestamp": 1748736321404
+      },
+      {
+        "index": 192,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652318,
+            43.0268772
+          ],
+          [
+            -76.1652413,
+            43.0268732
+          ],
+          [
+            -76.1652392,
+            43.0268716
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 240.05940206573536,
+        "bearingOut": 136.184593255261,
+        "angleChange": -103.87480881047435,
+        "duration": 18410,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748736342457
+      },
+      {
+        "index": 193,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652413,
+            43.0268732
+          ],
+          [
+            -76.1652392,
+            43.0268716
+          ],
+          [
+            -76.1652418,
+            43.0268722
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 136.184593255261,
+        "bearingOut": 287.51961534976385,
+        "angleChange": 151.33502209450285,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736351458
+      },
+      {
+        "index": 194,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652392,
+            43.0268716
+          ],
+          [
+            -76.1652418,
+            43.0268722
+          ],
+          [
+            -76.1652416,
+            43.0268727
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 287.51961534976385,
+        "bearingOut": 16.29963227005112,
+        "angleChange": 88.78001692028727,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736363458
+      },
+      {
+        "index": 196,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652416,
+            43.0268727
+          ],
+          [
+            -76.1652406,
+            43.0268728
+          ],
+          [
+            -76.1652425,
+            43.0268754
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 82.2107062835654,
+        "bearingOut": 331.88811168114864,
+        "angleChange": -110.32259460241676,
+        "duration": 20809,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736381458
+      },
+      {
+        "index": 197,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652406,
+            43.0268728
+          ],
+          [
+            -76.1652425,
+            43.0268754
+          ],
+          [
+            -76.1652436,
+            43.0268718
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 331.88811168114864,
+        "bearingOut": 192.59153834746704,
+        "angleChange": -139.2965733336816,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736393267
+      },
+      {
+        "index": 198,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652425,
+            43.0268754
+          ],
+          [
+            -76.1652436,
+            43.0268718
+          ],
+          [
+            -76.1652402,
+            43.0268716
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 192.59153834746704,
+        "bearingOut": 94.60046200933402,
+        "angleChange": -97.99107633813301,
+        "duration": 18191,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736402458
+      },
+      {
+        "index": 199,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652436,
+            43.0268718
+          ],
+          [
+            -76.1652402,
+            43.0268716
+          ],
+          [
+            -76.1652399,
+            43.0268779
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 1,
+        "bearingIn": 94.60046200933402,
+        "bearingOut": 1.9937255968358727,
+        "angleChange": -92.60673641249815,
+        "duration": 20941,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748736411458
+      },
+      {
+        "index": 200,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1652402,
+            43.0268716
+          ],
+          [
+            -76.1652399,
+            43.0268779
+          ],
+          [
+            -76.1652416,
+            43.0268657
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 1,
+        "bearingIn": 1.9937255968358727,
+        "bearingOut": 185.81639315197583,
+        "angleChange": -176.17733244486004,
+        "duration": 20999,
+        "flyDistance": 1,
+        "distance": 2,
+        "timestamp": 1748736423399
+      },
+      {
+        "index": 202,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1652416,
+            43.0268657
+          ],
+          [
+            -76.1652748,
+            43.0268495
+          ],
+          [
+            -76.1652753,
+            43.0268752
+          ]
+        ],
+        "distanceToPrev": 3,
+        "distanceToNext": 3,
+        "bearingIn": 236.2776246683046,
+        "bearingOut": 359.1851688066841,
+        "angleChange": 122.90754413837948,
+        "duration": 20912,
+        "flyDistance": 3,
+        "distance": 6,
+        "timestamp": 1748736441361
+      },
+      {
+        "index": 204,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1652753,
+            43.0268752
+          ],
+          [
+            -76.1652357,
+            43.0269018
+          ],
+          [
+            -76.1652553,
+            43.0269096
+          ]
+        ],
+        "distanceToPrev": 4,
+        "distanceToNext": 2,
+        "bearingIn": 47.421340041686165,
+        "bearingOut": 298.56294956296216,
+        "angleChange": -108.858390478724,
+        "duration": 18089,
+        "flyDistance": 4,
+        "distance": 6,
+        "timestamp": 1748736462263
+      },
+      {
+        "index": 207,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1653766,
+            43.0269579
+          ],
+          [
+            -76.1660665,
+            43.0272382
+          ],
+          [
+            -76.166314,
+            43.0269033
+          ]
+        ],
+        "distanceToPrev": 64,
+        "distanceToNext": 42,
+        "bearingIn": 299.0645646747033,
+        "bearingOut": 208.38029181883607,
+        "angleChange": -90.68427285586725,
+        "duration": 17978,
+        "flyDistance": 77,
+        "distance": 106,
+        "timestamp": 1748736492344
+      },
+      {
+        "index": 236,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.170585,
+            43.0268077
+          ],
+          [
+            -76.1705838,
+            43.0268164
+          ],
+          [
+            -76.1705785,
+            43.0268153
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 0,
+        "bearingIn": 5.757806233943143,
+        "bearingOut": 105.84971347264087,
+        "angleChange": 100.09190723869773,
+        "duration": 21000,
+        "flyDistance": 1,
+        "distance": 1,
+        "timestamp": 1748736783459
+      },
+      {
+        "index": 237,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1705838,
+            43.0268164
+          ],
+          [
+            -76.1705785,
+            43.0268153
+          ],
+          [
+            -76.1705806,
+            43.0268152
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 105.84971347264087,
+        "bearingOut": 266.27306066208337,
+        "angleChange": 160.4233471894425,
+        "duration": 17999,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736792459
+      },
+      {
+        "index": 241,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1705816,
+            43.0268152
+          ],
+          [
+            -76.1705853,
+            43.0268142
+          ],
+          [
+            -76.1705845,
+            43.0268162
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 249.71017650187957,
+        "bearingOut": 16.299646525334992,
+        "angleChange": 126.58947002345542,
+        "duration": 21000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736831458
+      },
+      {
+        "index": 242,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1705853,
+            43.0268142
+          ],
+          [
+            -76.1705845,
+            43.0268162
+          ],
+          [
+            -76.1705858,
+            43.0268155
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 16.299646525334992,
+        "bearingOut": 233.6255755830229,
+        "angleChange": -142.67407094231208,
+        "duration": 21001,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736843459
+      },
+      {
+        "index": 243,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1705845,
+            43.0268162
+          ],
+          [
+            -76.1705858,
+            43.0268155
+          ],
+          [
+            -76.1705858,
+            43.0268155
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 233.6255755830229,
+        "bearingOut": 0,
+        "angleChange": 126.37442441697709,
+        "duration": 17832,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736852459
+      },
+      {
+        "index": 245,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1705858,
+            43.0268155
+          ],
+          [
+            -76.1705858,
+            43.0268155
+          ],
+          [
+            -76.170585,
+            43.0268143
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 0,
+        "bearingOut": 154.01741885760612,
+        "angleChange": 154.01741885760612,
+        "duration": 21168,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748736873459
+      },
+      {
+        "index": 257,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.1664063,
+            43.0271883
+          ],
+          [
+            -76.1663753,
+            43.0271811
+          ],
+          [
+            -76.1663775,
+            43.0271881
+          ]
+        ],
+        "distanceToPrev": 3,
+        "distanceToNext": 1,
+        "bearingIn": 107.62574113549408,
+        "bearingOut": 347.06071627364184,
+        "angleChange": -120.56502486185224,
+        "duration": 18000,
+        "flyDistance": 2,
+        "distance": 4,
+        "timestamp": 1748736992472
+      },
+      {
+        "index": 259,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1663775,
+            43.0271881
+          ],
+          [
+            -76.1664073,
+            43.0271901
+          ],
+          [
+            -76.1663427,
+            43.0271939
+          ]
+        ],
+        "distanceToPrev": 2,
+        "distanceToNext": 5,
+        "bearingIn": 275.24549260861613,
+        "bearingOut": 85.39949077440684,
+        "angleChange": 170.1539981657907,
+        "duration": 21001,
+        "flyDistance": 3,
+        "distance": 7,
+        "timestamp": 1748737013472
+      },
+      {
+        "index": 327,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1524193,
+            43.0441904
+          ],
+          [
+            -76.152201,
+            43.044397
+          ],
+          [
+            -76.1522009,
+            43.0443945
+          ]
+        ],
+        "distanceToPrev": 29,
+        "distanceToNext": 0,
+        "bearingIn": 37.675740577295755,
+        "bearingOut": 178.3255490590525,
+        "angleChange": 140.64980848175674,
+        "duration": 21000,
+        "flyDistance": 29,
+        "distance": 29,
+        "timestamp": 1748737693485
+      },
+      {
+        "index": 328,
+        "type": "Left",
+        "coordinates": [
+          [
+            -76.152201,
+            43.044397
+          ],
+          [
+            -76.1522009,
+            43.0443945
+          ],
+          [
+            -76.1521995,
+            43.044396
+          ]
+        ],
+        "distanceToPrev": 0,
+        "distanceToNext": 0,
+        "bearingIn": 178.3255490590525,
+        "bearingOut": 34.29802972362603,
+        "angleChange": -144.02751933542646,
+        "duration": 15000,
+        "flyDistance": 0,
+        "distance": 0,
+        "timestamp": 1748737702485
+      },
+      {
+        "index": 383,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.131598,
+            43.0500022
+          ],
+          [
+            -76.1314549,
+            43.0498169
+          ],
+          [
+            -76.1314647,
+            43.049818
+          ]
+        ],
+        "distanceToPrev": 24,
+        "distanceToNext": 1,
+        "bearingIn": 150.5623022781158,
+        "bearingOut": 278.7323947906343,
+        "angleChange": 128.17009251251852,
+        "duration": 21000,
+        "flyDistance": 23,
+        "distance": 25,
+        "timestamp": 1748738253502
+      },
+      {
+        "index": 384,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1314549,
+            43.0498169
+          ],
+          [
+            -76.1314647,
+            43.049818
+          ],
+          [
+            -76.1314586,
+            43.0498207
+          ]
+        ],
+        "distanceToPrev": 1,
+        "distanceToNext": 1,
+        "bearingIn": 278.7323947906343,
+        "bearingOut": 58.7966300995995,
+        "angleChange": 140.06423530896518,
+        "duration": 18000,
+        "flyDistance": 1,
+        "distance": 2,
+        "timestamp": 1748738262502
+      },
+      {
+        "index": 386,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1314586,
+            43.0498207
+          ],
+          [
+            -76.1314442,
+            43.0498317
+          ],
+          [
+            -76.1314465,
+            43.0498243
+          ]
+        ],
+        "distanceToPrev": 2,
+        "distanceToNext": 1,
+        "bearingIn": 43.73025541881134,
+        "bearingOut": 192.79639278216092,
+        "angleChange": 149.06613736334958,
+        "duration": 21000,
+        "flyDistance": 1,
+        "distance": 3,
+        "timestamp": 1748738283502
+      },
+      {
+        "index": 390,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1314456,
+            43.0497926
+          ],
+          [
+            -76.1314708,
+            43.0497688
+          ],
+          [
+            -76.1314872,
+            43.049785
+          ]
+        ],
+        "distanceToPrev": 3,
+        "distanceToNext": 2,
+        "bearingIn": 217.7308067903464,
+        "bearingOut": 323.5066115559664,
+        "angleChange": 105.77580476562,
+        "duration": 18001,
+        "flyDistance": 3,
+        "distance": 5,
+        "timestamp": 1748738322502
+      },
+      {
+        "index": 391,
+        "type": "Right",
+        "coordinates": [
+          [
+            -76.1314708,
+            43.0497688
+          ],
+          [
+            -76.1314872,
+            43.049785
+          ],
+          [
+            -76.1313884,
+            43.0498269
+          ]
+        ],
+        "distanceToPrev": 2,
+        "distanceToNext": 9,
+        "bearingIn": 323.5066115559664,
+        "bearingOut": 59.87168921353623,
+        "angleChange": 96.36507765756983,
+        "duration": 20257,
+        "flyDistance": 9,
+        "distance": 11,
+        "timestamp": 1748738331503
+      }
+    ]
+  },
+  "features": [
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "session": "Alu9yXoxcT9aO_8DKthkuqd4l_45SR-h",
+            "title": "Bike_Party",
+            "numCoordinates": 395,
+            "startTime": "19:33:32 GMT-0400 (Eastern Daylight Time)",
+            "endTime": "20:39:20 GMT-0400 (Eastern Daylight Time)",
+            "deleteCalled": false,
+            "duration": 3947996,
+            "flyDistance": 3264,
+            "cumulative": [
+              9039,
+              3947996,
+              0.00228951599748328,
+              0
+            ],
+            "moving": [
+              8873,
+              2115925,
+              0.004193437858147146,
+              1
+            ],
+            "averageTimeDifference": 9994.926582278482,
+            "summary": {
+              "distance": 8.873,
+              "duration": 2115.925
+            },
+            "timestamps": [
+              1748734412412,
+              1748734421412,
+              1748734433412,
+              1748734442412,
+              1748734451411,
+              1748734463412,
+              1748734472412,
+              1748734481412,
+              1748734493411,
+              1748734502412,
+              1748734511411,
+              1748734523412,
+              1748734532411,
+              1748734541411,
+              1748734553411,
+              1748734562412,
+              1748734571412,
+              1748734583412,
+              1748734592412,
+              1748734601411,
+              1748734613412,
+              1748734622412,
+              1748734631412,
+              1748734643412,
+              1748734652413,
+              1748734661412,
+              1748734673412,
+              1748734682413,
+              1748734691412,
+              1748734703413,
+              1748734712413,
+              1748734721413,
+              1748734733413,
+              1748734742413,
+              1748734751413,
+              1748734763412,
+              1748734772412,
+              1748734781413,
+              1748734793413,
+              1748734802412,
+              1748734811338,
+              1748734823413,
+              1748734832320,
+              1748734841413,
+              1748734853413,
+              1748734862413,
+              1748734871412,
+              1748734883412,
+              1748734892412,
+              1748734901413,
+              1748734913413,
+              1748734922413,
+              1748734931413,
+              1748734942426,
+              1748734951426,
+              1748734963426,
+              1748734971430,
+              1748734983426,
+              1748734992221,
+              1748735001128,
+              1748735013242,
+              1748735022426,
+              1748735031426,
+              1748735043422,
+              1748735052426,
+              1748735061427,
+              1748735073426,
+              1748735082439,
+              1748735091426,
+              1748735100426,
+              1748735109448,
+              1748735123430,
+              1748735132430,
+              1748735141431,
+              1748735153431,
+              1748735162431,
+              1748735171431,
+              1748735183431,
+              1748735192431,
+              1748735201431,
+              1748735213431,
+              1748735222431,
+              1748735231430,
+              1748735243431,
+              1748735252431,
+              1748735261431,
+              1748735273431,
+              1748735279431,
+              1748735293465,
+              1748735302431,
+              1748735311431,
+              1748735323431,
+              1748735332430,
+              1748735341431,
+              1748735353431,
+              1748735362431,
+              1748735371430,
+              1748735380431,
+              1748735392430,
+              1748735401431,
+              1748735413437,
+              1748735422437,
+              1748735431437,
+              1748735443437,
+              1748735452436,
+              1748735461437,
+              1748735473436,
+              1748735482437,
+              1748735491437,
+              1748735503437,
+              1748735512436,
+              1748735521437,
+              1748735530437,
+              1748735542437,
+              1748735551437,
+              1748735563437,
+              1748735572437,
+              1748735581437,
+              1748735593438,
+              1748735602438,
+              1748735611438,
+              1748735623438,
+              1748735632438,
+              1748735641438,
+              1748735653438,
+              1748735662438,
+              1748735671438,
+              1748735683438,
+              1748735692438,
+              1748735701437,
+              1748735713438,
+              1748735722438,
+              1748735731438,
+              1748735743438,
+              1748735752437,
+              1748735761437,
+              1748735773438,
+              1748735782438,
+              1748735791146,
+              1748735803154,
+              1748735812438,
+              1748735821438,
+              1748735833218,
+              1748735842438,
+              1748735851438,
+              1748735860438,
+              1748735872438,
+              1748735881438,
+              1748735890438,
+              1748735902437,
+              1748735911438,
+              1748735920438,
+              1748735932437,
+              1748735941438,
+              1748735963449,
+              1748735972449,
+              1748735981448,
+              1748735993448,
+              1748736002449,
+              1748736011449,
+              1748736023449,
+              1748736032449,
+              1748736043452,
+              1748736052451,
+              1748736061452,
+              1748736073452,
+              1748736082452,
+              1748736091451,
+              1748736103431,
+              1748736112452,
+              1748736121387,
+              1748736133389,
+              1748736142477,
+              1748736151452,
+              1748736163452,
+              1748736172452,
+              1748736181198,
+              1748736193452,
+              1748736202480,
+              1748736211453,
+              1748736220452,
+              1748736232453,
+              1748736241452,
+              1748736253453,
+              1748736262453,
+              1748736271453,
+              1748736283453,
+              1748736292453,
+              1748736301453,
+              1748736310452,
+              1748736321404,
+              1748736333048,
+              1748736342457,
+              1748736351458,
+              1748736363458,
+              1748736372458,
+              1748736381458,
+              1748736393267,
+              1748736402458,
+              1748736411458,
+              1748736423399,
+              1748736432457,
+              1748736441361,
+              1748736453369,
+              1748736462263,
+              1748736471458,
+              1748736483479,
+              1748736492344,
+              1748736501457,
+              1748736513458,
+              1748736522458,
+              1748736531457,
+              1748736543457,
+              1748736552458,
+              1748736561458,
+              1748736570458,
+              1748736582458,
+              1748736591458,
+              1748736603457,
+              1748736612458,
+              1748736621458,
+              1748736633457,
+              1748736642458,
+              1748736651458,
+              1748736663458,
+              1748736672457,
+              1748736681459,
+              1748736693459,
+              1748736702458,
+              1748736711459,
+              1748736723458,
+              1748736732459,
+              1748736741459,
+              1748736750459,
+              1748736762459,
+              1748736771459,
+              1748736783459,
+              1748736792459,
+              1748736801458,
+              1748736810459,
+              1748736822459,
+              1748736831458,
+              1748736843459,
+              1748736852459,
+              1748736861291,
+              1748736873459,
+              1748736882459,
+              1748736891396,
+              1748736901427,
+              1748736911472,
+              1748736923471,
+              1748736932471,
+              1748736941472,
+              1748736953472,
+              1748736962472,
+              1748736971472,
+              1748736983471,
+              1748736992472,
+              1748737001471,
+              1748737013472,
+              1748737022472,
+              1748737031471,
+              1748737043472,
+              1748737052472,
+              1748737061472,
+              1748737073472,
+              1748737082472,
+              1748737091472,
+              1748737103471,
+              1748737112471,
+              1748737123477,
+              1748737132477,
+              1748737141477,
+              1748737153477,
+              1748737162477,
+              1748737171476,
+              1748737183477,
+              1748737192477,
+              1748737201477,
+              1748737213477,
+              1748737222476,
+              1748737231476,
+              1748737243477,
+              1748737252477,
+              1748737261477,
+              1748737270477,
+              1748737282477,
+              1748737291477,
+              1748737300477,
+              1748737312477,
+              1748737321477,
+              1748737330477,
+              1748737340477,
+              1748737352477,
+              1748737361477,
+              1748737373477,
+              1748737382476,
+              1748737391477,
+              1748737403476,
+              1748737412477,
+              1748737421477,
+              1748737430476,
+              1748737442476,
+              1748737451476,
+              1748737460477,
+              1748737473484,
+              1748737482483,
+              1748737491483,
+              1748737503483,
+              1748737512484,
+              1748737521484,
+              1748737530484,
+              1748737542484,
+              1748737551484,
+              1748737560485,
+              1748737572485,
+              1748737581485,
+              1748737590485,
+              1748737602485,
+              1748737612485,
+              1748737621485,
+              1748737633485,
+              1748737642485,
+              1748737651484,
+              1748737663485,
+              1748737672485,
+              1748737681485,
+              1748737693485,
+              1748737702485,
+              1748737708485,
+              1748737722484,
+              1748737731485,
+              1748737740484,
+              1748737746484,
+              1748737746484,
+              1748737746484,
+              1748737781485,
+              1748737790485,
+              1748737801492,
+              1748737801492,
+              1748737801492,
+              1748737831492,
+              1748737843492,
+              1748737852491,
+              1748737861492,
+              1748737873492,
+              1748737882492,
+              1748737891492,
+              1748737900492,
+              1748737912491,
+              1748737921492,
+              1748737933492,
+              1748737942492,
+              1748737951492,
+              1748737963492,
+              1748737972492,
+              1748737981492,
+              1748737993493,
+              1748738002493,
+              1748738011493,
+              1748738023493,
+              1748738032493,
+              1748738041493,
+              1748738053493,
+              1748738062492,
+              1748738068493,
+              1748738068493,
+              1748738068493,
+              1748738101493,
+              1748738113493,
+              1748738122492,
+              1748738131493,
+              1748738143493,
+              1748738152493,
+              1748738161493,
+              1748738173493,
+              1748738182492,
+              1748738191493,
+              1748738203492,
+              1748738209493,
+              1748738223502,
+              1748738232501,
+              1748738241502,
+              1748738253502,
+              1748738262502,
+              1748738271502,
+              1748738283502,
+              1748738292502,
+              1748738301502,
+              1748738313502,
+              1748738322502,
+              1748738331503,
+              1748738342759,
+              1748738352598,
+              1748738360408
+            ]
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -76.1507198,
+                43.0242324
+              ],
+              [
+                -76.1511251,
+                43.0241487
+              ],
+              [
+                -76.151695,
+                43.0240163
+              ],
+              [
+                -76.152118,
+                43.0239184
+              ],
+              [
+                -76.1525603,
+                43.0237995
+              ],
+              [
+                -76.1531835,
+                43.0236496
+              ],
+              [
+                -76.1536028,
+                43.0235433
+              ],
+              [
+                -76.1540652,
+                43.0234378
+              ],
+              [
+                -76.1547654,
+                43.0232585
+              ],
+              [
+                -76.155072,
+                43.0234779
+              ],
+              [
+                -76.1550534,
+                43.0239011
+              ],
+              [
+                -76.1551726,
+                43.0244067
+              ],
+              [
+                -76.1554658,
+                43.0247314
+              ],
+              [
+                -76.1556765,
+                43.0250819
+              ],
+              [
+                -76.1561042,
+                43.025457
+              ],
+              [
+                -76.1563023,
+                43.0257847
+              ],
+              [
+                -76.1566121,
+                43.0261138
+              ],
+              [
+                -76.1570368,
+                43.0263987
+              ],
+              [
+                -76.1572725,
+                43.0266285
+              ],
+              [
+                -76.1575583,
+                43.0269292
+              ],
+              [
+                -76.1580821,
+                43.0272502
+              ],
+              [
+                -76.1585474,
+                43.0274145
+              ],
+              [
+                -76.159045,
+                43.0273792
+              ],
+              [
+                -76.1596928,
+                43.0276044
+              ],
+              [
+                -76.160166,
+                43.0277879
+              ],
+              [
+                -76.160703,
+                43.0278107
+              ],
+              [
+                -76.1613678,
+                43.0278101
+              ],
+              [
+                -76.1618269,
+                43.0278863
+              ],
+              [
+                -76.1621447,
+                43.0280918
+              ],
+              [
+                -76.162154,
+                43.0285733
+              ],
+              [
+                -76.161866,
+                43.0289251
+              ],
+              [
+                -76.161737,
+                43.0292791
+              ],
+              [
+                -76.1623419,
+                43.0293934
+              ],
+              [
+                -76.162877,
+                43.0294225
+              ],
+              [
+                -76.1633666,
+                43.0293792
+              ],
+              [
+                -76.1638566,
+                43.0294406
+              ],
+              [
+                -76.1641664,
+                43.0294877
+              ],
+              [
+                -76.1643778,
+                43.0292841
+              ],
+              [
+                -76.1645785,
+                43.0290404
+              ],
+              [
+                -76.1646976,
+                43.028839
+              ],
+              [
+                -76.1647674,
+                43.028662
+              ],
+              [
+                -76.1648026,
+                43.0283984
+              ],
+              [
+                -76.1648593,
+                43.028202
+              ],
+              [
+                -76.1649317,
+                43.0279019
+              ],
+              [
+                -76.1648959,
+                43.0275318
+              ],
+              [
+                -76.1647107,
+                43.0272777
+              ],
+              [
+                -76.164616,
+                43.0269364
+              ],
+              [
+                -76.1645578,
+                43.0265602
+              ],
+              [
+                -76.1647157,
+                43.0263542
+              ],
+              [
+                -76.1650269,
+                43.0263386
+              ],
+              [
+                -76.1652389,
+                43.0266312
+              ],
+              [
+                -76.1651398,
+                43.0268435
+              ],
+              [
+                -76.1653642,
+                43.0269784
+              ],
+              [
+                -76.1653205,
+                43.0268935
+              ],
+              [
+                -76.1653519,
+                43.0268614
+              ],
+              [
+                -76.1653821,
+                43.0269208
+              ],
+              [
+                -76.1653811,
+                43.0269166
+              ],
+              [
+                -76.1653806,
+                43.0269225
+              ],
+              [
+                -76.1653804,
+                43.0269184
+              ],
+              [
+                -76.1653747,
+                43.0269135
+              ],
+              [
+                -76.1653309,
+                43.0269026
+              ],
+              [
+                -76.1653173,
+                43.0269063
+              ],
+              [
+                -76.1653209,
+                43.0269063
+              ],
+              [
+                -76.1653164,
+                43.0269063
+              ],
+              [
+                -76.1653258,
+                43.0269214
+              ],
+              [
+                -76.1653373,
+                43.0269258
+              ],
+              [
+                -76.1653825,
+                43.0269187
+              ],
+              [
+                -76.1654113,
+                43.0269052
+              ],
+              [
+                -76.165389,
+                43.0269214
+              ],
+              [
+                -76.1653908,
+                43.0269184
+              ],
+              [
+                -76.1653875,
+                43.0269185
+              ],
+              [
+                -76.165256,
+                43.0268609
+              ],
+              [
+                -76.1652524,
+                43.026856
+              ],
+              [
+                -76.1652434,
+                43.0268524
+              ],
+              [
+                -76.1652443,
+                43.0268329
+              ],
+              [
+                -76.1652556,
+                43.0268223
+              ],
+              [
+                -76.1652542,
+                43.0268226
+              ],
+              [
+                -76.1652573,
+                43.0268183
+              ],
+              [
+                -76.1652601,
+                43.0268169
+              ],
+              [
+                -76.1652555,
+                43.0268258
+              ],
+              [
+                -76.1652451,
+                43.0268368
+              ],
+              [
+                -76.1652532,
+                43.0268443
+              ],
+              [
+                -76.1652522,
+                43.0268469
+              ],
+              [
+                -76.1652546,
+                43.0268492
+              ],
+              [
+                -76.1652403,
+                43.0268534
+              ],
+              [
+                -76.1652456,
+                43.0268633
+              ],
+              [
+                -76.165255,
+                43.0268723
+              ],
+              [
+                -76.1652433,
+                43.0268687
+              ],
+              [
+                -76.1652433,
+                43.026868
+              ],
+              [
+                -76.1652407,
+                43.0268693
+              ],
+              [
+                -76.1652406,
+                43.0268686
+              ],
+              [
+                -76.1652406,
+                43.0268695
+              ],
+              [
+                -76.1652429,
+                43.0268694
+              ],
+              [
+                -76.1652409,
+                43.0268678
+              ],
+              [
+                -76.1652423,
+                43.0268682
+              ],
+              [
+                -76.1652426,
+                43.0268682
+              ],
+              [
+                -76.1652405,
+                43.0268672
+              ],
+              [
+                -76.1652401,
+                43.0268695
+              ],
+              [
+                -76.1652451,
+                43.0268701
+              ],
+              [
+                -76.1652411,
+                43.0268679
+              ],
+              [
+                -76.1652286,
+                43.0268705
+              ],
+              [
+                -76.1652323,
+                43.0268637
+              ],
+              [
+                -76.1652406,
+                43.0268681
+              ],
+              [
+                -76.1652402,
+                43.0268675
+              ],
+              [
+                -76.1652422,
+                43.0268683
+              ],
+              [
+                -76.1652393,
+                43.0268689
+              ],
+              [
+                -76.1652406,
+                43.026869
+              ],
+              [
+                -76.1652423,
+                43.0268707
+              ],
+              [
+                -76.1652442,
+                43.0268695
+              ],
+              [
+                -76.1652432,
+                43.0268676
+              ],
+              [
+                -76.1652424,
+                43.0268691
+              ],
+              [
+                -76.1652394,
+                43.0268672
+              ],
+              [
+                -76.1652403,
+                43.026868
+              ],
+              [
+                -76.1652413,
+                43.0268679
+              ],
+              [
+                -76.1652413,
+                43.0268673
+              ],
+              [
+                -76.1652409,
+                43.0268671
+              ],
+              [
+                -76.1652404,
+                43.0268687
+              ],
+              [
+                -76.1652402,
+                43.0268674
+              ],
+              [
+                -76.1652413,
+                43.0268697
+              ],
+              [
+                -76.1652433,
+                43.0268684
+              ],
+              [
+                -76.1652409,
+                43.0268693
+              ],
+              [
+                -76.1652414,
+                43.0268689
+              ],
+              [
+                -76.1652433,
+                43.0268673
+              ],
+              [
+                -76.1652433,
+                43.0268699
+              ],
+              [
+                -76.1652407,
+                43.0268697
+              ],
+              [
+                -76.1652428,
+                43.0268672
+              ],
+              [
+                -76.1652403,
+                43.0268678
+              ],
+              [
+                -76.1652388,
+                43.0268693
+              ],
+              [
+                -76.1652421,
+                43.026869
+              ],
+              [
+                -76.1652399,
+                43.0268677
+              ],
+              [
+                -76.165244,
+                43.0268679
+              ],
+              [
+                -76.1652429,
+                43.0268696
+              ],
+              [
+                -76.1652391,
+                43.0268696
+              ],
+              [
+                -76.1652409,
+                43.026869
+              ],
+              [
+                -76.1652392,
+                43.0268691
+              ],
+              [
+                -76.1652401,
+                43.0268683
+              ],
+              [
+                -76.1652402,
+                43.0268689
+              ],
+              [
+                -76.1652426,
+                43.0268687
+              ],
+              [
+                -76.1652405,
+                43.0268698
+              ],
+              [
+                -76.165243,
+                43.0268681
+              ],
+              [
+                -76.1652406,
+                43.0268673
+              ],
+              [
+                -76.1652426,
+                43.0268689
+              ],
+              [
+                -76.1652415,
+                43.0268689
+              ],
+              [
+                -76.1652427,
+                43.0268679
+              ],
+              [
+                -76.165242,
+                43.0268687
+              ],
+              [
+                -76.1652421,
+                43.0268678
+              ],
+              [
+                -76.1652413,
+                43.0268689
+              ],
+              [
+                -76.1652402,
+                43.0268706
+              ],
+              [
+                -76.1652429,
+                43.0268678
+              ],
+              [
+                -76.1652436,
+                43.0268688
+              ],
+              [
+                -76.1652399,
+                43.0268696
+              ],
+              [
+                -76.1652397,
+                43.0268687
+              ],
+              [
+                -76.165242,
+                43.0268676
+              ],
+              [
+                -76.1652418,
+                43.0268688
+              ],
+              [
+                -76.1652498,
+                43.0268197
+              ],
+              [
+                -76.1652455,
+                43.0268171
+              ],
+              [
+                -76.1652291,
+                43.0268287
+              ],
+              [
+                -76.1652401,
+                43.026871
+              ],
+              [
+                -76.1652438,
+                43.0268679
+              ],
+              [
+                -76.1652427,
+                43.0268689
+              ],
+              [
+                -76.1652449,
+                43.0268685
+              ],
+              [
+                -76.1652414,
+                43.0268697
+              ],
+              [
+                -76.1652361,
+                43.0268554
+              ],
+              [
+                -76.1652406,
+                43.0268648
+              ],
+              [
+                -76.1652434,
+                43.026868
+              ],
+              [
+                -76.1652429,
+                43.0268693
+              ],
+              [
+                -76.1652422,
+                43.0268697
+              ],
+              [
+                -76.1652416,
+                43.0268678
+              ],
+              [
+                -76.1652334,
+                43.0268696
+              ],
+              [
+                -76.1652441,
+                43.026872
+              ],
+              [
+                -76.1652401,
+                43.0268704
+              ],
+              [
+                -76.1652244,
+                43.0268806
+              ],
+              [
+                -76.1652364,
+                43.0268705
+              ],
+              [
+                -76.165243,
+                43.0268689
+              ],
+              [
+                -76.1652453,
+                43.0268674
+              ],
+              [
+                -76.1652449,
+                43.0268694
+              ],
+              [
+                -76.1652421,
+                43.0268763
+              ],
+              [
+                -76.1652419,
+                43.0268737
+              ],
+              [
+                -76.1652417,
+                43.0268748
+              ],
+              [
+                -76.1652428,
+                43.0268719
+              ],
+              [
+                -76.1652409,
+                43.0268707
+              ],
+              [
+                -76.1652447,
+                43.0268733
+              ],
+              [
+                -76.1652416,
+                43.0268722
+              ],
+              [
+                -76.1652425,
+                43.0268712
+              ],
+              [
+                -76.1652426,
+                43.0268722
+              ],
+              [
+                -76.1652453,
+                43.0268732
+              ],
+              [
+                -76.1652412,
+                43.0268724
+              ],
+              [
+                -76.1652423,
+                43.0268721
+              ],
+              [
+                -76.1652452,
+                43.026871
+              ],
+              [
+                -76.1652452,
+                43.0268714
+              ],
+              [
+                -76.1651971,
+                43.0268876
+              ],
+              [
+                -76.1652318,
+                43.0268772
+              ],
+              [
+                -76.1652413,
+                43.0268732
+              ],
+              [
+                -76.1652392,
+                43.0268716
+              ],
+              [
+                -76.1652418,
+                43.0268722
+              ],
+              [
+                -76.1652416,
+                43.0268727
+              ],
+              [
+                -76.1652406,
+                43.0268728
+              ],
+              [
+                -76.1652425,
+                43.0268754
+              ],
+              [
+                -76.1652436,
+                43.0268718
+              ],
+              [
+                -76.1652402,
+                43.0268716
+              ],
+              [
+                -76.1652399,
+                43.0268779
+              ],
+              [
+                -76.1652416,
+                43.0268657
+              ],
+              [
+                -76.1652748,
+                43.0268495
+              ],
+              [
+                -76.1652753,
+                43.0268752
+              ],
+              [
+                -76.1652357,
+                43.0269018
+              ],
+              [
+                -76.1652553,
+                43.0269096
+              ],
+              [
+                -76.1653766,
+                43.0269579
+              ],
+              [
+                -76.1660665,
+                43.0272382
+              ],
+              [
+                -76.166314,
+                43.0269033
+              ],
+              [
+                -76.1662446,
+                43.0265047
+              ],
+              [
+                -76.1660506,
+                43.0263267
+              ],
+              [
+                -76.1658592,
+                43.0261406
+              ],
+              [
+                -76.1655913,
+                43.0259038
+              ],
+              [
+                -76.1653938,
+                43.0256828
+              ],
+              [
+                -76.1652213,
+                43.0253646
+              ],
+              [
+                -76.1649631,
+                43.0249726
+              ],
+              [
+                -76.1648171,
+                43.0242922
+              ],
+              [
+                -76.1648286,
+                43.0238214
+              ],
+              [
+                -76.1652835,
+                43.0235515
+              ],
+              [
+                -76.1656001,
+                43.0235945
+              ],
+              [
+                -76.1659363,
+                43.0236961
+              ],
+              [
+                -76.1663264,
+                43.0238691
+              ],
+              [
+                -76.1667867,
+                43.023962
+              ],
+              [
+                -76.1672123,
+                43.0236527
+              ],
+              [
+                -76.1682379,
+                43.0233829
+              ],
+              [
+                -76.1687899,
+                43.0236323
+              ],
+              [
+                -76.1689846,
+                43.0240421
+              ],
+              [
+                -76.1692579,
+                43.024549
+              ],
+              [
+                -76.1694634,
+                43.0248758
+              ],
+              [
+                -76.1696387,
+                43.0251902
+              ],
+              [
+                -76.1698933,
+                43.0255909
+              ],
+              [
+                -76.1700997,
+                43.025855
+              ],
+              [
+                -76.1703252,
+                43.0261322
+              ],
+              [
+                -76.1705531,
+                43.0264103
+              ],
+              [
+                -76.1706269,
+                43.0267732
+              ],
+              [
+                -76.170585,
+                43.0268077
+              ],
+              [
+                -76.1705838,
+                43.0268164
+              ],
+              [
+                -76.1705785,
+                43.0268153
+              ],
+              [
+                -76.1705806,
+                43.0268152
+              ],
+              [
+                -76.1705811,
+                43.0268152
+              ],
+              [
+                -76.1705816,
+                43.0268152
+              ],
+              [
+                -76.1705853,
+                43.0268142
+              ],
+              [
+                -76.1705845,
+                43.0268162
+              ],
+              [
+                -76.1705858,
+                43.0268155
+              ],
+              [
+                -76.1705858,
+                43.0268155
+              ],
+              [
+                -76.1705858,
+                43.0268155
+              ],
+              [
+                -76.170585,
+                43.0268143
+              ],
+              [
+                -76.1705805,
+                43.0268142
+              ],
+              [
+                -76.1704703,
+                43.0269198
+              ],
+              [
+                -76.1699335,
+                43.0271352
+              ],
+              [
+                -76.1690135,
+                43.0272225
+              ],
+              [
+                -76.1684205,
+                43.0272305
+              ],
+              [
+                -76.1679192,
+                43.0272568
+              ],
+              [
+                -76.167296,
+                43.0272676
+              ],
+              [
+                -76.1669855,
+                43.0272099
+              ],
+              [
+                -76.1667074,
+                43.0271966
+              ],
+              [
+                -76.1664063,
+                43.0271883
+              ],
+              [
+                -76.1663753,
+                43.0271811
+              ],
+              [
+                -76.1663775,
+                43.0271881
+              ],
+              [
+                -76.1664073,
+                43.0271901
+              ],
+              [
+                -76.1663427,
+                43.0271939
+              ],
+              [
+                -76.1660386,
+                43.0272836
+              ],
+              [
+                -76.1657134,
+                43.0276581
+              ],
+              [
+                -76.16562,
+                43.0280504
+              ],
+              [
+                -76.1657505,
+                43.0283993
+              ],
+              [
+                -76.1658891,
+                43.0288896
+              ],
+              [
+                -76.1659598,
+                43.0293107
+              ],
+              [
+                -76.16598,
+                43.0297478
+              ],
+              [
+                -76.1660628,
+                43.0305201
+              ],
+              [
+                -76.1660842,
+                43.031149
+              ],
+              [
+                -76.166115,
+                43.0318833
+              ],
+              [
+                -76.1662005,
+                43.032489
+              ],
+              [
+                -76.1659623,
+                43.0330683
+              ],
+              [
+                -76.1650868,
+                43.0332382
+              ],
+              [
+                -76.1647956,
+                43.0332523
+              ],
+              [
+                -76.1643946,
+                43.0332689
+              ],
+              [
+                -76.1634058,
+                43.0332886
+              ],
+              [
+                -76.1626047,
+                43.0333276
+              ],
+              [
+                -76.1619395,
+                43.0333602
+              ],
+              [
+                -76.1611889,
+                43.033389
+              ],
+              [
+                -76.1606263,
+                43.033428
+              ],
+              [
+                -76.1601315,
+                43.0334426
+              ],
+              [
+                -76.1595141,
+                43.0334721
+              ],
+              [
+                -76.1591501,
+                43.0334836
+              ],
+              [
+                -76.1588183,
+                43.0334894
+              ],
+              [
+                -76.1583505,
+                43.0335112
+              ],
+              [
+                -76.1575122,
+                43.0335496
+              ],
+              [
+                -76.1569283,
+                43.0335681
+              ],
+              [
+                -76.1564076,
+                43.0336017
+              ],
+              [
+                -76.1558067,
+                43.0336102
+              ],
+              [
+                -76.1556298,
+                43.0338155
+              ],
+              [
+                -76.1553826,
+                43.0339503
+              ],
+              [
+                -76.155063,
+                43.033952
+              ],
+              [
+                -76.1549054,
+                43.0342796
+              ],
+              [
+                -76.1548437,
+                43.0346232
+              ],
+              [
+                -76.1548308,
+                43.0350261
+              ],
+              [
+                -76.15486,
+                43.0353168
+              ],
+              [
+                -76.154842,
+                43.035645
+              ],
+              [
+                -76.1548168,
+                43.03605
+              ],
+              [
+                -76.154813,
+                43.0362744
+              ],
+              [
+                -76.1548222,
+                43.0365665
+              ],
+              [
+                -76.1548768,
+                43.0368769
+              ],
+              [
+                -76.1550327,
+                43.0373154
+              ],
+              [
+                -76.155167,
+                43.0377775
+              ],
+              [
+                -76.1552891,
+                43.0381669
+              ],
+              [
+                -76.1554681,
+                43.0385721
+              ],
+              [
+                -76.155473,
+                43.0388908
+              ],
+              [
+                -76.1554927,
+                43.0392151
+              ],
+              [
+                -76.1556088,
+                43.0395988
+              ],
+              [
+                -76.1556918,
+                43.0399148
+              ],
+              [
+                -76.1557286,
+                43.0402213
+              ],
+              [
+                -76.1559675,
+                43.0404166
+              ],
+              [
+                -76.1563016,
+                43.0406595
+              ],
+              [
+                -76.1565618,
+                43.0408475
+              ],
+              [
+                -76.1566935,
+                43.0410126
+              ],
+              [
+                -76.1563959,
+                43.0412952
+              ],
+              [
+                -76.1561283,
+                43.0415003
+              ],
+              [
+                -76.1558416,
+                43.041709
+              ],
+              [
+                -76.1554253,
+                43.0420274
+              ],
+              [
+                -76.155048,
+                43.0422973
+              ],
+              [
+                -76.1545766,
+                43.0425806
+              ],
+              [
+                -76.1541198,
+                43.0429406
+              ],
+              [
+                -76.1537248,
+                43.0432096
+              ],
+              [
+                -76.1534192,
+                43.0434286
+              ],
+              [
+                -76.1530038,
+                43.0437699
+              ],
+              [
+                -76.1526936,
+                43.0439877
+              ],
+              [
+                -76.1524193,
+                43.0441904
+              ],
+              [
+                -76.152201,
+                43.044397
+              ],
+              [
+                -76.1522009,
+                43.0443945
+              ],
+              [
+                -76.1521995,
+                43.044396
+              ],
+              [
+                -76.1518664,
+                43.0448221
+              ],
+              [
+                -76.1514772,
+                43.0450787
+              ],
+              [
+                -76.1511369,
+                43.0453007
+              ],
+              [
+                -76.15088,
+                43.0454468
+              ],
+              [
+                -76.15088,
+                43.0454468
+              ],
+              [
+                -76.15088,
+                43.0454468
+              ],
+              [
+                -76.1509966,
+                43.0467349
+              ],
+              [
+                -76.1508643,
+                43.0468271
+              ],
+              [
+                -76.1508693,
+                43.0472153
+              ],
+              [
+                -76.1508693,
+                43.0472153
+              ],
+              [
+                -76.1508693,
+                43.0472153
+              ],
+              [
+                -76.1508117,
+                43.048521
+              ],
+              [
+                -76.1508425,
+                43.0489264
+              ],
+              [
+                -76.1508307,
+                43.0491942
+              ],
+              [
+                -76.1506098,
+                43.0495677
+              ],
+              [
+                -76.1498661,
+                43.0495556
+              ],
+              [
+                -76.1493796,
+                43.049548
+              ],
+              [
+                -76.148896,
+                43.0495268
+              ],
+              [
+                -76.1483935,
+                43.049507
+              ],
+              [
+                -76.1477678,
+                43.0495113
+              ],
+              [
+                -76.1472809,
+                43.0494822
+              ],
+              [
+                -76.146734,
+                43.0495186
+              ],
+              [
+                -76.1462679,
+                43.0495222
+              ],
+              [
+                -76.145799,
+                43.049527
+              ],
+              [
+                -76.1451929,
+                43.0495213
+              ],
+              [
+                -76.1447698,
+                43.0495106
+              ],
+              [
+                -76.1442777,
+                43.0495014
+              ],
+              [
+                -76.143614,
+                43.0494769
+              ],
+              [
+                -76.1431535,
+                43.0494924
+              ],
+              [
+                -76.1426654,
+                43.0495023
+              ],
+              [
+                -76.1420718,
+                43.0494994
+              ],
+              [
+                -76.1415947,
+                43.0494929
+              ],
+              [
+                -76.1410484,
+                43.0494606
+              ],
+              [
+                -76.1403696,
+                43.0494439
+              ],
+              [
+                -76.1398876,
+                43.04951
+              ],
+              [
+                -76.1398734,
+                43.0497892
+              ],
+              [
+                -76.1398734,
+                43.0497892
+              ],
+              [
+                -76.1398734,
+                43.0497892
+              ],
+              [
+                -76.1388563,
+                43.0502947
+              ],
+              [
+                -76.1382419,
+                43.0502837
+              ],
+              [
+                -76.1377684,
+                43.0502898
+              ],
+              [
+                -76.1373104,
+                43.0502897
+              ],
+              [
+                -76.1367259,
+                43.0502774
+              ],
+              [
+                -76.1362876,
+                43.0502689
+              ],
+              [
+                -76.1358246,
+                43.0502717
+              ],
+              [
+                -76.1351169,
+                43.0502643
+              ],
+              [
+                -76.1345553,
+                43.0502691
+              ],
+              [
+                -76.1340508,
+                43.0502496
+              ],
+              [
+                -76.1333425,
+                43.0502202
+              ],
+              [
+                -76.1330049,
+                43.0502105
+              ],
+              [
+                -76.1322426,
+                43.0502349
+              ],
+              [
+                -76.1317707,
+                43.0502082
+              ],
+              [
+                -76.131598,
+                43.0500022
+              ],
+              [
+                -76.1314549,
+                43.0498169
+              ],
+              [
+                -76.1314647,
+                43.049818
+              ],
+              [
+                -76.1314586,
+                43.0498207
+              ],
+              [
+                -76.1314442,
+                43.0498317
+              ],
+              [
+                -76.1314465,
+                43.0498243
+              ],
+              [
+                -76.1314487,
+                43.0498224
+              ],
+              [
+                -76.1314456,
+                43.0497926
+              ],
+              [
+                -76.1314708,
+                43.0497688
+              ],
+              [
+                -76.1314872,
+                43.049785
+              ],
+              [
+                -76.1313884,
+                43.0498269
+              ],
+              [
+                -76.1312923,
+                43.0499063
+              ],
+              [
+                -76.1313027,
+                43.0499291
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

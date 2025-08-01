@@ -1,0 +1,66 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "OT6TsbqWXsvwNwfTTCKvSoUU02oIoKW4",
+    "numCoordinates": 2,
+    "startTime": "23:51:36 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "23:52:35 GMT-0400 (Eastern Daylight Time)",
+    "duration": 59005,
+    "flyDistance": 0,
+    "cumulative": [
+      0,
+      59005
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 29502.5,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "names": [
+      null
+    ],
+    "timestamps": [
+      1751082696109,
+      1751082755114
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "sessionId": "OT6TsbqWXsvwNwfTTCKvSoUU02oIoKW4",
+        "numCoordinates": 2,
+        "startTime": "23:51:36 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "23:52:35 GMT-0400 (Eastern Daylight Time)",
+        "duration": 59005,
+        "flyDistance": 0,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "names": [
+          null
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1158197,
+            43.0302841
+          ],
+          [
+            -76.1158198,
+            43.0302818
+          ]
+        ]
+      }
+    }
+  ]
+}

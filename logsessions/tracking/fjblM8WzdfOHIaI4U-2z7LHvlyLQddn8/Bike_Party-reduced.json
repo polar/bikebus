@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "fjblM8WzdfOHIaI4U-2z7LHvlyLQddn8",
+    "title": "Bike_Party",
+    "numCoordinates": 18,
+    "startTime": "20:42:52 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "20:50:37 GMT-0400 (Eastern Daylight Time)",
+    "duration": 465000,
+    "flyDistance": 1494,
+    "cumulative": [
+      1648,
+      465000
+    ],
+    "moving": [
+      1475,
+      426000
+    ],
+    "averageTimeDifference": 25833.333333333332,
+    "summary": {
+      "distance": 1.475,
+      "duration": 426
+    },
+    "deleteCalled": false,
+    "names": []
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "fjblM8WzdfOHIaI4U-2z7LHvlyLQddn8",
+        "numCoordinates": 18,
+        "startTime": "20:42:52 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "20:50:37 GMT-0400 (Eastern Daylight Time)",
+        "duration": 465000,
+        "flyDistance": 1494,
+        "summary": {
+          "distance": 1.475,
+          "duration": 426
+        },
+        "names": [],
+        "deleteCalled": false,
+        "timestamps": [
+          1751157772816,
+          1751157781816,
+          1751157793816,
+          1751157802816,
+          1751157811816,
+          1751157862816,
+          1751157868816,
+          1751157877816,
+          1751157940816,
+          1751157946816,
+          1751157991816,
+          1751157997816,
+          1751158030816,
+          1751158159816,
+          1751158195816,
+          1751158198816,
+          1751158237816,
+          1751158237816
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1654732,
+            43.0358114
+          ],
+          [
+            -76.1658469,
+            43.0359746
+          ],
+          [
+            -76.1664706,
+            43.0361762
+          ],
+          [
+            -76.1668497,
+            43.0363656
+          ],
+          [
+            -76.1673336,
+            43.0365671
+          ],
+          [
+            -76.1696011,
+            43.0375422
+          ],
+          [
+            -76.1698751,
+            43.0376841
+          ],
+          [
+            -76.1702683,
+            43.0378798
+          ],
+          [
+            -76.1725588,
+            43.0390551
+          ],
+          [
+            -76.1725802,
+            43.0390497
+          ],
+          [
+            -76.1727114,
+            43.0391148
+          ],
+          [
+            -76.1729846,
+            43.0392296
+          ],
+          [
+            -76.1741949,
+            43.0399136
+          ],
+          [
+            -76.1740906,
+            43.0431912
+          ],
+          [
+            -76.1746787,
+            43.0448655
+          ],
+          [
+            -76.1747474,
+            43.0450239
+          ],
+          [
+            -76.1758581,
+            43.0468943
+          ],
+          [
+            -76.1758581,
+            43.0468943
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1654732,
+          43.0358114
+        ]
+      }
+    }
+  ]
+}

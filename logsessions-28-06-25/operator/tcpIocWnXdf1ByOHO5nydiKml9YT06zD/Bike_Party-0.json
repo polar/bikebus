@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "tcpIocWnXdf1ByOHO5nydiKml9YT06zD",
+    "title": "Bike_Party",
+    "numCoordinates": 2,
+    "startTime": "23:51:33 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "23:51:36 GMT-0400 (Eastern Daylight Time)",
+    "duration": 3000,
+    "flyDistance": 2,
+    "cumulative": [
+      2,
+      3000
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 1500,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": true,
+    "names": [
+      "Stace"
+    ],
+    "timestamps": [
+      1751082693109,
+      1751082696109
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "tcpIocWnXdf1ByOHO5nydiKml9YT06zD",
+        "numCoordinates": 2,
+        "startTime": "23:51:33 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "23:51:36 GMT-0400 (Eastern Daylight Time)",
+        "duration": 3000,
+        "flyDistance": 2,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "names": [
+          "Stace"
+        ],
+        "deleteCalled": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1158183,
+            43.0303
+          ],
+          [
+            -76.1158197,
+            43.0302841
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "3I5YTXB6acnraJf8JgMvohDu3RHwNl4U",
+    "title": "Bike_Party",
+    "numCoordinates": 7,
+    "startTime": "19:17:40 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "19:18:42 GMT-0400 (Eastern Daylight Time)",
+    "duration": 62000,
+    "flyDistance": 4,
+    "cumulative": [
+      4,
+      62000
+    ],
+    "moving": [
+      0,
+      21000
+    ],
+    "averageTimeDifference": 8857.142857142857,
+    "summary": {
+      "distance": 0,
+      "duration": 21
+    },
+    "deleteCalled": false,
+    "names": [
+      null
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "3I5YTXB6acnraJf8JgMvohDu3RHwNl4U",
+        "numCoordinates": 7,
+        "startTime": "19:17:40 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "19:18:42 GMT-0400 (Eastern Daylight Time)",
+        "duration": 62000,
+        "flyDistance": 4,
+        "summary": {
+          "distance": 0,
+          "duration": 21
+        },
+        "names": [
+          null
+        ],
+        "deleteCalled": false,
+        "timestamps": [
+          1751152660712,
+          1751152672712,
+          1751152672712,
+          1751152692711,
+          1751152701712,
+          1751152710712,
+          1751152722712
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1539066,
+            43.0498423
+          ],
+          [
+            -76.1539297,
+            43.0498081
+          ],
+          [
+            -76.1539297,
+            43.0498081
+          ],
+          [
+            -76.1539266,
+            43.049809
+          ],
+          [
+            -76.1539241,
+            43.0498084
+          ],
+          [
+            -76.1539245,
+            43.049808
+          ],
+          [
+            -76.1539277,
+            43.0498091
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1539066,
+          43.0498423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 2,
+        "end": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1539297,
+          43.0498081
+        ]
+      }
+    }
+  ]
+}

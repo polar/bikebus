@@ -1,0 +1,102 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "8c5XoYbAZtn87nJPscFqpB2DAEEX7Pjy",
+    "title": "Bike_Party",
+    "numCoordinates": 6,
+    "startTime": "22:12:41 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "22:27:50 GMT-0400 (Eastern Daylight Time)",
+    "duration": 909075,
+    "flyDistance": 0,
+    "cumulative": [
+      0,
+      909075
+    ],
+    "moving": [
+      0,
+      225019
+    ],
+    "averageTimeDifference": 151512.5,
+    "summary": {
+      "distance": 0,
+      "duration": 225.019
+    },
+    "deleteCalled": false,
+    "names": [
+      null
+    ],
+    "timestamps": [
+      1751076761666,
+      1751077069691,
+      1751077445722,
+      1751077445722,
+      1751077445722,
+      1751077670741
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "8c5XoYbAZtn87nJPscFqpB2DAEEX7Pjy",
+        "numCoordinates": 6,
+        "startTime": "22:12:41 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "22:27:50 GMT-0400 (Eastern Daylight Time)",
+        "duration": 909075,
+        "flyDistance": 0,
+        "summary": {
+          "distance": 0,
+          "duration": 225.019
+        },
+        "names": [
+          null
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158197,
+            43.0302841
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1158198,
+          43.0302816
+        ]
+      }
+    }
+  ]
+}

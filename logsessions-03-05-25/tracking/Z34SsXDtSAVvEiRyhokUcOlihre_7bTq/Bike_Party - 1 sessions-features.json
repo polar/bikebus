@@ -1,0 +1,156 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "Z34SsXDtSAVvEiRyhokUcOlihre_7bTq",
+    "title": "Bike_Party",
+    "name": "Bike_Party - 1 sessions",
+    "numCoordinates": 6,
+    "startTime": "18:42:26 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "18:44:36 GMT-0400 (Eastern Daylight Time)",
+    "duration": 130007,
+    "flyDistance": 4,
+    "cumulative": [
+      4,
+      130007,
+      0.0000307675740537048,
+      0
+    ],
+    "moving": [
+      0,
+      0,
+      null,
+      1
+    ],
+    "averageTimeDifference": 21667.833333333332,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "numLines": 1,
+    "lines": [
+      {
+        "start": 0,
+        "end": 2,
+        "length": 2,
+        "averageBearing": 91.66773230750871,
+        "angleDiff": 91.66773230750871
+      }
+    ],
+    "numPivots": 3,
+    "pivots": [
+      [],
+      [],
+      [
+        {
+          "start": 0,
+          "end": 2,
+          "length": 2
+        }
+      ]
+    ],
+    "numTurns": 1,
+    "turns": [
+      {
+        "index": 1,
+        "type": "U-Turn",
+        "coordinates": [
+          [
+            -76.1530034,
+            43.0507088
+          ],
+          [
+            -76.153006,
+            43.0506762
+          ],
+          [
+            -76.153006,
+            43.0506762
+          ]
+        ],
+        "distanceToPrev": 4,
+        "distanceToNext": 0,
+        "bearingIn": 183.33546461501743,
+        "bearingOut": 0,
+        "angleChange": 176.66453538498257,
+        "duration": 130007,
+        "flyDistance": 4,
+        "distance": 4,
+        "timestamp": 1748731476347
+      }
+    ]
+  },
+  "features": [
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "session": "Z34SsXDtSAVvEiRyhokUcOlihre_7bTq",
+            "title": "Bike_Party",
+            "numCoordinates": 6,
+            "startTime": "18:42:26 GMT-0400 (Eastern Daylight Time)",
+            "endTime": "18:44:36 GMT-0400 (Eastern Daylight Time)",
+            "deleteCalled": false,
+            "duration": 130007,
+            "flyDistance": 4,
+            "cumulative": [
+              4,
+              130007,
+              0.0000307675740537048,
+              0
+            ],
+            "moving": [
+              0,
+              0,
+              null,
+              1
+            ],
+            "averageTimeDifference": 21667.833333333332,
+            "summary": {
+              "distance": 0,
+              "duration": 0
+            },
+            "timestamps": [
+              1748731346340,
+              1748731476347,
+              1748731476347,
+              1748731476347,
+              1748731476347,
+              1748731476347
+            ]
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -76.1530034,
+                43.0507088
+              ],
+              [
+                -76.153006,
+                43.0506762
+              ],
+              [
+                -76.153006,
+                43.0506762
+              ],
+              [
+                -76.153006,
+                43.0506762
+              ],
+              [
+                -76.153006,
+                43.0506762
+              ],
+              [
+                -76.153006,
+                43.0506762
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

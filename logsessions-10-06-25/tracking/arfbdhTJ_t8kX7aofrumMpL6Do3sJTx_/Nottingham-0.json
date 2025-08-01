@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "arfbdhTJ_t8kX7aofrumMpL6Do3sJTx_",
+    "title": "Nottingham",
+    "numCoordinates": 3,
+    "startTime": "08:00:35 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "08:00:56 GMT-0400 (Eastern Daylight Time)",
+    "duration": 20783,
+    "flyDistance": 38,
+    "cumulative": [
+      39,
+      20783
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 6927.666666666667,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "timestamps": [
+      1749038435383,
+      1749038447173,
+      1749038456166
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nottingham",
+        "sessionId": "arfbdhTJ_t8kX7aofrumMpL6Do3sJTx_",
+        "numCoordinates": 3,
+        "startTime": "08:00:35 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "08:00:56 GMT-0400 (Eastern Daylight Time)",
+        "duration": 20783,
+        "flyDistance": 38,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1092496,
+            43.0357333
+          ],
+          [
+            -76.1094351,
+            43.0354947
+          ],
+          [
+            -76.1094437,
+            43.0354235
+          ]
+        ]
+      }
+    }
+  ]
+}

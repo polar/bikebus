@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "a2Ta9n3TfsGr6vYSfWtpD--w6fKx_QOT",
+    "title": "Nottingham",
+    "numCoordinates": 7,
+    "startTime": "08:01:50 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "08:08:17 GMT-0400 (Eastern Daylight Time)",
+    "duration": 387011,
+    "flyDistance": 606,
+    "cumulative": [
+      606,
+      387011
+    ],
+    "moving": [
+      0,
+      21000
+    ],
+    "averageTimeDifference": 55287.28571428572,
+    "summary": {
+      "distance": 0,
+      "duration": 21
+    },
+    "deleteCalled": false,
+    "names": [],
+    "timestamps": [
+      1750852910805,
+      1750852922805,
+      1750852931805,
+      1750852940805,
+      1750853276816,
+      1750853285816,
+      1750853297816
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Nottingham",
+        "sessionId": "a2Ta9n3TfsGr6vYSfWtpD--w6fKx_QOT",
+        "numCoordinates": 7,
+        "startTime": "08:01:50 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "08:08:17 GMT-0400 (Eastern Daylight Time)",
+        "duration": 387011,
+        "flyDistance": 606,
+        "summary": {
+          "distance": 0,
+          "duration": 21
+        },
+        "names": [],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1092453,
+            43.0357384
+          ],
+          [
+            -76.1094935,
+            43.0353276
+          ],
+          [
+            -76.109789,
+            43.0348926
+          ],
+          [
+            -76.1099475,
+            43.0345023
+          ],
+          [
+            -76.1122529,
+            43.0307555
+          ],
+          [
+            -76.1122529,
+            43.0307555
+          ],
+          [
+            -76.1122525,
+            43.0307543
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1092453,
+          43.0357384
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "nmkdnSm5szzRuOXqfgO3vy1vLiHdZYqF",
+    "title": "Bike_Party",
+    "name": "Bike_Party - 1 sessions",
+    "numCoordinates": 2,
+    "startTime": "18:50:21 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "18:50:33 GMT-0400 (Eastern Daylight Time)",
+    "duration": 11999,
+    "flyDistance": 0,
+    "cumulative": [
+      0,
+      11999,
+      0,
+      0
+    ],
+    "moving": [
+      0,
+      0,
+      null,
+      1
+    ],
+    "averageTimeDifference": 5999.5,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "numLines": 0,
+    "lines": [],
+    "numPivots": 3,
+    "pivots": [
+      [],
+      [],
+      []
+    ],
+    "numTurns": 0,
+    "turns": []
+  },
+  "features": [
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "session": "nmkdnSm5szzRuOXqfgO3vy1vLiHdZYqF",
+            "title": "Bike_Party",
+            "numCoordinates": 2,
+            "startTime": "18:50:21 GMT-0400 (Eastern Daylight Time)",
+            "endTime": "18:50:33 GMT-0400 (Eastern Daylight Time)",
+            "deleteCalled": false,
+            "duration": 11999,
+            "flyDistance": 0,
+            "cumulative": [
+              0,
+              11999,
+              0,
+              0
+            ],
+            "moving": [
+              0,
+              0,
+              null,
+              1
+            ],
+            "averageTimeDifference": 5999.5,
+            "summary": {
+              "distance": 0,
+              "duration": 0
+            },
+            "timestamps": [
+              1748731821348,
+              1748731833347
+            ]
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -76.15301,
+                43.0506761
+              ],
+              [
+                -76.1530105,
+                43.0506754
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

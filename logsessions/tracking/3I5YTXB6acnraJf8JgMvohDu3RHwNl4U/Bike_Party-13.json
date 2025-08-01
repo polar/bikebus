@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "3I5YTXB6acnraJf8JgMvohDu3RHwNl4U",
+    "title": "Bike_Party",
+    "numCoordinates": 2,
+    "startTime": "20:51:10 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "20:51:22 GMT-0400 (Eastern Daylight Time)",
+    "duration": 12000,
+    "flyDistance": 53,
+    "cumulative": [
+      53,
+      12000
+    ],
+    "moving": [
+      0,
+      0
+    ],
+    "averageTimeDifference": 6000,
+    "summary": {
+      "distance": 0,
+      "duration": 0
+    },
+    "deleteCalled": false,
+    "names": [
+      null
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "3I5YTXB6acnraJf8JgMvohDu3RHwNl4U",
+        "numCoordinates": 2,
+        "startTime": "20:51:10 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "20:51:22 GMT-0400 (Eastern Daylight Time)",
+        "duration": 12000,
+        "flyDistance": 53,
+        "summary": {
+          "distance": 0,
+          "duration": 0
+        },
+        "names": [
+          null
+        ],
+        "deleteCalled": false,
+        "timestamps": [
+          1751158270816,
+          1751158282816
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1775964,
+            43.0475681
+          ],
+          [
+            -76.1781937,
+            43.0477621
+          ]
+        ]
+      }
+    }
+  ]
+}

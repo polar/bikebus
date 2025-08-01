@@ -1,0 +1,102 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "6uempeuf_8h3IMfb9xEqd3-y4pTMCuQI",
+    "title": "Bike_Party",
+    "numCoordinates": 6,
+    "startTime": "22:27:34 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "22:27:50 GMT-0400 (Eastern Daylight Time)",
+    "duration": 16000,
+    "flyDistance": 2,
+    "cumulative": [
+      2,
+      16000
+    ],
+    "moving": [
+      0,
+      3001
+    ],
+    "averageTimeDifference": 2666.6666666666665,
+    "summary": {
+      "distance": 0,
+      "duration": 3.001
+    },
+    "deleteCalled": false,
+    "names": [
+      "Jennica"
+    ],
+    "timestamps": [
+      1751077654741,
+      1751077657741,
+      1751077661740,
+      1751077664740,
+      1751077667740,
+      1751077670741
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "6uempeuf_8h3IMfb9xEqd3-y4pTMCuQI",
+        "numCoordinates": 6,
+        "startTime": "22:27:34 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "22:27:50 GMT-0400 (Eastern Daylight Time)",
+        "duration": 16000,
+        "flyDistance": 2,
+        "summary": {
+          "distance": 0,
+          "duration": 3.001
+        },
+        "names": [
+          "Jennica"
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1158183,
+            43.0303
+          ],
+          [
+            -76.1158197,
+            43.0302841
+          ],
+          [
+            -76.1158196,
+            43.0302817
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1158183,
+          43.0303
+        ]
+      }
+    }
+  ]
+}

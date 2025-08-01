@@ -1,0 +1,244 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "k9bFjVDpUXx8GZlEY_OLs1K3xRRsjDc_",
+    "title": "HomeToMarket",
+    "numCoordinates": 24,
+    "startTime": "10:57:56 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "11:37:24 GMT-0400 (Eastern Daylight Time)",
+    "duration": 2367248,
+    "flyDistance": 5667,
+    "cumulative": [
+      5914,
+      2367248
+    ],
+    "moving": [
+      5523,
+      1119025
+    ],
+    "averageTimeDifference": 98635.33333333333,
+    "summary": {
+      "distance": 5.523,
+      "duration": 1119.025
+    },
+    "deleteCalled": false,
+    "names": [],
+    "timestamps": [
+      1751122676879,
+      1751123765102,
+      1751123904101,
+      1751123916102,
+      1751123925102,
+      1751123934101,
+      1751123967102,
+      1751124025108,
+      1751124085108,
+      1751124144108,
+      1751124803120,
+      1751124803120,
+      1751124815120,
+      1751124824119,
+      1751124833119,
+      1751124845120,
+      1751124852120,
+      1751124863120,
+      1751124875120,
+      1751124884120,
+      1751124893120,
+      1751124926120,
+      1751124984127,
+      1751125044127
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "HomeToMarket",
+        "sessionId": "k9bFjVDpUXx8GZlEY_OLs1K3xRRsjDc_",
+        "numCoordinates": 24,
+        "startTime": "10:57:56 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "11:37:24 GMT-0400 (Eastern Daylight Time)",
+        "duration": 2367248,
+        "flyDistance": 5667,
+        "summary": {
+          "distance": 5.523,
+          "duration": 1119.025
+        },
+        "names": [],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1171864,
+            43.0338314
+          ],
+          [
+            -76.117062,
+            43.0337884
+          ],
+          [
+            -76.1181014,
+            43.0351906
+          ],
+          [
+            -76.1193502,
+            43.0357411
+          ],
+          [
+            -76.1203037,
+            43.0360246
+          ],
+          [
+            -76.1210043,
+            43.0361996
+          ],
+          [
+            -76.123277,
+            43.0365082
+          ],
+          [
+            -76.1271694,
+            43.0365101
+          ],
+          [
+            -76.1298051,
+            43.0364007
+          ],
+          [
+            -76.1328798,
+            43.0382978
+          ],
+          [
+            -76.1629895,
+            43.0574564
+          ],
+          [
+            -76.1629895,
+            43.0574564
+          ],
+          [
+            -76.1634346,
+            43.0577693
+          ],
+          [
+            -76.1637944,
+            43.0576612
+          ],
+          [
+            -76.1640727,
+            43.0578457
+          ],
+          [
+            -76.1642854,
+            43.0581532
+          ],
+          [
+            -76.1645342,
+            43.0582883
+          ],
+          [
+            -76.1650153,
+            43.0586244
+          ],
+          [
+            -76.1652442,
+            43.0591396
+          ],
+          [
+            -76.1653366,
+            43.0594494
+          ],
+          [
+            -76.1652787,
+            43.0597524
+          ],
+          [
+            -76.1667259,
+            43.0606274
+          ],
+          [
+            -76.1699553,
+            43.0621883
+          ],
+          [
+            -76.1729159,
+            43.0643529
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1171864,
+          43.0338314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 4,
+        "end": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1203037,
+          43.0360246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 9,
+        "end": 11
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1328798,
+          43.0382978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 11,
+        "end": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1629895,
+          43.0574564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 13,
+        "end": 20
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1637944,
+          43.0576612
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "session": "Y5QUc27-0LBbNopTOqZWnOidyWNlidOK",
+    "title": "Bike_Party",
+    "numCoordinates": 8,
+    "startTime": "22:17:46 GMT-0400 (Eastern Daylight Time)",
+    "endTime": "22:18:24 GMT-0400 (Eastern Daylight Time)",
+    "duration": 38002,
+    "flyDistance": 2,
+    "cumulative": [
+      6,
+      38002
+    ],
+    "moving": [
+      4,
+      25001
+    ],
+    "averageTimeDifference": 4750.25,
+    "summary": {
+      "distance": 0.004,
+      "duration": 25.001
+    },
+    "deleteCalled": false,
+    "names": [
+      "Kaylyn"
+    ],
+    "timestamps": [
+      1751077066690,
+      1751077069691,
+      1751077073690,
+      1751077076691,
+      1751077079691,
+      1751077097692,
+      1751077100695,
+      1751077104692
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route": "Bike_Party",
+        "sessionId": "Y5QUc27-0LBbNopTOqZWnOidyWNlidOK",
+        "numCoordinates": 8,
+        "startTime": "22:17:46 GMT-0400 (Eastern Daylight Time)",
+        "endTime": "22:18:24 GMT-0400 (Eastern Daylight Time)",
+        "duration": 38002,
+        "flyDistance": 2,
+        "summary": {
+          "distance": 0.004,
+          "duration": 25.001
+        },
+        "names": [
+          "Kaylyn"
+        ],
+        "deleteCalled": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.1158183,
+            43.0303
+          ],
+          [
+            -76.1158197,
+            43.0302841
+          ],
+          [
+            -76.1158196,
+            43.0302817
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158198,
+            43.0302816
+          ],
+          [
+            -76.1158183,
+            43.0303
+          ],
+          [
+            -76.1158197,
+            43.0302841
+          ],
+          [
+            -76.1158196,
+            43.0302817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 0,
+        "end": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1158183,
+          43.0303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start": 3,
+        "end": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1158198,
+          43.0302816
+        ]
+      }
+    }
+  ]
+}
