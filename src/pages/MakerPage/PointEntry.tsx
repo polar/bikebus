@@ -1,9 +1,19 @@
-import React, {ChangeEvent} from "react";
-import {ButtonGroup, createTheme, SvgIcon, TextField, Theme, ThemeProvider, ToggleButton} from "@mui/material";
+import React, {ChangeEvent, createRef} from "react";
+import {
+    ButtonGroup,
+    createTheme,
+    SvgIcon,
+    TextField,
+    Theme,
+    ThemeProvider,
+    ToggleButton
+} from "@mui/material";
 
 interface PointEntryProps {
     feature: any;
+    tabIndex: number;
     onChange?: () => void;
+    onNameChange?: (index: number) => void;
 }
 
 export class PointEntry extends React.Component<PointEntryProps, { update: number }> {
@@ -13,8 +23,11 @@ export class PointEntry extends React.Component<PointEntryProps, { update: numbe
         update: 0
     }
 
+    myRef: React.RefObject<HTMLInputElement | null>
+
     constructor(props: PointEntryProps) {
         super(props);
+        this.myRef = createRef();
         let themeOptions = {
             palette: {
                 mode: 'light',
@@ -100,6 +113,11 @@ export class PointEntry extends React.Component<PointEntryProps, { update: numbe
         }
     }
 
+    onKeyPress(event: React.KeyboardEvent<HTMLDivElement>, index: number): void {
+        if (event.key === 'Enter' || event.key === 'Tab') {
+            this.props.onNameChange && this.props.onNameChange(index)
+        }
+    }
     render() {
         let text = this.props.feature.properties.name || this.props.feature.properties.label?.split(",")[0]
         // @ts-ignore
@@ -107,7 +125,7 @@ export class PointEntry extends React.Component<PointEntryProps, { update: numbe
             <div style={{background: "rgba(230,30,40,0.1)"}}>
                 <ThemeProvider theme={this.theme}>
                     <ButtonGroup>
-                        <TextField size={"small"} value={text} onChange={(e) => this.onChangeName(e)}></TextField>
+                        <TextField key={`textfield-${this.props.tabIndex}`} inputRef={this.myRef}  size={"small"} value={text} onKeyDown={(e) => this.onKeyPress(e, this.props.tabIndex)} onChange={(e) => this.onChangeName(e)}></TextField>
                         {/* @ts-ignore */}
                         <ToggleButton selected={!this.props.feature.properties.ignore} onChange={this.ignore.bind(this)}
                                       size={"small"}>

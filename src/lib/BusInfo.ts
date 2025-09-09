@@ -20,6 +20,14 @@ export function setBusInfoBusIcon(geojson: any, icon: string): any {
     return geojson
 }
 
+export function getBusInfoBusIccon(geojson: any, icon: string) : string {
+    let ls = getBusInfoLineString(geojson);
+    if (ls) {
+        return ls.properties.busIcon;
+    }
+    return icon
+}
+
 export function getBusInfoLineString(geojson: any): any {
     return geojson?.features?.find((f:any) => f.type === "Feature" && f.geometry.type === "LineString")
 }

@@ -23,10 +23,11 @@ export class EditorElement extends React.Component<EditorElementProps, EditorEle
     }
 
     myUpdate() {
-        this.setState({update: this.state.update + 1});
-        if (this.props.onChange) {
-            this.props.onChange()
-        }
+        this.setState({update: this.state.update + 1}, () => {
+            if (this.props.onChange) {
+                this.props.onChange()
+            }
+        })
     }
 
     changeTitle(_event: ChangeEvent<HTMLInputElement>) {

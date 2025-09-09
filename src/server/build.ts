@@ -42,6 +42,11 @@ const build = (opts?: BuildOpts): FastifyInstance => {
                 cb(null, true)
                 return
             }
+            if(hostname === "bikebus.bike"){
+                //  Request from localhost will pass
+                cb(null, true)
+                return
+            }
             // Generate an error on other origins, disabling access
             cb(new Error("Not allowed"), false)
         }

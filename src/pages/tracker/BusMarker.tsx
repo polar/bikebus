@@ -42,7 +42,7 @@ export class BusMarker extends React.Component<BusMarkerProps, BusMarkerState> {
         }
     }
     busMarker(location: BusLocation){
-        let icon = "/api/bus-icons/44-512.webp'"
+        let icon = "/api/bus-icons/44-512.webp"
         let ls = getBusInfoLineString(this.props.geojson)
         if (ls && ls.properties.busIcon) {
             icon = ls.properties.busIcon

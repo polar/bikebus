@@ -8,12 +8,24 @@ interface PointEditorProps {
     onChange?: () => void
 }
 
+interface PointEditorState {
+    focus: number
+}
 
-export class PointEditor extends React.Component<PointEditorProps, {}> {
+export class PointEditor extends React.Component<PointEditorProps,PointEditorState> {
 
+
+    state: PointEditorState =
+        {
+            focus: 0
+        }
+    private fs: any[];
 
     constructor(props: PointEditorProps) {
         super(props);
+
+        this.fs = this.props.geojson.features.filter(
+            (f:any) => f.type === "Feature" && f.geometry.type === "Point")
     }
 
     doUpdate() {
@@ -22,6 +34,14 @@ export class PointEditor extends React.Component<PointEditorProps, {}> {
         }
     }
 
+    onNameChange(lastIndex: number) {
+        this.setState({focus: lastIndex+1 % this.fs.length}, () => {
+            if (this.props.onChange) {
+                this.props.onChange();
+            }
+        });
+
+    }
     render() {
         let fs = this.props.geojson.features.filter(
             (f:any) => f.type === "Feature" && f.geometry.type === "Point")
@@ -31,23 +51,10 @@ export class PointEditor extends React.Component<PointEditorProps, {}> {
                     {
                         ({index, style}) =>
                             <div style={style}>
-                                <PointEntry feature={fs[index]} key={`point-${index}`} onChange={this.doUpdate.bind(this)}/>
+                                <PointEntry tabIndex={index} feature={fs[index]} key={`point-${index}`} onNameChange={(i) => this.onNameChange(i)} onChange={this.doUpdate.bind(this)}/>
                             </div>
                     }
                 </FixedSizeList>
-                <BusIconChooser  onChange={this.doUpdate.bind(this)} geojson={this.props.geojson}></BusIconChooser>
-            </div>
-        )
-    }
-    render2() {
-        let fs = this.props.geojson.features.filter(
-            (f:any) => f.type === "Feature" && f.geometry.type === "Point")
-        return (
-            <div className={"polar"}>
-                {
-                    fs.map((item:any, index: number) =>
-                        <PointEntry feature={item} key={`point-${index}`} onChange={this.doUpdate.bind(this)}/>)
-                }
                 <BusIconChooser  onChange={this.doUpdate.bind(this)} geojson={this.props.geojson}></BusIconChooser>
             </div>
         )

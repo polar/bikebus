@@ -25,7 +25,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     "host": "0.0.0.0",
-    "allowedHosts": ["adiron.com", "bikebus.bike"],
+    "allowedHosts": ["bikebus.bike","adiron.com"],
+      hmr: false,
     proxy: {
       '/api': {
         target: 'http://0.0.0.0:9090',

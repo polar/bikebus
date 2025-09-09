@@ -1,6 +1,6 @@
 import React from "react";
 import {createTheme, TextField, Theme, ThemeProvider, ToggleButton, ToggleButtonGroup} from "@mui/material";
-import {setBusInfoBusIcon} from "../../lib/BusInfo.ts";
+import {setBusInfoBusIcon, getBusInfoBusIccon} from "../../lib/BusInfo.ts";
 
 
 interface BusIconChooserProps {
@@ -69,7 +69,11 @@ export class BusIconChooser extends React.Component<BusIconChooserProps, BusIcon
             },
         }).then((res) => res.json())
             .then((data) => {
-                this.setState({icons: data.map((item: string) => `/api/bus-icons/${item}`)})
+                let icon = getBusInfoBusIccon(this.props.geojson, this.state.icon);
+                this.setState({
+                    icon: icon,
+                    icons: data.map((item: string) => `/api/bus-icons/${item}`)
+                })
             })
     }
     updateIcon(
