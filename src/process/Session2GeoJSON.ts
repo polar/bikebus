@@ -790,5 +790,5 @@ let processor = new SessionProcessor({
     distanceThreshold: 32
 })
 
-processor.processLogsToSessions("logs", "logsessions")
+processor.processLogsToSessions(process.argv[2] || "logs", process.argv[3] || "logsessions")
 .then(() => { console.log("Done")})
