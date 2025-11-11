@@ -148,8 +148,11 @@ export class MapElement extends React.Component<MapElementProps, MapElementState
 
     lastLocation?: MyLocation
 
-    onLocationChange(location: MyLocation) {
+    onLocationChange(location: MyLocation | undefined) {
         this.lastLocation = location
+        if (location === undefined) {
+            this.setState({locationControl: "location-control-off"})
+        }
     }
     componentDidMount() {
     }

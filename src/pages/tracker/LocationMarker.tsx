@@ -16,7 +16,7 @@ export interface MyLocation extends Coordinates {
 interface MyLocationMarkerProps {
     name: string
     location?: MyLocation
-    onLocationChange: (location: MyLocation) => void
+    onLocationChange: (location?: MyLocation) => void
     panMapToMarker: boolean
 }
 
@@ -130,6 +130,9 @@ export class MyLocationMarker extends React.Component<MyLocationMarkerProps, MyL
 
     error(err: any) {
         console.error(`ERROR(${err.code}): ${err.message}`);
+        if (err.code === 1) {
+            this.props.onLocationChange(undefined);
+        }
     }
 
     geoLocationId? : number
@@ -141,7 +144,7 @@ export class MyLocationMarker extends React.Component<MyLocationMarkerProps, MyL
             maximumAge: 5000,
         };
 
-        this.geoLocationId = navigator.geolocation.watchPosition(this.success.bind(this), this.error, options);
+        this.geoLocationId = navigator.geolocation.watchPosition(this.success.bind(this), this.error.bind(this), options);
     }
 
     mounted = false

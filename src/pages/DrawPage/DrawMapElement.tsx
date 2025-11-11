@@ -160,11 +160,18 @@ export class DrawMapElement extends React.Component<DrawMapElementProps, DrawMap
             maximumAge: 5000,
         };
 
-        this.geoLocationId = navigator.geolocation.watchPosition(this.success.bind(this), this.error, options);
+        this.geoLocationId = navigator.geolocation.watchPosition(this.success.bind(this), this.error.bind(this), options);
     }
 
     error(err: any) {
-        console.error(err)
+        console.error(`Error(${err.code})`, err)
+        if (err.code === 1) {
+            if (this.geoLocationId) {
+                navigator.geolocation.clearWatch(this.geoLocationId);
+            }
+            this.geoLocationId = undefined;
+            this.setState({locationControl: "location-control-off"})
+        }
     }
 
     success(pos:any) {
