@@ -32,9 +32,14 @@ html {
 }
 
 .float-bottom {
-    align-content: center;
+    float: right;
+    padding: 10vw;
+}
+
+.float-right {
+    align-content: flex-end;
     position: relative;
-    bottom: 20vh;
+    right: 20vw;
 }
 
 .main-image {
@@ -50,6 +55,16 @@ html {
     font-size: 6vw;
 }
 
+.container .app {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 3vw;
+}
+
+.container .app a {
+    color: #63c760;
+}
 .container .listItem {
     font-size: 4vw;
     margin: 10px

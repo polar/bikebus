@@ -186,11 +186,11 @@ function FrontPageShower() {
     let {device} = useParams()
     switch(device) {
         case "android":
-            return (<FrontPage prefix={`/${device}`} displayNavigation={false} displayOperator={true}/>)
+            return (<FrontPage prefix={`/${device}`} displayGetApp={false} displayNavigation={false} displayOperator={true}/>)
         case "desktop":
-            return (<FrontPage prefix={`/${device}`} displayNavigation={true} displayOperator={false}/>)
+            return (<FrontPage prefix={`/${device}`} displayGetApp={true} displayNavigation={true} displayOperator={false}/>)
         default:
-            return (<FrontPage prefix={`/desktop`} displayNavigation={true} displayOperator={false}/>)
+            return (<FrontPage prefix={`/desktop`}  displayGetApp={true} displayNavigation={true} displayOperator={false}/>)
 
     }
 }
@@ -198,11 +198,11 @@ function ObserveOnlyFrontPageShower() {
     let {device} = useParams()
     switch(device) {
         case "android":
-            return (<FrontPage prefix={`/${device}`} displayNavigation={false} displayOperator={false}/>)
+            return (<FrontPage prefix={`/${device}`}  displayGetApp={false} displayNavigation={false} displayOperator={false}/>)
         case "desktop":
-            return (<FrontPage prefix={`/${device}`} displayNavigation={false} displayOperator={false}/>)
+            return (<FrontPage prefix={`/${device}`} displayGetApp={true}  displayNavigation={false} displayOperator={false}/>)
         default:
-            return (<FrontPage prefix={`/desktop`} displayNavigation={false} displayOperator={false}/>)
+            return (<FrontPage prefix={`/desktop`} displayGetApp={true}  displayNavigation={false} displayOperator={false}/>)
 
     }
 }
@@ -249,7 +249,7 @@ ReactDOM.createRoot(root!).render(
             <Route path="/makes" element={<MakesListShower/>} />
             <Route path="/make" element={<MakerShower/>} />
             <Route path="/op" element={<OperatePage prefix={"/desktop"} show={[]}/>} />
-            <Route path="/" element={<FrontPage prefix={"/desktop"} displayNavigation={false} displayOperator={false}/>} />
+            <Route path="/" element={<FrontPage prefix={"/desktop"} displayGetApp={true}  displayNavigation={false} displayOperator={false}/>} />
         </Routes>
     </BrowserRouter>
 );

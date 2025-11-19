@@ -5,6 +5,7 @@ import {Button, ButtonGroup} from "@mui/material";
 
 export interface FrontPageOps {
     prefix: string
+    displayGetApp: boolean
     displayNavigation: boolean
     displayOperator: boolean
 }
@@ -84,9 +85,21 @@ export default class FrontPage extends Component<FrontPageOps, FrontPageState> {
 
     }
 
+    private getApp() {
+        if (this.props.displayGetApp) {
+            return (
+                <h1 className={"app"}>
+                    <a href={"https://play.google.com/store/apps/details?id=com.adiron.bikebus"}>Get the Android App</a>
+                </h1>
+            )
+        }
+    }
+
     private getNames() {
         return <div className={"overlay"}>
-            <h1 className={"name"}>Bike Bus</h1>
+            <h1 className={"name"}>Bike Bus
+            </h1>
+            { this.getApp() }
             <table>
                 <tbody>
                 {this.state.names!.map(name => <RouteEntry prefix={this.props.prefix} key={name} name={name}/>)}
